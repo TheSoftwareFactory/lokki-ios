@@ -1,0 +1,22 @@
+<div class="page signup" ng-cloak>
+    <div class="header">
+        <div class="left-side">
+            <div class="icon-button icon-back icon-normal icon-inline" ng-click="goToStartOfFlow()"></div>
+        </div>
+    </div>
+
+    <div class="contentRow scroll-y no-scroll-x">
+        <p class="reset-margins">{{"eulaPage.starter" | i18n}}</p>
+        <div class="highlightBox white noBottomPadding noTopPadding top-margin scroll-y no-scroll-x" ng-click="onEulaClicked()">
+            <p>{{"eulaPage.eula.b1" | i18n}}</p>
+            <p>{{"eulaPage.eula.b2" | i18n}}</p>
+            <p>{{"eulaPage.eula.b3" | i18n}}</p>
+            <p>{{"eulaPage.eula.b4" | i18n}}</p>
+            <p ng-show="inUSA">{{"eulaPage.eula.b5" | i18n}}</p>
+        </div>
+    </div>
+    <div class="buttonRowBottom">
+        <div class="button primary full-width top-margin" ng-click="userAcceptedEula()">{{"eulaPage.agree" | i18n}}</div>
+        <div class="button primary full-width bottom-margin top-margin" ng-click="userDeclinedEula()">{{"eulaPage.disagree" | i18n}}</div>
+    </div>
+</div>

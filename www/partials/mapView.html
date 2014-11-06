@@ -1,0 +1,12 @@
+<div class="page" ng-cloak>
+    <div class="contentRow overlayHeader scroll-y no-scroll-x">
+        <google-map center="center" draggable="true" zoom="zoom" events="events" markers="markers" mark-click="true" 	latitude="clickedLatitudeProperty" longitude="clickedLongitudeProperty" fit="false" style="height: 100%;display:block"></google-map>
+    </div>
+
+    <div class="buttonRowBottom">
+        <div ng-show="markers.length" class="button primary full-width" ng-click="selectPlace()">{{"mapView.selectPlace" | i18n}}</div>
+        <div ng-show="!markers.length" class="button double-line secondary full-width">{{"mapView.tutorial" | i18n}}</div>
+        <div class="button primary full-width" ng-click="back()">{{"mapView.back" | i18n}}</div>
+    </div>
+
+</div>

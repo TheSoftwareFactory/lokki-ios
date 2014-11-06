@@ -1,0 +1,52 @@
+<!--
+  ~ Copyright (c) 2013 F-Secure Corporation
+  ~ See license terms for the related product.
+  ~
+  ~ Author: Jussi Nieminen
+  ~ Since: 19.06.2013 13:2
+  -->
+<div class="page locationSettings" ng-cloak>
+    <div class="header">
+        <div class="left-side">
+            <div class="icon-button icon-back icon-normal icon-inline" ng-click="back()"></div>
+        </div>
+        <div class="right-side"></div>
+        <div class="middle centered"><h1 class="page-title">{{"locationSettings.title" | i18n}}</h1></div>
+    </div>
+    <div class="content scroll-y no-scroll-x">
+        <div class="chooseNotificationWrapper">
+            <div class="graphical-checkbox with-top-bottom-margins checkbox-right">
+                <input type="checkbox" id="locationAlerts" ng-model="settings.enabled">
+                <label class="checkbox-image"><span ng-click="changeEnabledCheckbox()"></span></label>
+                <label class="labelText big" for="locationAlerts">{{"locationSettings.label.locationAlerts" | i18n}}</label>
+            </div>
+        </div>
+
+        <div class="enter-exit-heading" ng-show="settings.enabled">
+            <div class="exit-place" ng-click="changeAllExitPlaces()"></div>
+            <div class="enter-place" ng-click="changeAllEnterPlaces()"></div>
+            <div class="clearfix"></div>
+        </div>
+        <hr>
+        <div ng-repeat="place in places" class="locationAlertPlace" ng-show="settings.enabled">
+            <div class="left-side">
+                <div class="placesTinyWrapper">
+                    <div class="place tiny" ng-class="place.type"></div>
+                </div>
+            </div>
+            <div class="right-side">
+                <div class="graphical-checkbox inline wide-margin">
+                    <input type="checkbox" ng-model="settings.perPlace[place.name].enter">
+                    <label class="checkbox-image"><span ng-click="changeCheckboxArrival(place.name)"></span></label>
+                </div>
+                <div class="graphical-checkbox inline wide-margin">
+                    <input type="checkbox" ng-model="settings.perPlace[place.name].leave">
+                    <label class="checkbox-image"><span ng-click="changeCheckboxDeparture(place.name)"></span></label>
+                </div>
+            </div>
+            <div class="middle">{{place.name}}</div>
+        </div>
+
+
+    </div>
+</div>

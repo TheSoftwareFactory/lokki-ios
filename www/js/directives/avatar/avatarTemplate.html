@@ -1,0 +1,5 @@
+<div class="avatar" ng-class="haloClass" ng-click="onClickHandler({$event:$event})">
+    <div class="avatarHalo"><img ng-src="{{person.image}}"/></div>
+    <div class="avatar-badge" ng-show="showBadge">+{{person.newMessages}}</div>
+    <div class="avatar-bad-accuracy-icon" ng-class="badAccuracyIconClass" ng-show="badAccuracyIconClass"></div>
+</div>

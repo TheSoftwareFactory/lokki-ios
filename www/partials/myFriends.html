@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<!--
+  ~ Copyright (c) 2013 F-Secure Corporation
+  ~ See license terms for the related product.
+  ~
+  ~ Author: Jussi Nieminen
+  ~ Since: 13.08.2013 13:33
+  -->
+<div class="page myFriends" ng-cloak>
+    <div class="header">
+        <div class="left-side">
+            <div class="icon-button icon-back icon-normal icon-inline" ng-click="back()"></div>
+        </div>
+        <!--
+        <div class="right-side"><div class="icon-button icon-plus icon-normal icon-inline" ng-click="addFriend()"></div></div>
+        -->
+        <div class="middle centered">{{"myFriends.title" | i18n}}</div>
+    </div>
+    <div class="content scroll-y no-scroll-x">
+        <div class="myFamilyList">
+            <div ng-repeat="friend in friends | objectSort:{by:'name', firstParamKey:'isCurrentUser', firstParamValue:true}">
+                <div class="avatar-with-text" ng-click="onMemberClick(friend)" >
+                    <fs-avatar person="friend" fade-icon="false"></fs-avatar>
+                    <p>{{friend.name}}</p>
+                </div>
+                <hr>
+            </div>
+        </div>
+    </div>
+</div>

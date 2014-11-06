@@ -1,0 +1,79 @@
+<div class="page userDetails familyMemberDetails" ng-cloak>
+    <div class="header">
+        <div class="left-side">
+            <div class="icon-button icon-back icon-normal icon-inline" ng-click="backButtonClicked()"></div>
+        </div>
+        <div class="right-side" ng-show="!user.pendingMember">
+            <div class="icon-button icon-delete icon-normal icon-inline" ng-click="deleteUser(userId)"></div>
+        </div>
+        <div class="middle centered"><h1 class="page-title no-left-margin" >{{user.name}}</h1></div>
+    </div>
+    <div class="userDetailsContainer no-scroll-x scroll-y">
+        <div class="centerContainer">
+            <div ng-show="!user.pendingMember">
+                <div ng-show="user.currentUser">
+                    <div class="aroundIcons north-west"><button class="icon-button icon-create-place icon-normal icon-inline" ng-click="createPlaceButtonClicked()"></button></div>
+                    <div class="aroundIcons east"><button class="icon-button icon-location icon-normal icon-inline" ng-click="locationOnMapButtonClicked()"></button></div>
+                    <div class="aroundIcons west"><button class="icon-button icon-settings icon-normal icon-inline" ng-click="onEditButtonClicked()"></button></div>
+                    <div class="aroundIcons north-east" ng-show="placeToShareToFacebook"><button class="icon-button icon-facebook-share icon-normal icon-inline" ng-click="shareOnFacebookButtonClicked()"></button></div>
+                </div>
+
+                <div ng-show="!user.currentUser">
+                    <div class="aroundIcons north">
+                        <button class="icon-button icon-chat icon-normal icon-inline" ng-click="pingButtonClicked()" ></button>
+                        <div class="badge" ng-show="numberOfNewMessages" >+{{numberOfNewMessages}}</div>
+                    </div>
+                    <div class="aroundIcons north-east"><button class="icon-button icon-location icon-normal icon-inline" ng-click="locationOnMapButtonClicked()"></button></div>
+                    <div class="aroundIcons north-west"><button class="icon-button icon-call icon-normal icon-inline" ng-click="callButtonClicked()"></button></div>
+                    <div class="aroundIcons west"><button class="icon-button icon-message icon-normal icon-inline" ng-click="messageButtonClicked()"></button></div>
+                    <div class="aroundIcons east"><button class="icon-button icon-create-place icon-normal icon-inline" ng-click="createPlaceButtonClicked()"></button></div>
+                </div>
+            </div>
+
+            <div class="aroundIcons south for-text" ng-show="user.pendingMember"><div class="text">{{"userDetailsPage.pendingMember" | i18n}}</div></div>
+            <div class="centerAvatar"><div class="avatar large"  ng-class="cssClassForAvatarHalo()" ng-click="changeAvatar()"><div class="avatarHalo"><img ng-src="{{user.icon}}" /></div></div></div>
+        </div>
+
+        <div class="textAfterCenterContainer just-below-avatar" ng-show="user.currentUser">
+            <div class="bubble">
+                <div class="bubbleThingSize"></div>
+                <p class="text-align-center">{{text.currentlyAt}}</p>
+                <p class="text-align-center">{{text.lastReportTime}}</p>
+            </div>
+
+            <div ng-show="badAccuracy.iconClass">
+                <p class="text-align-center"><span class="icon-info icon-inline" ng-class="badAccuracy.iconClass"></span> {{badAccuracy.text}}</p>
+            </div>
+        </div>
+
+        <div class="textAfterCenterContainer" ng-show="!user.currentUser">
+            <div class="bubble">
+                <div class="bubbleThingSize"></div>
+                <p class="text-align-center" ng-show="!user.pendingMember">{{text.currentlyAt}}</p>
+                <p class="text-align-center" ng-show="text.distanceFromYou">{{text.distanceFromYou}}</p>
+                <p class="text-align-center" ng-show="!user.pendingMember">{{text.lastReportTime}}</p>
+            </div>
+
+            <div ng-show="badAccuracy.iconClass">
+                <p class="text-align-center"><span class="icon-info icon-inline" ng-class="badAccuracy.iconClass"></span> {{badAccuracy.text}}</p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="buttonContainer">
+        <div ng-show="leavingFamily && user.currentUser" ng-repeat="family in ['Rodriguez', 'Kukkonen', 'Third']" >
+            <hr/>
+            <button class="button bottom-margin " >{{family}}</button>
+            <button class="button warning bottom-margin float-right" ng-click="">{{"userDetailsPage.leaveFamily" | i18n}}</button>
+        </div>
+
+        <button class="button primary full-width bottom-margin" ng-show="user.pendingMember" ng-click="deleteUser(userId)">{{"userDetailsPage.button.cancelFamilyInvite" | i18n}}</button>
+
+        <div ng-show="leavingFamily && !user.currentUser" ng-repeat="family in ['Rodriguez', 'Kukkonen', 'Third']" >
+            <hr/>
+            <button class="button bottom-margin " >{{family}}</button>
+            <button class="button warning bottom-margin float-right" ng-click="">{{"userDetailsPage.removeUserFromFamily" | i18n}}</button>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,71 @@
+<div class="page no-margins dashboard" ng-cloak>
+    <div class="header">
+        <div class="left-side">
+            <div class="icon-button icon-menu icon-normal icon-inline" ng-click="menuButtonClicked()"></div>
+        </div>
+
+        <div class="right-side">
+            <div class="icon-button icon-notification-panel icon-normal icon-inline" ng-click="notificationsPanelButtonClicked()">
+                <div class="badge" ng-show="numberOfNewMessages" >+{{numberOfNewMessages}}</div>
+            </div>
+        </div>
+
+        <div class="middle centered icon-lokki-logo"></div>
+    </div>
+
+    <div class="dashboardContent">
+        <div class="familyContainer">
+            <div ng-show="!invitingUser" class="dashboardBar scroll-x no-scroll-y">
+                <div class="dashboardBarItemWrapper" ng-repeat="member in family"><fs-avatar person="member" on-click="onAvatarClick($event, member)"></fs-avatar></div>
+                <div class="dashboardBarItemWrapper"><div class="familyPlusSign" ng-click="addToFamily()"><div class="icon-button icon-plus icon-inline"></div></div></div>
+                <div class="dashboardBarItemWrapper float-right chat">
+                    <div class="icon-button icon-chat-group icon-normal icon-inline icon-relative" ng-click="chatsButtonClicked()">
+                        <div class="badge" ng-show="numberOfNewMessages" >+{{numberOfNewMessages}}</div>
+                    </div>
+                </div>
+            </div>
+            <div ng-show="invitingUser" class="dashboardNotification" ng-click="viewFamilyInvitation()">
+                <div class="notificationWrapper"><div class="avatar"><div class="avatarHalo"><img ng-src="{{invitingUser.icon}}" /></div></div></div>
+                <div class="notificationWrapper"><p>{{invitingUser.name}} {{"dashboard.invitation.text" | i18n}}</p></div>
+            </div>
+        </div>
+
+        <div class="placesContainer" ng-show="!visibilityOptions">
+            <div class="placeContent scroll-y no-scroll-x" ng-show="!viewOverlay" >
+                <div ng-show="!haveFamilyPlaces"  class="dashboardTutorialTextContent">
+                    <h1>{{"dashboard.noPlaces.info" | i18n}}</h1>
+                    <div class="button secondary full-width" ng-click="createNewPlace()">{{"dashboard.noPlaces.createFirst" | i18n}}</div>
+                </div>
+                <div class="place" ng-class="cssClassForPlace(place)" ng-repeat="place in places" ng-click="onPlaceClick(place)">
+                    <div class="placeAvatars">
+                        <fs-avatar person="member" on-click="onAvatarClick($event, member)" ng-repeat="member in place.atPlace"></fs-avatar>
+                    </div>
+                    <div class="placeTitle">{{place.name}}</div>
+                </div>
+                <div class="place add-new" ng-click="createNewPlace()" ng-show="haveFamilyPlaces">
+                    <div class="placeAvatars">
+                    </div>
+                </div>
+            </div>
+            <div class="familyBullets">
+                <div class="bullet"></div><div class="bullet selected"></div><div class="bullet"></div><div class="bullet"></div>
+            </div>
+            <div class="changeFamilyArrows">
+                <div class="arrow-left" ng-click="leftArrowClick($event)"></div>
+                <div class="arrow-right" ng-click="rightArrowClick($event)"></div>
+            </div>
+        </div>
+
+        <div ng-show="viewOverlay" style="margin-top: 65px; text-align: center">
+            <img src="images/overlay.png" width="98%" height="400px" />
+        </div>
+
+        <div class="friendsContainer">
+            <div class="dashboardBar">
+                <div class="float-left dashboardBarItemWrapper icon-button icon-normal icon-inline " ng-class="visibilityClass" ng-click="changeVisibilityForGroup()"></div>
+                <div class="float-right dashboardBarItemWrapper no-margin-right icon-button icon-plus icon-normal icon-inline" ng-click="showOverlay()"></div>
+                <div class="middle" ng-click="onGroupClick()"><div class="dashboardBarItemWrapper"><h1>Family</h1></div></div>
+            </div>
+        </div>
+    </div>
+</div>

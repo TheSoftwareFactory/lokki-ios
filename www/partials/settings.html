@@ -1,0 +1,139 @@
+<!--
+  ~ Copyright (c) 2013 F-Secure Corporation
+  ~ See license terms for the related product.
+  ~
+  ~ Author: Oleg Fedorov
+  ~ Since: 17.06.2013 12:0
+  -->
+
+<div class="page settings" ng-cloak xmlns="http://www.w3.org/1999/html">
+    <div class="header">
+        <div class="left-side">
+            <div class="icon-button icon-back icon-normal icon-inline" ng-click="backToDashboard()"></div>
+        </div>
+        <div class="middle centered">{{"settings.title" | i18n}}</div>
+    </div>
+    <div class="content scroll-y no-scroll-x">
+
+        <div class="settings-group">
+            <div class="graphical-checkbox checkbox-right"  ng-show="nameEditorEnabled">
+                <input type="text" class="full-width" id="userNameInputElement" ng-model="userData.name">
+                <div class="button primary full-width" ng-click="onFinishChangingName()" >{{"mySettings.label.finishEditing" | i18n}}</div>
+            </div>
+        </div>
+
+        <div class="full-width" ng-show="!nameEditorEnabled">
+            <div class="avatar-with-text" >
+                <span ng-click="onChangeAvatar()"><fs-avatar person="userData" fade-icon="false" ></fs-avatar></span>
+                <p class="largeFont"><strong ng-click="onChangeName()">{{userData.name}}</strong></p>
+            </div>
+            <hr/>
+        </div>
+
+        <div class="full-width" ng-click="onChangeLanguage()">
+            <h2 class="text-align-left">{{"mySettings.label.myLanguage" | i18n}}: <strong>{{currentLanguageName}}</strong></h2>
+            <hr/>
+        </div>
+
+        <div class="full-width" ng-click="onHelpClick()">
+            <h2  class="text-align-left">{{"settings.help" | i18n}}</h2>
+            <hr/>
+        </div>
+
+        <div class="full-width" ng-click="onFeedbackClick()">
+            <h2  class="text-align-left">{{"settings.feedback" | i18n}}</h2>
+            <hr/>
+        </div>
+
+        <div class="full-width" ng-click="onOtherProductsClick()" ng-show="fsecureProductsIsVisible">
+            <h2  class="text-align-left">{{"settings.fsecureProducts" | i18n}}</h2>
+            <hr/>
+        </div>
+
+        <div class="full-width" ng-click="onAboutClick()">
+            <h2  class="text-align-left">{{"settings.about" | i18n}}</h2>
+            <hr/>
+        </div>
+
+        <!--
+        <div class="full-width" ng-click="">
+            <h2  class="text-align-left">Power usage (tap to change)</h2>
+            <div class="full-width accuracy-switch" >
+                <input type="checkbox" name="accuracy-switch" id="accuracy-switch" class="" ng-model="useGPS" ng-click="onUseGPS()" >
+                <label for="accuracy-switch"></label>
+            </div>
+            <span style="float: left; text-align: center; margin-left: 15px;">Longer<br/>battery</span>
+            <span style="float: right; text-align: center; margin-right: 15px;">Higher<br/>accuracy</span>
+
+        </div>
+        -->
+        <!--
+        <div class="full-width accuracy-switch" ng-click="">
+            <input type="checkbox" name="accuracy-switch" id="accuracy-switch" class="" ng-model="useGPS" ng-click="onUseGPS()" >
+            <label for="accuracy-switch"></label>
+        </div>
+        -->
+
+        <!--
+        <div class="full-width" ng-click="">
+            <h2  class="text-align-left">Power usage (tap to change)</h2>
+            <span style="float: left; text-align: center; margin-left: 15px;">Longer<br/>battery</span>
+            <span style="float: right; text-align: center; margin-right: 15px;">Higher<br/>accuracy</span>
+            <div class="onoffswitch" >
+                <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" ng-model="useGPS" ng-click="onUseGPS()" >
+                <label class="onoffswitch-label" for="myonoffswitch">
+                    <div class="onoffswitch-inner"></div>
+                    <div class="onoffswitch-switch"></div>
+                </label>
+            </div>
+        </div>
+
+        -->
+
+
+        <!--
+        <div class="full-width graphical-checkbox with-top-bottom-margins checkbox-right" ng-show="onAndroid">
+            <h2  class="text-align-left">Power usage (click on a checkbox)</h2>
+                <div id="gpsSelector" style="width: 60%; margin: auto;">
+
+                    <input type="checkbox" id="useGPS" ng-model="useNoGPS">
+                    <label class="checkbox-image" ><span ng-click="onUseGPS()"></span></label>
+                    Longer battery life
+
+                    <br/><br/>
+
+                    <input type="checkbox" id="useGPS" ng-model="useGPS">
+                    <label class="checkbox-image" ><span ng-click="onUseGPS()"></span></label>
+                    <span style="">Higher accuracy</span>
+
+                </div>
+        </div>
+        -->
+
+    </div>
+
+
+</div>
+
+        <!--
+        <div class="full-width" ng-click="onMySettingsClick()">
+            <h2 class="text-align-left">{{"settings.mySettings" | i18n}}</h2>
+            <hr/>
+        </div>
+        -->
+        <!--
+        <div class="full-width" ng-click="onMyFamilyClick()">
+            <h2  class="text-align-left">{{"settings.myFamily" | i18n}}</h2>
+            <hr/>
+        </div>
+
+        <div class="full-width" ng-click="onMyPlacesClick()">
+            <h2  class="text-align-left">{{"settings.myPlaces" | i18n}}</h2>
+            <hr/>
+        </div>
+
+        <div class="full-width" ng-click="onMyFriendsClick()">
+            <h2  class="text-align-left">{{"settings.myFriends" | i18n}}</h2>
+            <hr/>
+        </div>
+        -->

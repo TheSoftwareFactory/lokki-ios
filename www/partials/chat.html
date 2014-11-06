@@ -1,0 +1,53 @@
+<!--
+  ~ Copyright (c) 2013 F-Secure Corporation
+  ~ See license terms for the related product.
+  ~
+  ~ Author: Oleg Fedorov
+  ~ Since: 19.07.2013 12:0
+  -->
+<div class="page chat" ng-cloak>
+    <div class="header">
+        <div class="left-side">
+            <div class="icon-button icon-back icon-normal icon-inline" ng-click="back()"></div>
+        </div>
+        <div class="middle centered"><h1 class="page-title">{{userName}}</h1></div>
+    </div>
+    <div class="content with-one-button scroll-y no-scroll-x">
+        <div ng-show = "!showOldMessages">
+            <p class="top-button" ng-click="onOldClick()">{{"chat.old" | i18n}}</p>
+            <hr ng-show="!messages.length"/>
+        </div>
+        <p class="top-button" ng-show="!messages.length">{{"chat.noMessagesToday" | i18n}}</p>
+
+        <div class="message-line" ng-repeat="message in messages">
+            <!-- <hr ng-show="message.date"/> -->
+
+            <div class="messageWrapper incomingMessageLine" ng-show="message.incoming">
+                <div ng-show="message.showIcon" class="avatar float-right" ng-class="message.avatarHaloClass" ng-click="onOtherUserClick(message)"><div class="avatarHalo"><img ng-src="{{message.icon}}" /></div></div>
+                <div class="textContainer">
+                    <p ng-repeat="text in message.texts" class="incoming-message float-left" >{{text}}</p>
+                    <p class="message-date" ng-show="message.date">{{message.date}}</p>
+                </div>
+            </div>
+
+            <div class="messageWrapper myMessageLine" ng-show="!message.incoming">
+                <div ng-show="message.showIcon" class="avatar float-left" ng-class="message.avatarHaloClass" ng-click="onOwnUserClick(message)"><div class="avatarHalo"><img ng-src="{{message.icon}}" /></div></div>
+                <div class="textContainer">
+                    <p ng-repeat="text in message.texts" class="outgoing-message float-right" >{{text}}</p>
+                    <p class="message-date" ng-show="message.date">{{message.date}}</p>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div id="lastMessage">
+        </div>
+    </div>
+
+    <div class="buttonRowBottom" ng-show="canSendMessagesToThisChat">
+        <div class="button-side-small"><div class="button primary icon-chat-input" ng-click="sendMessage()"></div></div>
+        <div class="input-side"><input maxlength="500" type="text" class="chat-input" ng-model="typedMessage" fs-on-focus="onInputBoxFocus()"/></div>
+
+    </div>
+</div>

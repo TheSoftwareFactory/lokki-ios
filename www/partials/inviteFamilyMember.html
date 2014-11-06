@@ -1,0 +1,72 @@
+<div class="page inviteFamilyMember" ng-cloak>
+    <div class="header">
+        <div class="left-side icon-button icon-back icon-normal icon-inline" ng-click="backButtonClicked()"></div>
+
+        <div class="right-side">
+            <div class="icon-button icon-facebook-share icon-normal icon-inline" ng-click="shareOnFacebookButtonClicked()"></div>
+        </div>
+        <div class="middle centered" ng-show="invitingFamilyMember"><h1 class="page-title no-left-margin">{{"inviteFamilyMember.title" | i18n}}</h1></div>
+        <div class="middle centered" ng-show="invitingFriend"><h1 class="page-title no-left-margin">{{"inviteFriend.title" | i18n}}</h1></div>
+    </div>
+    <div class="content with-margins no-bottom-margin scroll-y no-scroll-x">
+
+        <!--
+        <div ng-show="startFamily">
+            <h1>{{"inviteFamilyMember.startFamily.heading" | i18n}}</h1>
+            <h2>{{"inviteFamilyMember.selectContacts" | i18n}}</h2>
+            <p >{{"inviteFamilyMember.startFamily.text" | i18n}}</p>
+            <p >{{"inviteFamilyMemberOrFriend.reminder" | i18n}}</p>
+            <button class="button primary full-width top-margin" ng-click="chooseContacts()">{{"inviteFamilyMember.button" | i18n}}</button>
+        </div>
+
+        <div ng-show="addToFamily">
+            <h1>{{"inviteFamilyMember.addToFamily.heading" | i18n}}</h1>
+            <h2>{{"inviteFamilyMember.selectContacts" | i18n}}</h2>
+            <p >{{"inviteFamilyMember.addToFamily.text" | i18n}}</p>
+            <p >{{"inviteFamilyMemberOrFriend.reminder" | i18n}}</p>
+            <button class="button primary full-width top-margin" ng-click="chooseContacts()">{{"inviteFamilyMember.button" | i18n}}</button>
+        </div>
+        <div ng-show="addToFriends">
+            <h2>{{"inviteFriend.selectContacts" | i18n}}</h2>
+            <p >{{"inviteFriend.text" | i18n}}</p>
+            <p >{{"inviteFamilyMemberOrFriend.reminder" | i18n}}</p>
+            <button class="button primary full-width top-margin" ng-click="chooseContacts()">{{"inviteFriend.button" | i18n}}</button>
+        </div>
+        -->
+        <!--
+        <div ng-show="!startFamily && !addToFamily && !addToFriends">
+        -->
+        <div>
+            <div ng-show="queryInProgress && !haveUsersToShow">
+                <h1>{{"inviteFamilyMemberOrFriend.queryInProgress" | i18n}}</h1>
+            </div>
+            <!--
+            <div ng-show="!queryInProgress && !haveUsersToShow">
+                <h1>{{"inviteFamilyMemberOrFriend.noNewContactsFound" | i18n}}</h1>
+                <p>{{"inviteFamilyMemberOrFriend.noNewContactsFound.p1" | i18n}}</p>
+                <p>{{"inviteFamilyMemberOrFriend.noNewContactsFound.p2" | i18n}}</p>
+            </div>
+            -->
+
+            <div ng-show="haveUsersToShow" ng-repeat="userData in ringoUsers | objectSort:{by:'name'}">
+                <div class="avatar-with-text"  ng-click="contactClicked(userData['phoneNumber'])">
+
+                    <!--
+                    <div class="avatar" ng-class="{'friend' : invitingFriend}">
+                        <div class="avatarHalo"><img ng-src="{{ userData['img'] }}"/></div>
+                    </div>
+                    -->
+                    <p>{{ userData['name'] }}</p>
+                </div>
+                <hr>
+            </div>
+
+            <button ng-show="!queryInProgress" class="button primary full-width top-margin bottom-margin" ng-click="tellFriends()">{{"inviteFamilyMemberOrFriend.tellFriends" | i18n}}</button>
+
+            <div ng-show="inBrowser">
+                <input type="text" class="full-width" ng-model="browserPhoneNumber"/>
+                <button class="button primary full-width" ng-click="inviteFromBrowser()">{{"inviteFamilyMemberOrFriend.invite" | i18n}}</button>
+            </div>
+        </div>
+    </div>
+</div>

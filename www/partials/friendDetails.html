@@ -1,0 +1,56 @@
+<div class="page userDetails friendDetails" ng-cloak>
+    <div class="header">
+        <div class="left-side">
+            <div class="icon-button icon-back icon-normal icon-inline" ng-click="backButtonClicked()"></div>
+        </div>
+        <div class="right-side" ng-show="!user.pendingFriend">
+            <div class="icon-button icon-delete icon-normal icon-inline" ng-show="!removingFriend" ng-click="deleteUser(userId)"></div>
+        </div>
+        <div class="middle centered"><h1 class="page-title" ng-show="removingFriend">{{user.name}}</h1><h1 class="page-title no-left-margin" ng-show="!removingFriend">{{user.name}}</h1></div>
+    </div>
+    <div class="userDetailsContainer no-scroll-x scroll-y">
+        <div class="centerContainer">
+
+            <div ng-show="!user.pendingFriend">
+                <div class="aroundIcons north">
+                    <button class="icon-button icon-chat icon-normal icon-inline" ng-click="pingButtonClicked()" ></button>
+                    <div class="badge" ng-show="numberOfNewMessages" >+{{numberOfNewMessages}}</div>
+                </div>
+                <div class="aroundIcons north-west"><button class="icon-button icon-call icon-normal icon-inline" ng-click="callButtonClicked()"></button></div>
+                <div class="aroundIcons north-east"><button class="icon-button icon-message icon-normal icon-inline" ng-click="messageButtonClicked()"></button></div>
+                <div class="aroundIcons east" ng-show="user.location"><button class="icon-button icon-location icon-normal icon-inline" ng-click="locationOnMapButtonClicked()"></button></div>
+            </div>
+
+            <div class="centerAvatar"><div class="avatar large friend" ng-click="changeAvatar()"><div class="avatarHalo"><img ng-src="{{user.icon}}" /></div></div></div>
+
+        </div>
+
+        <div class="textAfterCenterContainer just-below-avatar">
+            <h1 ng-show="user.pendingFriend" class="full-width text-align-center">{{"userDetailsPage.pendingFriend" | i18n }}</h1>
+
+            <div ng-show="!user.pendingFriend">
+                <div ng-show="badAccuracy.iconClass && !timeoutToHideInaccurateInfoPassed">
+                    <p class="text-align-center"><span class="icon-info icon-inline" ng-class="badAccuracy.iconClass"></span>{{badAccuracy.text}}</p>
+                </div>
+
+                <p class="full-width text-align-center blue-dark-text">{{"userDetailsPage.howFriendCanSeeMe.title" | i18n}}</p>
+                <div class="button secondary top-margin half-height one-of-three-buttons-in-row" ng-class="selectClassIfHowFriendCanSeeMeIs('shareAlways', 'selected-with-border-and-bold-text')" ng-click="onHowFriendCanSeeMe('shareAlways')">{{"userDetailsPage.howFriendCanSeeMe.always" | i18n}}</div>
+                <div class="button secondary top-margin half-height one-of-three-buttons-in-row" ng-class="selectClassIfHowFriendCanSeeMeIs('shareNearby', 'selected-with-border-and-bold-text')" ng-click="onHowFriendCanSeeMe('shareNearby')">{{"userDetailsPage.howFriendCanSeeMe.nearby" | i18n}}</div>
+                <div class="button secondary top-margin half-height one-of-three-buttons-in-row" ng-class="selectClassIfHowFriendCanSeeMeIs('shareNever', 'selected-with-border-and-bold-text')" ng-click="onHowFriendCanSeeMe('shareNever')">{{"userDetailsPage.howFriendCanSeeMe.never" | i18n}}</div>
+                <div class="float-clear bottom-margin"></div>
+
+                <p class="full-width text-align-center blue-dark-text top-margin">{{"userDetailsPage.howISeeFriend.title" | i18n}}</p>
+                <div class="button secondary half-height one-of-two-buttons-in-row" ng-class="selectClassIfHowISeeFriendIs('showNearby', 'selected-with-border-and-bold-text')" ng-click="onHowISeeFriend('showNearby')">{{"userDetailsPage.howISeeFriend.nearby" | i18n}}</div>
+                <div class="button secondary half-height one-of-two-buttons-in-row" ng-class="selectClassIfHowISeeFriendIs('showNowhere', 'selected-with-border-and-bold-text')" ng-click="onHowISeeFriend('showNowhere')">{{"userDetailsPage.howISeeFriend.dockOnly" | i18n}}</div>
+                <div class="float-clear"></div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="buttonContainer">
+        <button class="button warning double-line full-width bottom-margin" ng-show="removingFriend" ng-click="removeFriendButtonClicked(userId)">{{"userDetailsPage.removeFriend" | i18n}}</button>
+        <button class="button primary-black full-width bottom-margin" ng-show="removingFriend" ng-click="removeFriendCancelButtonClicked()">{{"userDetailsPage.cancel" | i18n}}</button>
+        <button class="button primary full-width bottom-margin" ng-show="user.pendingFriend" ng-click="deletePendingFriend(userId)">{{"userDetailsPage.button.cancelFriendInvite" | i18n}}</button>
+    </div>
+</div>

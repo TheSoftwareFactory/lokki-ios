@@ -1,0 +1,168 @@
+/*
+ Localizable.strings
+ Lokki
+ 
+ Created by Oleg Fedorov on 12/20/13.
+ Copyright (c) 2013 F-Secure. All rights reserved.
+ */
+
+/* Shown in settings view if user name is not found in Contacts app */
+"Name not found in contacts" = "Nom introuvable dans les Contacts";
+
+/*  Shown in My visibility selection in settings, means that user will be invisible if she selects it*/
+"Invisible" = "Non";
+
+/*  Shown in My visibility selection in settings, means that user will be visible if she selects it */
+"Visible" = "Oui";
+
+"Sending contacts" = "Envoi aux contacts";
+"Select contacts" = "Sélectionner les contacts";
+"Selected: %@" = "Sélectionné : %@";
+"OK" = "OK";
+"Yes" = "Oui";
+"Don't add" = "Ne pas ajouter";
+"Add" = "Ajouter";
+"Later" = "Plus tard";
+"Invite" = "Inviter";
+"Error" = "Erreur";
+"Cannot invite people right now. Please check your internet connection and try again later." = "Impossible d'inviter des contacts pour le moment. Vérifie ta connexion Internet et recommence.";
+"TellAFriendSMS" = "Coucou ! J'utilise F-Secure Lokki, l'application de géolocalisation privée qui est conviviale, sécurisée et gratuite. Rends-toi sur f-secure.com/lokki pour l'installer.";
+"TellAFriendGeneric" = "Coucou !\n\nJ'utilise F-Secure Lokki, l'application de géolocalisation privée et sécurisée. Avec Lokki, tu choisis qui peut voir où tu es et tu peux masquer ta position dès que tu veux. Pas d'intrus, ni d'étrangers, le tout sans pub.\n\nSi tu n'as pas encore Lokki sur ton téléphone, rends-toi sur http://www.lok.ki pour l'installer.\n\nLokki est développé par F-Secure, éditeur de solutions de sécurité européen maintes fois primé. La vie privée est une chose que nous prenons au sérieux. Tu peux lire notre politique de confidentialité à l'adresse http://www.f-secure.com/en/web/home_global/privacy/privacy-summary. Tous les serveurs F-Secure Lokki se trouvent sur le territoire de l'Union Européenne. F-Secure Lokki ne conserve pas les coordonnées de tes contacts ou ton historique de localisation.\n\nÀ bientôt sur Lokki ! ";
+"F-Secure Lokki is awesome!" = "Retrouve-moi sur F-Secure Lokki !";
+"FeedbackEmailSubject" = "Ce que je pense de Lokki 3.2.2 (iOS 7)";
+"FeedbackEmailBody" = "Bonjour l'équipe Lokki,\n\r";
+"AccountDisabledForSecurityReasons" = "Nous devons autoriser ton compte pour que tu puisse te connecter. Suis les instructions que nous avons envoyées à l'adresse %@.";
+"SignupGenericError" = "Impossible de terminer l'inscription. Assure-toi d'avoir saisi une adresse email valide et recommence";
+"YourAccountRequiresSignupForSecurityReasons" = "Ton compte est provisoirement verrouillé. Tu ne peux pas utiliser la même adresse email pour plusieurs comptes Lokki ou plusieurs appareils.\nEssaie de te reconnecter.";
+"PhoneNumberNotFoundInContacts" = "Impossible de trouver le numéro de téléphone de ce contact";
+"AddNewContactQuestion" = "Impossible de trouver ce contact. Veux-tu ajouter un nouveau contact ?";
+"FailedToCreateContact" = "Impossible de créer ce contact";
+"TimeFormatJustNow" = "à l'instant";
+"TimeFormatMinutesAgo" = "il y a %d min";
+"TimeFormatHoursAgo" = "il y a %d heures";
+"Tutorial" = "Tutoriel";
+"TutorialMessageWelcomeToLokki" = "Bienvenue dans Lokki. Lorsque tu lance Lokki, ta position est au centre de la carte.";
+"TutorialMessageAddFriends" = "Salut ! Il semble que tu sois le premier de tes amis à utiliser Lokki.\nAjoute tes amis pour les localiser. Souviens-toi que tu peux toujours masquer ta position si tu le souhaites.";
+"TutorialMessageSomeoneCanSeeYou" = "%@ peut/peuvent maintenant voir où tu es et tu vois cette/ces personne(s) dans Lokki si elle(s) l'autorise(nt).";
+"Lokki" = "Lokki";
+
+/* Button with "You are visible" and "You are invisible" text is of limited size. Please keep this text short in all languages  */
+"You are visible" = "Tu es visible";
+"You are invisible" = "Tu es caché";
+
+
+"Filter contacts" = "Filtrer les contacts";
+"Select people you allow to see your location" = "Sélectionne les personnes qui peuvent voir où tu es quand tu l'autorises. Choisis les adresses email que tes contacts utilisent dans Lokki.\nSi une personne ne figure pas dans cette liste, vérifie que tu l'a ajoutée dans tes Contacts.";
+"Menu" = "Menu";
+"Add people" = "Ajouter des contacts";
+"Add place" = "Ajouter un lieu";
+"People" = "Contacts";
+"Settings" = "Paramètres";
+"Help" = "Aide";
+"Send feedback" = "Donne-nous ton avis";
+"Tell a friend about Lokki" = "Dis à tes amis ce que tu penses de Lokki";
+"F-Secure products" = "Produits F-Secure";
+"About" = "À propos de";
+
+/* Upper part of 'Can see me' text in People view */
+"Can" = "Peut";
+/* Bottom part of 'Can see me' text in People view */
+"see me" = "me voir";
+/* Upper part of 'Show on map' text in People view */
+"Show" = "Afficher";
+/*Bottom part of 'Show on map' text in People view*/
+"on map" = "sur la carte";
+
+/* Shown in settings view */
+"Your Lokki ID is:" = "Ton identifiant Lokki est :";
+"Your friends need to use this email to let you see them in Lokki." = "Dis à tes amis d'utiliser cet email dans Lokki.";
+
+/* Map types (Standard, Satellite, Hybrid) - how user sees the map */
+"Standard" = "Standard";
+"Satellite" = "Satellite";
+"Hybrid" = "Hybride";
+
+/* Settings view header for MY VISIBILITY selection */
+"MY VISIBILITY" = "Mes contacts peuvent me voir";
+/* Settings view header for MAP MODE selection */
+"MAP MODE" = "Mode carte";
+
+/* Shown in About view - opens web page with privacy policy */
+"Privacy policy" = "Politique de confidentialité";
+
+/* Shown in About view*/
+"Copyright © 2013 F-Secure Corporation All rights reserved" = "Copyright © 2013-2014 F-Secure Corporation Tous droits réservés";
+
+/* Shown in about view, don't delete %@ - code will put version there (like: "Version: 3.0.2")*/
+"Version: %@" = "Version : %@";
+
+/* Shown in alert box if user does not allow Lokki to access his Contacts */
+"Cannot get access to your Contacts.\nLokki will not work correctly if you don't give it access to your Contacts." = "Impossible d'accéder à tes contacts.\nLokki doit avoir accès à tes contacts pour fonctionner.";
+
+/* Shown in alert box if user disabled background refresh in system settings  */
+"Background refresh is not enabled" = "L'actualisation en arrière-plan n'est pas activée dans Lokki. Active-la dans les paramètres iOS (Général>Actualisation en arrière-plan) si tu veux que tes amis voient où tu te trouves même si l'appli est en arrière-plan.";
+
+/* Shown in alert box if user denied location services for Lokki in system settings  */
+"Location services are not enabled" = "Les services de géolocalisation ne sont pas activés dans Lokki. Pour utiliser Lokki, active ces services dans les paramètres.";
+
+/* Shown in add contacts if user does not have email defined */
+"No email" = "Aucune adresse email";
+
+/* Shown in add contacts if user clicks on contact without email defined */
+"This contact does not have email defined. Do you want to add email address to this contact to be able to use it in Lokki?" = "Tu n'a pas ajouté d'adresse email pour ce contact. Veux-tu le faire maintenant ?";
+
+/* Buttons in dialog shown in add contacts if user clicks on contact without email defined */
+"Add email" = "Ajouter";
+"Not now" = "Pas maintenant";
+
+
+"Add a place" = "Ajouter un lieu";
+"Enter the name for the place" = "Donner un nom à ce lieu";
+
+"Done" = "Terminé";
+"Cancel" = "Annuler";
+
+"You cannot have more places in free version" = "Tu ne peux pas créer de lieux supplémentaires dans la version gratuite";
+"Failed to create place" = "Impossible de créer un lieu";
+
+"Failed to delete place" = "Impossible de supprimer le lieu. Réessaye un peu plus tard.";
+
+"Long press on the map to create new place" = "Pour créer un lieu, appuie longuement sur un point de la carte ou appuie sur \"+\" pour utiliser ta position actuelle.";
+
+"Edit place name" = "Modifier le nom";
+
+"Failed to edit place name" = "Impossible de modifier le nom";
+
+/*  Please don't remove caps from MAP and PLACES */
+"MAP" = "CARTE";
+"PLACES" = "LIEUX";
+
+/* User did not report yet */
+"Not reported" = "Pas signalé pour l'instant";
+
+
+"I have read and agree to the terms" = "J'ai lu et j'accepte les conditions";
+"PrivacyPolicyText" = "Ta sécurité est notre priorité. Avant de commencer, tu dois accepter les conditions suivantes (double-clique sur le texte pour en savoir plus) :\n\n1.Lire et accepter les conditions générales d'utilisation.\n2.Accepter les conditions de collecte et de traitement de tes informations personnelles.\n3.Accepter que le service suive et affiche ta géolocalisation.\n4.Confirmer que tu as plus de 15 ans et que tu as obtenu l'autorisation de tes parents d'utiliser Lokki, conformément aux conditions d'utilisation.\n5.Arrêter d'utiliser Lokki si tu as moins de 13 ans et que tu habites aux États-Unis.";
+
+"SignupEnterYourEmailAddress" = "Tape ton adresse email ; les autres utilisateurs Lokki te trouveront grâce à elle.";
+
+
+"your email address" = "ton adresse email";
+"Please enter a valid email" = "Saisis une adresse e-mail valide";
+"Signup" = "Inscription";
+
+
+"AppRaterDoYouLikeTitle" = "Fais-nous part de tes suggestions";
+"AppRaterDoYouLikeQuestion" = "Comment trouves-tu F-Secure Lokki ?";
+"NO" = "PAS BIEN";
+"YES" = "BIEN";
+"AppRaterReviewQuestionTitle" = "Donne une note à Lokki";
+"AppRaterReviewQuestion" = "Si tu aimes bien l'application F-Secure Lokki, donne-lui une note ! Nous te remercions par avance de ton aide.";
+"AppRaterNoThanks" = "Je n'ai pas envie";
+"AppRaterRate" = "Noter Lokki";
+"AppRaterRemindLater" = "Plus tard";
+
+"SendFeedbackBodyWhenUserDoesNotLike" = "Bonjour l'équipe Lokki,\n\rJ'ai des suggestions à vous proposer :";
+"MailClientNotConfigured" = "Tu ne peux pas envoyer cet e-mail car l'e-mail client n'est pas configuré.";
+
+"HelpLink" = "http://bit.ly/KTIpGJ";

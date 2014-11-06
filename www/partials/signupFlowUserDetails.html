@@ -1,0 +1,13 @@
+<div class="page signup" ng-cloak>
+    <div class="header">
+       <div class="left-side icon-button icon-back icon-normal icon-inline" ng-click="goToStartOfFlow()"></div>
+       <div class="middle centered"><h1 class="page-title">{{"signupUserDetailsPage.title" | i18n}}</h1></div>
+    </div>
+    <div class="contentRow overlayBothButtons scroll-y no-scroll-x">
+        <input type="text" class="full-width no-margin-top" ng-model="newUserName" placeholder="{{'signupUserDetailsPage.yourName' | i18n}}">
+        <input type="password" class="full-width" ng-model="newUserPassword1" placeholder="{{'signupUserDetailsPage.password1' | i18n}}">
+        <input type="password" class="full-width" ng-model="newUserPassword2" placeholder="{{'signupUserDetailsPage.password2' | i18n}}">
+        <button class="button primary full-width" ng-click="setUserDetails()">{{"signupUserDetailsPage.button.continue" | i18n}}</button>
+    </div>
+
+</div>

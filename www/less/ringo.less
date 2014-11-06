@@ -1,0 +1,1450 @@
+/*
+ * Copyright (c) 2013 F-Secure Corporation
+ * See license terms for the related product.
+ *
+ * Author: Jussi Nieminen
+ * Since: 29.04.2013 12:54
+ */
+
+@import "variables.less";
+@import "common.less";
+@import "icons.less";
+
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+html {
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+  -webkit-touch-callout: none;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+
+body {
+    color: @colorC4Turqoise;
+    margin: @baseGrid;
+    background-color: @colorC3BlueLightest;
+    background-repeat: repeat-x;
+    height: 100%;
+
+    font-family: HeleveticaNeue, Helvetica, Arial, Roboto;
+    font-weight: normal;
+
+    -ms-touch-action: none;
+}
+
+h1 {
+    font-size: @fontSizeHeading1;
+    line-height: @fontLineHeightHeading1;
+    font-weight: normal;
+    margin: 0px;
+
+    &.page-title{
+        font-size: @fontSizePageTitle;
+        line-height: @fontLineHeightPageTitle;
+    }
+}
+
+h2 {
+    font-size: @fontSizeHeading2;
+    line-height: @fontLineHeightHeading2;
+    font-weight: normal;
+
+    &.no-margins{
+        margin: 0px;
+    }
+}
+
+p {
+    font-size: @fontSizeParagraphNormal;
+    line-height: @fontLineHeightParagraphNormal;
+
+    -webkit-margin-before: 0px;
+    -webkit-margin-after: 0px;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+
+    &.largeFont {
+        font-size: @fontSizeParagraphLarge;
+        line-height: @fontLineHeightParagraphLarge;
+    }
+
+    &.paddingLeft {
+        padding-left: (@baseGrid*6);
+    }
+
+    &.floatLeft {
+      float: left;
+    }
+    &.reset-margins{
+        margin: 0px;
+    }
+    &.bottom-margin{
+        margin-bottom: @baseMargin;
+    }
+}
+
+select,
+textarea,
+input[type="text"],
+input[type="password"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="color"] {
+
+    @inputWidth: (27 * @baseGrid);
+    @inputHeight: (12 * @baseGrid);
+    @inputFontSize: (@baseGrid*4);
+
+    .round-corners;
+    height: @inputHeight;
+    line-height: @inputHeight;
+    margin: @baseMargin 0px;
+
+    color: @colorDarkBlue;
+    font-size: @inputFontSize;
+    text-align: left;
+    padding-left: (4*@baseGrid);
+
+    .box-sizing(border-box);
+
+    outline: none;
+    display: block;
+    border: 0;
+
+    &.full-width {
+        width: 100%;
+        max-width: 100%;
+    }
+    &.half-width {
+      width: 50%;
+      max-width: 50%;
+    }
+
+    &.doubleMarginBottom {
+        margin-bottom: (2 * @baseGrid);
+    }
+
+    &.doubleMarginTop {
+        margin-top: (4 * @baseGrid);
+    }
+
+    &.no-margins{
+        margin: 0px;
+    }
+
+    &.no-margin-top{
+        margin-top: 0px;
+    }
+
+    &.no-margin-bottom{
+        margin-bottom: 0px;
+    }
+
+    &.big {
+        max-height: (@baseGrid*31.25);
+        height: (@baseGrid*31.25);
+        font-size: (@baseGrid*4);
+        line-height: (@baseGrid*6);
+
+    }
+}
+
+hr{
+    border:0px;
+    height:1px;
+    background-color: #98dcf8;
+}
+
+.bodyWrapper {
+    background-color: @colorC3BlueLightest;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+}
+
+
+.progressContent {
+  position: absolute;
+  top: (@baseGrid);
+  left: (@baseGrid);
+  right: (@baseGrid);
+  bottom: (@baseGrid);
+  z-index: 100;
+  pointer-events:none;
+
+  .progress-icon {
+    background-repeat: no-repeat;
+    width: (@baseGrid*8);
+    height: (@baseGrid*8);
+    background-size: 100%;
+    top: 50%;
+    left: 50%;
+    margin-left: (-@baseGrid*4);
+    margin-top: (-@baseGrid*4);
+    position: absolute;
+  }
+}
+
+.mainContent {
+    position: absolute;
+    top: (@baseGrid);
+    left: 0px;
+    right: 0px;
+    bottom: (@footerHeight * @baseGrid);
+}
+
+.page {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    margin: 0px;
+
+    &.no-margins {
+        margin: 0px;
+    }
+
+    .header {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        height: ((@headerHeight - 2) * @baseGrid);
+        padding: @baseGrid @baseMargin @baseGrid @baseMargin;
+        margin: 0px;
+
+        .E1TextAndEffect();
+        .G1BackgroundGradient();
+
+        .left-side {
+            float: left;
+
+        }
+        .middle{
+              font-size: (@baseGrid*4.75);
+              line-height: @normalButtonSize;
+              height: @normalButtonSize;
+              text-overflow: ellipsis;
+              white-space: nowrap;
+              overflow: hidden;
+
+              h1{
+                  margin-left: (@normalButtonSize * -1);
+
+                  &.no-left-margin{
+                      margin-left: 0px;
+                  }
+              }
+
+              .username{
+                  text-transform: uppercase;
+              }
+
+              &.centered {
+                text-align: center;
+              }
+
+              &.with-one-right-button {
+
+              }
+
+              &.with-two-right-buttons {
+              }
+        }
+        .right-side {
+            float: right;
+        }
+    }
+
+    .content{
+        position: absolute;
+        top: ((@headerHeight) * @baseGrid);
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
+
+        &.with-padding-on-top{
+          padding-top: (3*@baseGrid);
+        }
+
+        &.with-one-button{
+            bottom: @ButtonRowHeight;
+        }
+        &.with-margins{
+            margin: @baseMargin;
+        }
+
+        &.no-bottom-margin{
+            margin-bottom: 0px;
+        }
+    }
+}
+
+
+
+.footer {
+    position: absolute;
+    height: (@footerHeight * @baseGrid);
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+
+}
+
+.button{
+
+    border: 0px;
+    .round-corners;
+    width: @buttonWidth;
+    max-width: @buttonWidth;
+    height: @buttonHeight;
+    line-height: @buttonHeight;
+    max-height: @buttonHeight;
+    margin: 0px;
+
+    color: @colorText;
+    font-size: @buttonFontSize;
+    text-align: center;
+    //text-transform: uppercase;
+    white-space: nowrap;
+    overflow: hidden;
+    cursor: pointer;
+    .E4TextAndEffect();
+
+    -ms-touch-action: none;
+
+    &.full-width {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    &.primary {
+        background-color: @colorC4Turqoise;
+        //.transparentElement;
+    }
+
+    &.primary-black {
+        .transparentElement(1.0);
+    }
+
+    &.primary-black-31 {
+        background-color: #313131;
+    }
+
+    &.primary-green {
+        background-color: @colorGreen;
+    }
+
+    &.primary-white {
+        background: white;
+    }
+
+    &.secondary {
+        background: none;
+        color: @colorC4Turqoise;
+    }
+
+    &.warning{
+        background-color: @colorWarningBackground;
+    }
+
+    &.disabled{
+        .transparentElement(0.3);
+    }
+
+    &.double-line {
+        white-space: normal;
+        line-height: (@buttonHeight/2);
+    }
+
+    &.text-align-left {
+        text-align: left;
+    }
+    &.reset-margins{
+        margin: 0px;
+    }
+
+    &.left-margin {
+      margin-left: (@baseGrid*4);
+    }
+
+    &.top-margin {
+        margin-top: (@baseMargin);
+    }
+
+    &.bottom-margin {
+        margin-bottom: (@baseMargin);
+    }
+
+    &.bottom3buttons {
+      width: (@baseGrid*21.25);
+      max-width: (@baseGrid*21.25);
+      margin: (@baseGrid) (@baseGrid);
+      text-wrap: normal;
+      text-align: center;
+      float: none;
+    }
+
+    &.verySmall {
+      width: 8.3%;
+      //height: 40px;
+      font-size: (@baseGrid*2.5);
+      float: left;
+      vertical-align: text-top;
+      margin: (@baseGrid*0.25) (@baseGrid*0.25);
+    }
+
+    &.one-of-three-buttons-in-row {
+        width: 30%;
+        max-width: 30%;
+        float: left;
+        text-align: center;
+    }
+
+    &.one-of-two-buttons-in-row {
+        width: 45%;
+        max-width: 45%;
+        float: left;
+        text-align: center;
+    }
+    &.half-height {
+        height: (@buttonHeight/2);
+        line-height: (@buttonHeight/2);
+        max-height: (@buttonHeight/2);
+    }
+
+    &.with-icon{
+        background-repeat: no-repeat;
+        background-size: @normalButtonSize;
+        background-position: @baseMargin 0;
+
+        span{
+            margin-left: (@normalButtonSize + @baseMargin);;
+            margin-right: (@normalButtonSize + @baseMargin);;
+        }
+
+    }
+
+}
+
+.button:active{
+    .grayed-out();
+}
+
+.placeBackground(@baseFileName) {
+  background-image: url("@{baseFileName}_01.png");
+
+  &.twoAvatars {
+    background-image: url('@{baseFileName}_02.png');
+  }
+  &.threeAvatars {
+    background-image: url('@{baseFileName}_03.png');
+  }
+  &.fullAvatars {
+    background-image: url('@{baseFileName}_04.png');
+  }
+
+}
+
+.place {
+    height: @placesHeight;
+    width: @placesDefaultWidth;
+    position: relative;
+    float: left;
+
+    .placeBackground('../images/Places/place_house1/place_house1');
+
+    background-repeat: no-repeat;
+    background-position: 0;
+    background-size: 100% 100%;//from image
+
+    .box-sizing(border-box);
+
+    margin-right: (2 * @baseGrid);
+
+
+    &.seaside{
+      .placeBackground('../images/Places/place_seaside/place_seaside');
+    }
+
+    &.park {
+      .placeBackground('../images/Places/place_park/place_park');
+    }
+
+
+    &.house1 {
+      .placeBackground('../images/Places/place_house1/place_house1');
+    }
+
+    &.factory {
+        .placeBackground('../images/Places/place_factory/place_factory');
+    }
+
+    &.house_arched{
+      .placeBackground('../images/Places/place_house_arched/place_house_arched');
+    }
+
+    &.house_cross_gabled{
+      .placeBackground('../images/Places/place_house_cross_gabled/place_house_cross_gabled');
+    }
+
+    &.house_flat{
+      .placeBackground('../images/Places/place_house_flat/place_house_flat');
+    }
+
+    &.house_hip{
+      .placeBackground('../images/Places/place_house_hip/place_house_hip');
+    }
+
+    &.house_mansard{
+      .placeBackground('../images/Places/place_house_mansard/place_house_mansard');
+    }
+
+    &.house_pyramid{
+      .placeBackground('../images/Places/place_house_pyramid/place_house_pyramid');
+    }
+
+    &.house_saltbox{
+      .placeBackground('../images/Places/place_house_saltbox/place_house_saltbox');
+    }
+
+    &.house_skillion{
+      .placeBackground('../images/Places/place_house_skillion/place_house_skillion');
+    }
+
+    &.place_amusement{
+        .placeBackground('../images/Places/place_amusement/place_amusement');
+    }
+
+    &.place_office{
+        .placeBackground('../images/Places/place_office/place_office');
+    }
+
+
+    &.house_school{
+        .placeBackground('../images/Places/place_school/place_school');
+    }
+
+    &.downtown{
+      .placeBackground('../images/Places/place_downtown/place_downtown');
+    }
+
+    &.place_shopping_mall {
+      .placeBackground('../images/Places/place_shopping_mall/place_shopping_mall');
+    }
+
+    &.place_lyceum {
+      .placeBackground('../images/Places/place_lyceum/place_lyceum');
+    }
+
+    &.place_mosque {
+        .placeBackground('../images/Places/place_mosque/place_mosque');
+    }
+
+    &.place_church {
+        .placeBackground('../images/Places/place_church/place_church');
+    }
+
+    &.place_church_o {
+        .placeBackground('../images/Places/place_curch_o/place_orthodox_church');
+    }
+
+    &.place_orient_temple {
+        .placeBackground('../images/Places/place_orient_temple/place_orient_house');
+    }
+
+    &.place_terminal {
+        .placeBackground('../images/Places/place_terminal/place_terminal');
+    }
+
+    &.place_desert {
+        .placeBackground('../images/Places/place_desert/place_desert');
+    }
+
+    &.place_house_middleeast {
+        .placeBackground('../images/Places/place_house_middleeast/place_house_levant');
+    }
+
+
+
+
+
+
+    &.place_restaurant {
+      .placeBackground('../images/Places/place_restaurant/place_restaurant');
+    }
+
+    &.place_shop {
+      .placeBackground('../images/Places/place_shop/place_shop');
+    }
+
+    &.place_stadium {
+      .placeBackground('../images/Places/place_stadium/place_stadium');
+    }
+
+    &.place_playground {
+      .placeBackground('../images/Places/place_playground/place_playground');
+    }
+
+    &.friends_nearby {
+        .placeBackground('../images/Places/place_nearby/place_nearby');
+    }
+
+    &.add-new {
+        height: (@baseGrid*17);
+        width: (@baseGrid*17);
+        left: (3*@baseGrid);
+        top: (5*@baseGrid);
+        background-image: url('../images/Places/addplace.svg');
+        background-size: 100% 100%;//from image
+    }
+
+    &.disabled{
+        //border:1px solid red;
+//        opacity: 0.3;
+    }
+
+    &.selected {
+        border:(@baseGrid*5/8) solid red;
+        //opacity: 1;
+    }
+
+    &.small{
+        transform: scale(@placeSmallScaleFactor);
+        -ms-transform: scale(@placeSmallScaleFactor);
+        -webkit-transform: scale(@placeSmallScaleFactor);
+        transform-origin:left top;
+        -ms-transform-origin:left top;
+        -webkit-transform-origin:left top;
+    }
+
+    &.tiny{
+        transform: scale(@placeTinyScaleFactor);
+        -ms-transform: scale(@placeTinyScaleFactor);
+        -webkit-transform: scale(@placeTinyScaleFactor);
+        transform-origin:left top;
+        -ms-transform-origin:left top;
+        -webkit-transform-origin:left top;
+    }
+
+    &.size-icon{
+        transform: scale(@placeSizeIconScaleFactor);
+        -ms-transform: scale(@placeSizeIconScaleFactor);
+        -webkit-transform: scale(@placeSizeIconScaleFactor);
+        transform-origin:left top;
+        -ms-transform-origin:left top;
+        -webkit-transform-origin:left top;
+    }
+
+    &.twoAvatars {
+        @twoAvatarsWidth: (@baseGrid*235/8);
+        width: @twoAvatarsWidth;
+
+
+        .placeAvatars {
+            width: @twoAvatarsWidth;
+
+        }
+
+        .placeTitle {
+            width: (@twoAvatarsWidth  - (2 * @baseGrid));
+        }
+    }
+
+    &.threeAvatars {
+        @threeAvatarsWidth: (@baseGrid*354/8);
+        width: @threeAvatarsWidth;
+
+        .placeAvatars {
+            width: @threeAvatarsWidth;
+        }
+
+        .placeTitle {
+            width: (@threeAvatarsWidth  - (2 * @baseGrid));
+        }
+    }
+
+    &.fullAvatars {
+        @fullAvatarsWidth: (@baseGrid*594/8);
+        width: @fullAvatarsWidth;
+
+        .placeAvatars {
+            width: @fullAvatarsWidth;
+        }
+
+        .placeTitle {
+            width: (@fullAvatarsWidth  - (2 * @baseGrid));
+        }
+    }
+
+    .placeAvatars {
+        @placesAvatarHeight: @avatarSizeWithBorder;
+        position: relative;
+        height: @placesAvatarHeight;
+        width: @placesDefaultWidth;
+        top: 50%;
+        margin-top: ((@placesAvatarHeight / 2) * -1);
+        text-align: center;
+
+        .avatar{
+            margin-right: (@baseGrid/2);
+            margin-left: (@baseGrid/2);
+        }
+    }
+
+}
+
+.placesSmallWrapper {
+
+    height: (@placesHeight * @placeSmallScaleFactor );
+    width: (@placesDefaultWidth * @placeSmallScaleFactor);
+    float: left;
+    margin: (2*@baseGrid) (2*@baseGrid);
+}
+
+.placesTinyWrapper {
+
+    height: (@placesHeight * @placeTinyScaleFactor );
+    width: (@placesDefaultWidth * @placeTinyScaleFactor);
+    float: left;
+    margin: 0 @baseGrid;
+}
+
+.placesSizeIconWrapper {
+    height: (@placesHeight * @placeSizeIconScaleFactor );
+    width: (@placesDefaultWidth * @placeSizeIconScaleFactor);
+    float: left;
+    margin: 0 @baseGrid;
+}
+
+.placeTitle {
+
+    @placeTitleHeight: (6 * @baseGrid);
+
+    position: absolute;
+    bottom: 0px;
+    height: @placeTitleHeight;
+    line-height: @placeTitleHeight;
+    width: (@placesDefaultWidth - (2 * @baseGrid));
+    margin: 0px @baseGrid;
+
+    text-align: center;
+    font-size: (@baseGrid*3);
+
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: @colorPlacesTitle;
+
+}
+
+.placesListElement{
+
+    margin: @baseMargin 0px;
+    padding: 0px @baseMargin;
+    cursor: pointer;
+
+    .left-side{
+        float: left;
+        margin-right: (2 * @baseGrid);
+    }
+
+    .middle{
+        font-size: @fontSizeParagraphLarge;
+        line-height: @normalButtonSize;
+    }
+
+    .right-side{
+        float: right;
+    }
+
+
+}
+
+.highlightBox {
+    margin: 0px;
+    padding: (3*@baseGrid);
+    .round-corners;
+
+    &.white {
+        color: @colorDarkBlue;
+        background-color: @colorHighlightBackground;
+    }
+    &.noBottomPadding {
+        padding-bottom: 0px;
+    }
+
+    &.noTopPadding {
+        padding-top: 0px;
+    }
+
+    &.top-margin{
+        margin-top: @baseMargin;
+    }
+}
+
+.icon-button-with-text{
+
+    @lineHeight: @normalButtonSize;
+
+    margin-bottom: @baseMargin;
+    height: @lineHeight;
+
+    .icon-button{
+        float: left;
+    }
+
+    p{
+        float: left;
+        line-height: @lineHeight;
+        margin:0px;
+        margin-left: (2 * @baseGrid);
+    }
+}
+
+.icon-info-button-with-text{
+
+    @lineHeight: @infoButtonSize;
+
+    height: @lineHeight;
+
+    .icon-info{
+        float: left;
+    }
+
+    p{
+        float: left;
+        line-height: @lineHeight;
+        margin:0px;
+        margin-left: (2 * @baseGrid);
+    }
+}
+
+.avatar-with-text{
+    @lineHeight: @normalButtonSize;
+
+    margin-bottom: @baseMargin;
+    height: @lineHeight;
+
+    .avatar{
+        float: left;
+    }
+
+    p{
+        float: left;
+        line-height: @lineHeight;
+        margin:0px;
+        margin-left: (2 * @baseGrid);
+    }
+}
+
+.graphical-checkbox {
+    label{
+        font-size: (@baseGrid*3);
+        line-height: (@baseGrid*7.75);
+    }
+
+    .labelText{
+        padding-right: (13*@baseGrid);
+
+        &.no-padding {
+            padding-right: 0px;
+        }
+
+        &.big{
+            font-size: (@baseGrid*4);
+        }
+        &.huge{
+            font-size: @fontSizeHeading1;
+        }
+        &.on-text-input-right {
+            margin-left: (@baseGrid*3);
+            margin-top: (@baseGrid*3);
+        }
+    }
+
+    input[type="checkbox"]{
+        opacity: 0;
+        display: none;
+    }
+
+    input[type="checkbox"] + label span {
+        display:inline-block;
+        width:@graphicalBalloonCheckboxSize;
+        height:@graphicalBalloonCheckboxSize;
+        vertical-align:middle;
+        background:url("../images/checkbox/empty.svg") left top no-repeat;
+        background-size: 100% 100%;
+        cursor:pointer;
+
+    }
+
+    input[type="checkbox"]:checked + label span {
+        background:url("../images/checkbox/filled.svg") left top no-repeat;
+        background-size: 100% 100%;
+    }
+
+    &.inline{
+        display: inline-block;
+    }
+
+    &.with-top-bottom-margins{
+        margin: (4 * @baseGrid) 0;
+    }
+
+    &.wide-margin {
+      margin-left: (@graphicalBalloonCheckboxSize/3);
+      margin-right: (@graphicalBalloonCheckboxSize/3);
+    }
+
+    &.checkbox-right{
+        input[type="checkbox"] + label span {
+            float:right;
+        }
+    }
+}
+
+.badge{
+    font-size: (@baseGrid*3);
+    position: absolute;
+    right: (@baseGrid*0.5);
+    top: (@baseGrid*0.5);
+    font-weight: bold;
+    padding: (@baseGrid*0.5);
+    border: (@baseGrid*0.25) solid white;
+    border-radius: (@baseGrid*2);
+    background-color: red;
+    color: @colorText;
+}
+
+.settings-title-bar{
+    .G2BackgroundGradient();
+    .E2TextAndEffect();
+    padding-left: @baseMargin;
+}
+
+.G1BackgroundGradient(){
+    background-color: @colorC1BlueLight;
+    .linear-gradient(@colorG1Top, @colorG1Bottom);
+}
+
+.G2BackgroundGradient(){
+    background-color: @colorC2BlueLighter;
+    .linear-gradient(@colorG2Top, @colorG2Bottom);
+}
+
+.E1TextAndEffect(){
+    color: white;
+    text-shadow: 0 (-@baseGrid*0.25) #0078a5;
+}
+
+.E2TextAndEffect(){
+    color: @colorC4Turqoise;
+    text-shadow: 0 (@baseGrid*0.25) #c3e9fa;
+}
+
+.E4TextAndEffect(){
+    color: white;
+    text-shadow: 0 (-@baseGrid*0.25) #182c56;
+}
+
+// We need to have imports at the end of the file. So that their values are overriding defaults
+// that are defined in this file
+
+@import "avatar.less";
+@import "dashboard.less";
+@import "loginFlow.less";
+@import "userDetails.less";
+
+.page{
+    &.createPlace{
+        .centered-select-buttons {
+            top: 50%;
+            margin-top: (-13*@baseGrid);
+            width: 100%;
+            position: absolute;
+        }
+
+        .buttonRowBottom{
+            height: @ButtonRowHeight;
+            .button{
+                float: right;
+            }
+        }
+    }
+
+    &.tellFriendVia{
+        .centered-select-buttons {
+            top: 50%;
+            margin-top: (-23*@baseGrid);
+            width: 100%;
+            position: absolute;
+        }
+    }
+
+    &.editPlace{
+        .buttonRowBottom{
+            .button{
+                float: right;
+            }
+        }
+    }
+
+    &.placeInfo{
+        .content {
+          margin-top: (2 * @baseGrid);
+        }
+
+        .youAreThere {
+            margin-left: (6 * @baseGrid);
+            text-align: center;
+        }
+    }
+
+    &.mySettings{
+        .avatar-with-text{
+            position: relative;
+            cursor: pointer;
+
+            .icon-button{
+                transform: rotate(180deg);
+                -ms-transform: rotate(180deg);
+                -webkit-transform: rotate(180deg); // only rotating because we don't yet have correct arrow pointing right icon
+                position:absolute;
+                top: 50%;
+                margin-top: (-1 * (@normalButtonSize / 2));
+                right: 0px;
+            }
+        }
+        .settings-group{
+            margin: 0 @baseMargin;
+        }
+    }
+
+    &.selectLanguage{
+        .languageLine{
+            padding: @baseMargin 0;
+            //text-align: center;
+
+            h2{
+                margin: 0px @baseMargin;
+            }
+        }
+    }
+
+    &.myFamily{
+        .avatar-with-text{
+            position: relative;
+            cursor: pointer;
+            margin: @baseMargin 0px;
+            padding: 0px @baseMargin;
+        }
+    }
+    &.myFriends{
+
+        .avatar-with-text{
+            position: relative;
+            cursor: pointer;
+            margin: @baseMargin 0px;
+            padding: 0px @baseMargin;
+        }
+    }
+
+    &.locationSettings{
+
+        @enterExitIconHeight: (@baseGrid*7.75);
+        @enterExitIconWidth: (@baseGrid*7.75);
+
+        .chooseNotificationWrapper{
+            margin: 0px @baseMargin;
+        }
+
+        .enter-exit-heading{
+            height: @enterExitIconHeight;
+            margin-bottom: (@baseGrid*4);
+        }
+
+        .enter-place{
+            background: url('../images/icons/icon_enter_place.svg');
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            width: @enterExitIconWidth;
+            height: @enterExitIconHeight;
+            float: right;
+            margin-right: (@baseGrid*5.75);
+        }
+
+        .exit-place{
+            background: url('../images/icons/icon_exit_place.svg');
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            width: @enterExitIconWidth;
+            height: @enterExitIconHeight;
+            float: right;
+            margin-right: (@baseGrid*3);
+        }
+
+        .locationAlertPlace{
+            margin: (4 * @baseGrid) 0px;
+            margin-right: @baseGrid;
+
+            .left-side {
+                float: left;
+            }
+            .middle{
+                font-size: (@baseGrid*4);
+                line-height: (@placesHeight * @placeTinyScaleFactor );
+                padding-left: (3 * @baseGrid);
+                overflow: hidden;
+            }
+            .right-side {
+                float: right;
+                position: relative;
+                height: (@placesHeight * @placeTinyScaleFactor );
+
+                .graphical-checkbox{
+                    margin-top: (@baseGrid*0.75);
+                    margin-left: (2 * @baseGrid);
+                    display: inline-block;
+                }
+            }
+        }
+    }
+
+    &.chats {
+
+        .avatar-with-text{
+            position: relative;
+            cursor: pointer;
+            margin: @baseMargin 0px;
+            padding: 0px @baseMargin;
+        }
+
+        .chat-last-conversation {
+            color: @colorC10Gray;
+        }
+    }
+
+    &.chat {
+
+        .buttonRowBottom{
+            margin-left: 0px;
+            margin-right: 0px;
+            padding: 0px @baseMargin;
+            margin: 0px;
+            height: @ButtonRowHeight;
+
+            .input-side{
+                margin: @baseMargin 0px;
+                margin-right: (@buttonWidth + 2*@baseGrid);
+
+            }
+            .button-side {
+                margin: @baseMargin 0px;
+                margin-left: @baseGrid;
+                float: right;
+                width: @buttonWidth;
+
+            }
+
+            .button-side-small {
+                margin: @baseMargin 0px;
+                margin-left: @baseGrid;
+                float: right;
+
+            }
+
+            .button{
+                margin: 0px;
+            }
+
+            .chat-input{
+                text-align: left;
+                width: 100%;
+                margin: 0px;
+                padding: 0px @baseGrid;
+            }
+        }
+
+        .message-line {
+            clear: both;
+            padding-top: (2*@baseGrid);
+            padding-bottom: (2*@baseGrid);
+        }
+
+        .incoming-message {
+            width: 100%;
+            text-align: right;
+            word-wrap: break-word;
+            color: #30683c;
+            //margin-top: (@baseGrid*2);
+            margin-bottom: (@baseGrid*0.5);
+            margin-right: (@baseGrid);
+            font-size: @fontSizeForChat;
+            line-height: (@fontLineForChat);
+
+            &.without-image {
+                margin-left: (@baseGrid*13);
+            }
+        }
+
+        .outgoing-message {
+            text-align: left;
+            word-wrap: break-word;
+            width: 100%;
+            color: @colorC4Turqoise;
+            //margin-top: (@baseGrid*2);
+            margin-bottom: (@baseGrid*0.5);
+            margin-left: (@baseGrid);
+            font-size: @fontSizeForChat;
+            line-height: (@fontLineForChat);
+
+            &.without-image {
+                margin-right: (@baseGrid*13);
+            }
+        }
+
+        .messageWrapper{
+            padding-left: (2*@baseGrid);
+            padding-right: (2*@baseGrid);
+            padding-top: (2*@baseGrid);
+            padding-bottom: (2*@baseGrid);
+            display: inline-block;
+            width: 90%;
+        }
+
+        .myMessageLine {
+            background-color: @colorC2BlueLighter;
+            box-shadow: inset (@baseGrid) 0px (@baseGrid*3) 1px #5db2ce;
+            -moz-box-shadow: inset (@baseGrid) 0px (@baseGrid*3) 1px #5db2ce;
+            -webkit-box-shadow: inset (@baseGrid) 0px (@baseGrid*3) 1px #5db2ce;
+
+            float: right;
+            margin-left: (2*@baseGrid);
+            border-radius: (8*@baseGrid) 0px 0px (8*@baseGrid);
+
+            .textContainer {
+                float: left;
+                width: 80%;
+                padding-left: (2*@baseGrid);
+                //padding-right: @baseGrid;
+            }
+            .message-date {
+                text-align: left;
+                color: @colorC10Gray;
+                margin-right: @baseGrid;
+                font-size: (@baseGrid*2.75);
+                line-height: (@baseGrid*3.5);
+            }
+        }
+
+        .incomingMessageLine {
+            background-color: #7fdb95;
+            box-shadow: inset (-@baseGrid) 0px (@baseGrid*3) 1px #65aa73;
+            -moz-box-shadow: inset (-@baseGrid) 0px (@baseGrid*3) 1px #65aa73;
+            -webkit-box-shadow: inset (-@baseGrid) 0px (@baseGrid*3) 1px #65aa73;
+
+
+
+            float: left;
+            border-radius: 0px (8*@baseGrid) (8*@baseGrid) 0px;
+
+            .textContainer {
+                float: right;
+                width: 80%;
+                //padding-left: @baseGrid;
+                padding-right: (2*@baseGrid);
+            }
+            .message-date {
+                text-align: right;
+                color: @colorC10Gray;
+                margin-left: @baseGrid;
+                font-size: (@baseGrid*2.75);
+                line-height: (@baseGrid*3.5);
+            }
+        }
+
+      .notificationLine {
+            background-color: #7fdb95;
+            margin-left: (2*@baseGrid);
+            float: left;
+            border-radius: (8*@baseGrid) (8*@baseGrid) (8*@baseGrid) (8*@baseGrid);
+
+            .textContainer {
+                float: right;
+                width: 80%;
+                padding-right: (2*@baseGrid);
+            }
+            .message-date {
+                text-align: right;
+                color: @colorC10Gray;
+                margin-left: @baseGrid;
+                font-size: (@baseGrid*2.75);
+                line-height: (@baseGrid*3.5);
+            }
+        }
+
+        .top-button {
+            text-align: center;
+            color: @colorC4Turqoise;
+            background-color: @colorC2BlueLighter;
+            margin-top: (2*@baseGrid);
+            margin-bottom: (2*@baseGrid);
+            height: (8*@baseGrid);
+            line-height: (8*@baseGrid);
+        }
+    }
+
+    &.userDetails{
+
+        .button{
+            text-shadow: none;
+        }
+    }
+
+    &.friendDetails{
+        .bottom-margin{
+           margin-bottom: @baseMargin;
+        }
+        .top-margin{
+           margin-top: @baseMargin;
+        }
+
+        .one-of-two-buttons-in-row {
+            margin-bottom: (@baseMargin);
+            margin-top: (@baseMargin);
+            color: @colorC4Turqoise;
+
+            &.selected-with-border-and-bold-text {
+                border: (@baseGrid*5/8) solid @blueDark;
+                color: @blueDark;
+                font-weight: bold;
+            }
+        }
+
+        .one-of-three-buttons-in-row {
+            margin-bottom: (@baseMargin);
+            margin-top: (@baseMargin);
+            color: @colorC4Turqoise;
+
+            &.selected-with-border-and-bold-text {
+                border: (@baseGrid*5/8) solid @blueDark;
+                color: @blueDark;
+                font-weight: bold;
+            }
+        }
+    }
+
+    .selectedScore {
+        background-color: orange;
+    }
+
+    &.fsecureProducts {
+        .line {
+            margin: @baseMargin 0px;
+            position: relative;
+            left:0px;
+            right:0px;
+            height: (@baseGrid*14);
+
+            //border: 1px solid black;
+
+            .lineWrapper{
+                margin-bottom: @baseMargin;
+                //position: absolute;
+                //border: 1px solid blue;
+
+            }
+
+            p{
+                margin: 0px;
+            }
+            .productIcon{
+                //border: 1px solid red;
+                //margin-left: @baseMargin;
+                //float: left;
+                position: absolute;
+                heigth:(@baseGrid*12);
+                width:(@baseGrid*12);
+                top: 0px;
+                left: 0px;
+                margin-left: @baseMargin;
+
+                .icon {
+                    width: (@baseGrid*12);
+                    height: (@baseGrid*12);
+                }
+
+            }
+
+            .productText{
+                margin: 0px;
+                margin-right: @baseMargin;
+                position: absolute;
+                display: inline-block;
+                left:(@baseGrid*18);
+            }
+        }
+
+    }
+
+    .scoreWrapper {
+        width: 100%;
+        display: inline-block;
+        margin-top: @baseMargin;
+    }
+
+    .selectedScore {
+        background-color: orange;
+    }
+
+    &.settings{
+        .text-align-left{
+            margin-left: @baseMargin;
+        }
+
+        .avatar-with-text{
+
+            margin-top: (3*@baseGrid);
+            margin-left: (3*@baseGrid);
+
+            .largeFont{
+                font-size: (5 * @baseGrid);
+            }
+        }
+    }
+
+    &.visibilitySetting{
+
+        .buttonsBox{
+            @buttonBoxSize: ((3 * @buttonHeight) + (2 * @baseMargin));
+
+            position: absolute;
+            left:@baseGrid;
+            right:@baseGrid;
+            top:50%;
+            margin-top: (-1 * (@buttonBoxSize/2));
+            //border:1px solid red;
+        }
+
+    }
+}

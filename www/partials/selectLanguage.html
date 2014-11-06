@@ -1,0 +1,22 @@
+<!--
+  ~ Copyright (c) 2013 F-Secure Corporation
+  ~ See license terms for the related product.
+  ~
+  ~ Author: Jussi Nieminen
+  ~ Since: 17.06.2013 12:0
+  -->
+<div class="page mySettings selectLanguage" ng-cloak>
+    <div class="header">
+        <div class="left-side">
+            <div class="icon-button icon-back icon-normal icon-inline" ng-click="back()"></div>
+        </div>
+        <div class="right-side"></div>
+        <div class="middle centered"><h1 class="page-title">{{"selectLanguage.title" | i18n}}</h1></div>
+    </div>
+    <div class="content scroll-y no-scroll-x">
+        <div ng-repeat="lang in languages">
+            <div class="languageLine full-width" ng-click="onLanguageClick(lang.id)"><h2>{{getLanguageName(lang.id)}}</h2></div>
+            <hr/>
+        </div>
+    </div>
+</div>

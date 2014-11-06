@@ -1,0 +1,1355 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		10012718189A2C93009E5BD2 /* AppRater.m in Sources */ = {isa = PBXBuildFile; fileRef = 10012717189A2C93009E5BD2 /* AppRater.m */; };
+		10012719189A2C93009E5BD2 /* AppRater.m in Sources */ = {isa = PBXBuildFile; fileRef = 10012717189A2C93009E5BD2 /* AppRater.m */; };
+		1001271A189A2C93009E5BD2 /* AppRater.m in Sources */ = {isa = PBXBuildFile; fileRef = 10012717189A2C93009E5BD2 /* AppRater.m */; };
+		1009878B1856627800C53327 /* LocMapFormatters.m in Sources */ = {isa = PBXBuildFile; fileRef = 1094FBD7184CB0A2004D0EC5 /* LocMapFormatters.m */; };
+		1009878C1856627800C53327 /* SingleServerRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1030A491183E030D00587D74 /* SingleServerRequest.m */; };
+		1009878D1856627800C53327 /* PeopleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 10C5F2FD18437BE100642160 /* PeopleViewController.m */; };
+		1009878E1856627800C53327 /* FSConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 10C5F3041845F5E200642160 /* FSConstants.m */; };
+		1009878F1856627800C53327 /* Users.m in Sources */ = {isa = PBXBuildFile; fileRef = 1030A472183B697400587D74 /* Users.m */; };
+		100987901856627800C53327 /* LocMapAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1030A485183BA0F400587D74 /* LocMapAnnotationView.m */; };
+		100987911856627800C53327 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 10C5F2F81843514200642160 /* SettingsViewController.m */; };
+		100987921856627800C53327 /* LocMapAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 10B04A331835133900109841 /* LocMapAppDelegate.m */; };
+		100987931856627800C53327 /* LocalStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 1030A46A183B64D600587D74 /* LocalStorage.m */; };
+		100987941856627800C53327 /* StandaloneGPSReporter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1030A48D183CE59D00587D74 /* StandaloneGPSReporter.m */; };
+		100987951856627800C53327 /* Checks.m in Sources */ = {isa = PBXBuildFile; fileRef = 10C5F3011844F45F00642160 /* Checks.m */; };
+		100987961856627800C53327 /* LocMapAnnotationViewCallout.m in Sources */ = {isa = PBXBuildFile; fileRef = 10C5F30718462CB100642160 /* LocMapAnnotationViewCallout.m */; };
+		100987971856627800C53327 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 10B04A2F1835133900109841 /* main.m */; };
+		100987981856627800C53327 /* RootNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1094FBE21855F3B3004D0EC5 /* RootNavigationController.m */; };
+		100987991856627800C53327 /* LocMapAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1030A481183B9D2300587D74 /* LocMapAnnotation.m */; };
+		1009879A1856627800C53327 /* UserData.m in Sources */ = {isa = PBXBuildFile; fileRef = 1030A46E183B68EB00587D74 /* UserData.m */; };
+		1009879B1856627800C53327 /* SignupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1030A497183E232300587D74 /* SignupViewController.m */; };
+		1009879C1856627800C53327 /* ServerApi+messages.m in Sources */ = {isa = PBXBuildFile; fileRef = 1030A494183E03CA00587D74 /* ServerApi+messages.m */; };
+		1009879D1856627800C53327 /* ServerApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 1030A489183CD8D500587D74 /* ServerApi.m */; };
+		1009879E1856627800C53327 /* Contacts.m in Sources */ = {isa = PBXBuildFile; fileRef = 1030A49D183E4D4E00587D74 /* Contacts.m */; };
+		1009879F1856627800C53327 /* LocMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 10B04A3C1835133900109841 /* LocMapViewController.m */; };
+		100987A01856627800C53327 /* AddContactsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1030A49A183E4BB800587D74 /* AddContactsViewController.m */; };
+		100987A11856627800C53327 /* PeopleTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1094FBD4184C8376004D0EC5 /* PeopleTableViewCell.m */; };
+		100987A31856627800C53327 /* OtherSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1094FBDA18505F28004D0EC5 /* OtherSettingsViewController.m */; };
+		100987A41856627800C53327 /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1094FBDD1850A556004D0EC5 /* AboutViewController.m */; };
+		100987A71856627800C53327 /* AddressBookUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1094FBDF1850C59B004D0EC5 /* AddressBookUI.framework */; };
+		100987A81856627800C53327 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10C5F2FA18436D1A00642160 /* MessageUI.framework */; };
+		100987A91856627800C53327 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1030A4A0183E4DCF00587D74 /* AddressBook.framework */; };
+		100987AA1856627800C53327 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10B04A5D18351BA400109841 /* CoreLocation.framework */; };
+		100987AB1856627800C53327 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10B04A5B18351B7900109841 /* MapKit.framework */; };
+		100987AC1856627800C53327 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10B04A251835133900109841 /* CoreGraphics.framework */; };
+		100987AD1856627800C53327 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10B04A271835133900109841 /* UIKit.framework */; };
+		100987AE1856627800C53327 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10B04A231835133900109841 /* Foundation.framework */; };
+		100987B01856627800C53327 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10B04A381835133900109841 /* Main_iPad.storyboard */; };
+		100987B11856627800C53327 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10B04A3E1835133900109841 /* Images.xcassets */; };
+		100987B31856627800C53327 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10B04A351835133900109841 /* Main_iPhone.storyboard */; };
+		100987B41856627800C53327 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 10B04A2C1835133900109841 /* InfoPlist.strings */; };
+		100987BC1856FD5A00C53327 /* UIBottomToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 100987BB1856FD5A00C53327 /* UIBottomToolbar.m */; };
+		100987BD1856FD5A00C53327 /* UIBottomToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 100987BB1856FD5A00C53327 /* UIBottomToolbar.m */; };
+		100987BE1856FD5A00C53327 /* UIBottomToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 100987BB1856FD5A00C53327 /* UIBottomToolbar.m */; };
+		100987C11857206D00C53327 /* PrivacyPolicyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 100987C01857206D00C53327 /* PrivacyPolicyViewController.m */; };
+		100987C21857206D00C53327 /* PrivacyPolicyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 100987C01857206D00C53327 /* PrivacyPolicyViewController.m */; };
+		100987C31857206D00C53327 /* PrivacyPolicyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 100987C01857206D00C53327 /* PrivacyPolicyViewController.m */; };
+		100987C6185746BC00C53327 /* Tutorial.m in Sources */ = {isa = PBXBuildFile; fileRef = 100987C5185746BC00C53327 /* Tutorial.m */; };
+		100987C7185746BC00C53327 /* Tutorial.m in Sources */ = {isa = PBXBuildFile; fileRef = 100987C5185746BC00C53327 /* Tutorial.m */; };
+		100987C8185746BC00C53327 /* Tutorial.m in Sources */ = {isa = PBXBuildFile; fileRef = 100987C5185746BC00C53327 /* Tutorial.m */; };
+		102F4520185B26A700B52343 /* LocMapAvatarsAroundMap.m in Sources */ = {isa = PBXBuildFile; fileRef = 102F451F185B26A700B52343 /* LocMapAvatarsAroundMap.m */; };
+		102F4521185B26A700B52343 /* LocMapAvatarsAroundMap.m in Sources */ = {isa = PBXBuildFile; fileRef = 102F451F185B26A700B52343 /* LocMapAvatarsAroundMap.m */; };
+		102F4522185B26A700B52343 /* LocMapAvatarsAroundMap.m in Sources */ = {isa = PBXBuildFile; fileRef = 102F451F185B26A700B52343 /* LocMapAvatarsAroundMap.m */; };
+		102F4525185B408400B52343 /* AvatarAroundMapInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 102F4524185B408400B52343 /* AvatarAroundMapInfo.m */; };
+		102F4526185B408400B52343 /* AvatarAroundMapInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 102F4524185B408400B52343 /* AvatarAroundMapInfo.m */; };
+		102F4527185B408400B52343 /* AvatarAroundMapInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 102F4524185B408400B52343 /* AvatarAroundMapInfo.m */; };
+		102F452A185B941E00B52343 /* LocatingInProgressAnimationAroundAvatar.m in Sources */ = {isa = PBXBuildFile; fileRef = 102F4529185B941E00B52343 /* LocatingInProgressAnimationAroundAvatar.m */; };
+		102F452B185B941E00B52343 /* LocatingInProgressAnimationAroundAvatar.m in Sources */ = {isa = PBXBuildFile; fileRef = 102F4529185B941E00B52343 /* LocatingInProgressAnimationAroundAvatar.m */; };
+		102F452C185B941E00B52343 /* LocatingInProgressAnimationAroundAvatar.m in Sources */ = {isa = PBXBuildFile; fileRef = 102F4529185B941E00B52343 /* LocatingInProgressAnimationAroundAvatar.m */; };
+		1030A46B183B64D600587D74 /* LocalStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 1030A46A183B64D600587D74 /* LocalStorage.m */; };
+		1030A46C183B64D600587D74 /* LocalStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 1030A46A183B64D600587D74 /* LocalStorage.m */; };
+		1030A46F183B68EB00587D74 /* UserData.m in Sources */ = {isa = PBXBuildFile; fileRef = 1030A46E183B68EB00587D74 /* UserData.m */; };
+		1030A470183B68EB00587D74 /* UserData.m in Sources */ = {isa = PBXBuildFile; fileRef = 1030A46E183B68EB00587D74 /* UserData.m */; };
+		1030A473183B697400587D74 /* Users.m in Sources */ = {isa = PBXBuildFile; fileRef = 1030A472183B697400587D74 /* Users.m */; };
+		1030A474183B697400587D74 /* Users.m in Sources */ = {isa = PBXBuildFile; fileRef = 1030A472183B697400587D74 /* Users.m */; };
+		1030A482183B9D2300587D74 /* LocMapAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1030A481183B9D2300587D74 /* LocMapAnnotation.m */; };
+		1030A483183B9D2300587D74 /* LocMapAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1030A481183B9D2300587D74 /* LocMapAnnotation.m */; };
+		1030A486183BA0F400587D74 /* LocMapAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1030A485183BA0F400587D74 /* LocMapAnnotationView.m */; };
+		1030A487183BA0F400587D74 /* LocMapAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1030A485183BA0F400587D74 /* LocMapAnnotationView.m */; };
+		1030A48A183CD8D500587D74 /* ServerApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 1030A489183CD8D500587D74 /* ServerApi.m */; };
+		1030A48B183CD8D500587D74 /* ServerApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 1030A489183CD8D500587D74 /* ServerApi.m */; };
+		1030A48E183CE59D00587D74 /* StandaloneGPSReporter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1030A48D183CE59D00587D74 /* StandaloneGPSReporter.m */; };
+		1030A48F183CE59D00587D74 /* StandaloneGPSReporter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1030A48D183CE59D00587D74 /* StandaloneGPSReporter.m */; };
+		1030A492183E030D00587D74 /* SingleServerRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1030A491183E030D00587D74 /* SingleServerRequest.m */; };
+		1030A495183E03CA00587D74 /* ServerApi+messages.m in Sources */ = {isa = PBXBuildFile; fileRef = 1030A494183E03CA00587D74 /* ServerApi+messages.m */; };
+		1030A498183E232300587D74 /* SignupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1030A497183E232300587D74 /* SignupViewController.m */; };
+		1030A49B183E4BB800587D74 /* AddContactsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1030A49A183E4BB800587D74 /* AddContactsViewController.m */; };
+		1030A49E183E4D4E00587D74 /* Contacts.m in Sources */ = {isa = PBXBuildFile; fileRef = 1030A49D183E4D4E00587D74 /* Contacts.m */; };
+		1030A49F183E4D4E00587D74 /* Contacts.m in Sources */ = {isa = PBXBuildFile; fileRef = 1030A49D183E4D4E00587D74 /* Contacts.m */; };
+		1030A4A1183E4DCF00587D74 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1030A4A0183E4DCF00587D74 /* AddressBook.framework */; };
+		1030C0FC187BEEFA001341FC /* InAppPurchase.m in Sources */ = {isa = PBXBuildFile; fileRef = 1030C0F9187BEEFA001341FC /* InAppPurchase.m */; };
+		1030C0FD187BEEFA001341FC /* InAppPurchase.m in Sources */ = {isa = PBXBuildFile; fileRef = 1030C0F9187BEEFA001341FC /* InAppPurchase.m */; };
+		1030C0FE187BEEFA001341FC /* InAppPurchase.m in Sources */ = {isa = PBXBuildFile; fileRef = 1030C0F9187BEEFA001341FC /* InAppPurchase.m */; };
+		1030C0FF187BEEFA001341FC /* SKProduct+LocalizedPrice.m in Sources */ = {isa = PBXBuildFile; fileRef = 1030C0FB187BEEFA001341FC /* SKProduct+LocalizedPrice.m */; };
+		1030C100187BEEFA001341FC /* SKProduct+LocalizedPrice.m in Sources */ = {isa = PBXBuildFile; fileRef = 1030C0FB187BEEFA001341FC /* SKProduct+LocalizedPrice.m */; };
+		1030C101187BEEFA001341FC /* SKProduct+LocalizedPrice.m in Sources */ = {isa = PBXBuildFile; fileRef = 1030C0FB187BEEFA001341FC /* SKProduct+LocalizedPrice.m */; };
+		1030C104187BEF78001341FC /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 1030C103187BEF78001341FC /* NSData+Base64.m */; };
+		1030C105187BEF78001341FC /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 1030C103187BEF78001341FC /* NSData+Base64.m */; };
+		1030C106187BEF78001341FC /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 1030C103187BEF78001341FC /* NSData+Base64.m */; };
+		1030C108187C047C001341FC /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1030C107187C047C001341FC /* StoreKit.framework */; };
+		1030C109187C0484001341FC /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1030C107187C047C001341FC /* StoreKit.framework */; };
+		1030C10A187C048B001341FC /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1030C107187C047C001341FC /* StoreKit.framework */; };
+		1030C10D187C1D55001341FC /* SubscriptionsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1030C10C187C1D55001341FC /* SubscriptionsTableViewController.m */; };
+		1030C10E187C1D55001341FC /* SubscriptionsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1030C10C187C1D55001341FC /* SubscriptionsTableViewController.m */; };
+		1030C10F187C1D55001341FC /* SubscriptionsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1030C10C187C1D55001341FC /* SubscriptionsTableViewController.m */; };
+		104C4494187D779B00F2B32F /* PlacesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 104C4493187D779B00F2B32F /* PlacesViewController.m */; };
+		104C4495187D779B00F2B32F /* PlacesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 104C4493187D779B00F2B32F /* PlacesViewController.m */; };
+		104C4496187D779B00F2B32F /* PlacesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 104C4493187D779B00F2B32F /* PlacesViewController.m */; };
+		104C4499187D789600F2B32F /* UITransparentToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 104C4498187D789600F2B32F /* UITransparentToolbar.m */; };
+		104C449A187D789600F2B32F /* UITransparentToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 104C4498187D789600F2B32F /* UITransparentToolbar.m */; };
+		104C449B187D789600F2B32F /* UITransparentToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 104C4498187D789600F2B32F /* UITransparentToolbar.m */; };
+		105E71071886B59400222C85 /* place_01.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 105E70FE1886B59400222C85 /* place_01.jpg */; };
+		105E71081886B59400222C85 /* place_01.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 105E70FE1886B59400222C85 /* place_01.jpg */; };
+		105E71091886B59400222C85 /* place_01.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 105E70FE1886B59400222C85 /* place_01.jpg */; };
+		105E710A1886B59400222C85 /* place_02.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 105E70FF1886B59400222C85 /* place_02.jpg */; };
+		105E710B1886B59400222C85 /* place_02.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 105E70FF1886B59400222C85 /* place_02.jpg */; };
+		105E710C1886B59400222C85 /* place_02.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 105E70FF1886B59400222C85 /* place_02.jpg */; };
+		105E710D1886B59400222C85 /* place_03.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 105E71001886B59400222C85 /* place_03.jpg */; };
+		105E710E1886B59400222C85 /* place_03.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 105E71001886B59400222C85 /* place_03.jpg */; };
+		105E710F1886B59400222C85 /* place_03.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 105E71001886B59400222C85 /* place_03.jpg */; };
+		105E71101886B59400222C85 /* place_04.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 105E71011886B59400222C85 /* place_04.jpg */; };
+		105E71111886B59400222C85 /* place_04.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 105E71011886B59400222C85 /* place_04.jpg */; };
+		105E71121886B59400222C85 /* place_04.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 105E71011886B59400222C85 /* place_04.jpg */; };
+		105E71131886B59400222C85 /* place_05.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 105E71021886B59400222C85 /* place_05.jpg */; };
+		105E71141886B59400222C85 /* place_05.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 105E71021886B59400222C85 /* place_05.jpg */; };
+		105E71151886B59400222C85 /* place_05.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 105E71021886B59400222C85 /* place_05.jpg */; };
+		105E71161886B59400222C85 /* place_06.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 105E71031886B59400222C85 /* place_06.jpg */; };
+		105E71171886B59400222C85 /* place_06.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 105E71031886B59400222C85 /* place_06.jpg */; };
+		105E71181886B59400222C85 /* place_06.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 105E71031886B59400222C85 /* place_06.jpg */; };
+		105E71191886B59400222C85 /* place_07.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 105E71041886B59400222C85 /* place_07.jpg */; };
+		105E711A1886B59400222C85 /* place_07.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 105E71041886B59400222C85 /* place_07.jpg */; };
+		105E711B1886B59400222C85 /* place_07.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 105E71041886B59400222C85 /* place_07.jpg */; };
+		105E711C1886B59400222C85 /* place_08.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 105E71051886B59400222C85 /* place_08.jpg */; };
+		105E711D1886B59400222C85 /* place_08.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 105E71051886B59400222C85 /* place_08.jpg */; };
+		105E711E1886B59400222C85 /* place_08.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 105E71051886B59400222C85 /* place_08.jpg */; };
+		105E711F1886B59400222C85 /* place_09.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 105E71061886B59400222C85 /* place_09.jpg */; };
+		105E71201886B59400222C85 /* place_09.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 105E71061886B59400222C85 /* place_09.jpg */; };
+		105E71211886B59400222C85 /* place_09.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 105E71061886B59400222C85 /* place_09.jpg */; };
+		1077F882185F2F3E00F4A6C6 /* LocMapNonOverlappingAnnotations.m in Sources */ = {isa = PBXBuildFile; fileRef = 1077F881185F2F3E00F4A6C6 /* LocMapNonOverlappingAnnotations.m */; };
+		1077F883185F2F3E00F4A6C6 /* LocMapNonOverlappingAnnotations.m in Sources */ = {isa = PBXBuildFile; fileRef = 1077F881185F2F3E00F4A6C6 /* LocMapNonOverlappingAnnotations.m */; };
+		1077F884185F2F3E00F4A6C6 /* LocMapNonOverlappingAnnotations.m in Sources */ = {isa = PBXBuildFile; fileRef = 1077F881185F2F3E00F4A6C6 /* LocMapNonOverlappingAnnotations.m */; };
+		1089ECE518647B4100D7A8D5 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1089ECE918647B4100D7A8D5 /* Localizable.strings */; };
+		1089ECE618647B4100D7A8D5 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1089ECE918647B4100D7A8D5 /* Localizable.strings */; };
+		1089ECE718647B4100D7A8D5 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1089ECE918647B4100D7A8D5 /* Localizable.strings */; };
+		108F65F618967BB700452745 /* LocalizationFramework.m in Sources */ = {isa = PBXBuildFile; fileRef = 108F65F518967BB700452745 /* LocalizationFramework.m */; };
+		108F65F718967BB700452745 /* LocalizationFramework.m in Sources */ = {isa = PBXBuildFile; fileRef = 108F65F518967BB700452745 /* LocalizationFramework.m */; };
+		108F65F818967BB700452745 /* LocalizationFramework.m in Sources */ = {isa = PBXBuildFile; fileRef = 108F65F518967BB700452745 /* LocalizationFramework.m */; };
+		10920431188940D8000CF950 /* MapPlaceCircle.m in Sources */ = {isa = PBXBuildFile; fileRef = 10920430188940D8000CF950 /* MapPlaceCircle.m */; };
+		10920432188940D8000CF950 /* MapPlaceCircle.m in Sources */ = {isa = PBXBuildFile; fileRef = 10920430188940D8000CF950 /* MapPlaceCircle.m */; };
+		10920433188940D8000CF950 /* MapPlaceCircle.m in Sources */ = {isa = PBXBuildFile; fileRef = 10920430188940D8000CF950 /* MapPlaceCircle.m */; };
+		109204361889453B000CF950 /* MapPlaceCircleOverlay.m in Sources */ = {isa = PBXBuildFile; fileRef = 109204351889453B000CF950 /* MapPlaceCircleOverlay.m */; };
+		109204371889453B000CF950 /* MapPlaceCircleOverlay.m in Sources */ = {isa = PBXBuildFile; fileRef = 109204351889453B000CF950 /* MapPlaceCircleOverlay.m */; };
+		109204381889453B000CF950 /* MapPlaceCircleOverlay.m in Sources */ = {isa = PBXBuildFile; fileRef = 109204351889453B000CF950 /* MapPlaceCircleOverlay.m */; };
+		1094FBD5184C8376004D0EC5 /* PeopleTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1094FBD4184C8376004D0EC5 /* PeopleTableViewCell.m */; };
+		1094FBD8184CB0A2004D0EC5 /* LocMapFormatters.m in Sources */ = {isa = PBXBuildFile; fileRef = 1094FBD7184CB0A2004D0EC5 /* LocMapFormatters.m */; };
+		1094FBDB18505F28004D0EC5 /* OtherSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1094FBDA18505F28004D0EC5 /* OtherSettingsViewController.m */; };
+		1094FBDE1850A556004D0EC5 /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1094FBDD1850A556004D0EC5 /* AboutViewController.m */; };
+		1094FBE01850C59B004D0EC5 /* AddressBookUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1094FBDF1850C59B004D0EC5 /* AddressBookUI.framework */; };
+		1094FBE31855F3B3004D0EC5 /* RootNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1094FBE21855F3B3004D0EC5 /* RootNavigationController.m */; };
+		1094FBE618565DB5004D0EC5 /* LocMapFormatters.m in Sources */ = {isa = PBXBuildFile; fileRef = 1094FBD7184CB0A2004D0EC5 /* LocMapFormatters.m */; };
+		1094FBE718565DB5004D0EC5 /* SingleServerRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1030A491183E030D00587D74 /* SingleServerRequest.m */; };
+		1094FBE818565DB5004D0EC5 /* PeopleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 10C5F2FD18437BE100642160 /* PeopleViewController.m */; };
+		1094FBE918565DB5004D0EC5 /* FSConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 10C5F3041845F5E200642160 /* FSConstants.m */; };
+		1094FBEA18565DB5004D0EC5 /* Users.m in Sources */ = {isa = PBXBuildFile; fileRef = 1030A472183B697400587D74 /* Users.m */; };
+		1094FBEB18565DB5004D0EC5 /* LocMapAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1030A485183BA0F400587D74 /* LocMapAnnotationView.m */; };
+		1094FBEC18565DB5004D0EC5 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 10C5F2F81843514200642160 /* SettingsViewController.m */; };
+		1094FBED18565DB5004D0EC5 /* LocMapAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 10B04A331835133900109841 /* LocMapAppDelegate.m */; };
+		1094FBEE18565DB5004D0EC5 /* LocalStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 1030A46A183B64D600587D74 /* LocalStorage.m */; };
+		1094FBEF18565DB5004D0EC5 /* StandaloneGPSReporter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1030A48D183CE59D00587D74 /* StandaloneGPSReporter.m */; };
+		1094FBF018565DB5004D0EC5 /* Checks.m in Sources */ = {isa = PBXBuildFile; fileRef = 10C5F3011844F45F00642160 /* Checks.m */; };
+		1094FBF118565DB5004D0EC5 /* LocMapAnnotationViewCallout.m in Sources */ = {isa = PBXBuildFile; fileRef = 10C5F30718462CB100642160 /* LocMapAnnotationViewCallout.m */; };
+		1094FBF218565DB5004D0EC5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 10B04A2F1835133900109841 /* main.m */; };
+		1094FBF318565DB5004D0EC5 /* RootNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1094FBE21855F3B3004D0EC5 /* RootNavigationController.m */; };
+		1094FBF418565DB5004D0EC5 /* LocMapAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1030A481183B9D2300587D74 /* LocMapAnnotation.m */; };
+		1094FBF518565DB5004D0EC5 /* UserData.m in Sources */ = {isa = PBXBuildFile; fileRef = 1030A46E183B68EB00587D74 /* UserData.m */; };
+		1094FBF618565DB5004D0EC5 /* SignupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1030A497183E232300587D74 /* SignupViewController.m */; };
+		1094FBF718565DB5004D0EC5 /* ServerApi+messages.m in Sources */ = {isa = PBXBuildFile; fileRef = 1030A494183E03CA00587D74 /* ServerApi+messages.m */; };
+		1094FBF818565DB5004D0EC5 /* ServerApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 1030A489183CD8D500587D74 /* ServerApi.m */; };
+		1094FBF918565DB5004D0EC5 /* Contacts.m in Sources */ = {isa = PBXBuildFile; fileRef = 1030A49D183E4D4E00587D74 /* Contacts.m */; };
+		1094FBFA18565DB5004D0EC5 /* LocMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 10B04A3C1835133900109841 /* LocMapViewController.m */; };
+		1094FBFB18565DB5004D0EC5 /* AddContactsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1030A49A183E4BB800587D74 /* AddContactsViewController.m */; };
+		1094FBFC18565DB5004D0EC5 /* PeopleTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1094FBD4184C8376004D0EC5 /* PeopleTableViewCell.m */; };
+		1094FBFE18565DB5004D0EC5 /* OtherSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1094FBDA18505F28004D0EC5 /* OtherSettingsViewController.m */; };
+		1094FBFF18565DB5004D0EC5 /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1094FBDD1850A556004D0EC5 /* AboutViewController.m */; };
+		1094FC0218565DB5004D0EC5 /* AddressBookUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1094FBDF1850C59B004D0EC5 /* AddressBookUI.framework */; };
+		1094FC0318565DB5004D0EC5 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10C5F2FA18436D1A00642160 /* MessageUI.framework */; };
+		1094FC0418565DB5004D0EC5 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1030A4A0183E4DCF00587D74 /* AddressBook.framework */; };
+		1094FC0518565DB5004D0EC5 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10B04A5D18351BA400109841 /* CoreLocation.framework */; };
+		1094FC0618565DB5004D0EC5 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10B04A5B18351B7900109841 /* MapKit.framework */; };
+		1094FC0718565DB5004D0EC5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10B04A251835133900109841 /* CoreGraphics.framework */; };
+		1094FC0818565DB5004D0EC5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10B04A271835133900109841 /* UIKit.framework */; };
+		1094FC0918565DB5004D0EC5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10B04A231835133900109841 /* Foundation.framework */; };
+		1094FC0B18565DB5004D0EC5 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10B04A381835133900109841 /* Main_iPad.storyboard */; };
+		1094FC0C18565DB5004D0EC5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10B04A3E1835133900109841 /* Images.xcassets */; };
+		1094FC0D18565DB5004D0EC5 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10B04A351835133900109841 /* Main_iPhone.storyboard */; };
+		1094FC0E18565DB5004D0EC5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 10B04A2C1835133900109841 /* InfoPlist.strings */; };
+		10B04A241835133900109841 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10B04A231835133900109841 /* Foundation.framework */; };
+		10B04A261835133900109841 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10B04A251835133900109841 /* CoreGraphics.framework */; };
+		10B04A281835133900109841 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10B04A271835133900109841 /* UIKit.framework */; };
+		10B04A2E1835133900109841 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 10B04A2C1835133900109841 /* InfoPlist.strings */; };
+		10B04A301835133900109841 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 10B04A2F1835133900109841 /* main.m */; };
+		10B04A341835133900109841 /* LocMapAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 10B04A331835133900109841 /* LocMapAppDelegate.m */; };
+		10B04A371835133900109841 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10B04A351835133900109841 /* Main_iPhone.storyboard */; };
+		10B04A3A1835133900109841 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10B04A381835133900109841 /* Main_iPad.storyboard */; };
+		10B04A3D1835133900109841 /* LocMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 10B04A3C1835133900109841 /* LocMapViewController.m */; };
+		10B04A3F1835133900109841 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10B04A3E1835133900109841 /* Images.xcassets */; };
+		10B04A461835133900109841 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10B04A451835133900109841 /* XCTest.framework */; };
+		10B04A471835133900109841 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10B04A231835133900109841 /* Foundation.framework */; };
+		10B04A481835133900109841 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10B04A271835133900109841 /* UIKit.framework */; };
+		10B04A501835133900109841 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 10B04A4E1835133900109841 /* InfoPlist.strings */; };
+		10B04A521835133900109841 /* locmapTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 10B04A511835133900109841 /* locmapTests.m */; };
+		10B04A5C18351B7900109841 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10B04A5B18351B7900109841 /* MapKit.framework */; };
+		10B04A5E18351BA400109841 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10B04A5D18351BA400109841 /* CoreLocation.framework */; };
+		10C5F2F91843514200642160 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 10C5F2F81843514200642160 /* SettingsViewController.m */; };
+		10C5F2FB18436D1A00642160 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10C5F2FA18436D1A00642160 /* MessageUI.framework */; };
+		10C5F2FE18437BE100642160 /* PeopleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 10C5F2FD18437BE100642160 /* PeopleViewController.m */; };
+		10C5F3021844F45F00642160 /* Checks.m in Sources */ = {isa = PBXBuildFile; fileRef = 10C5F3011844F45F00642160 /* Checks.m */; };
+		10C5F3051845F5E200642160 /* FSConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 10C5F3041845F5E200642160 /* FSConstants.m */; };
+		10C5F30818462CB100642160 /* LocMapAnnotationViewCallout.m in Sources */ = {isa = PBXBuildFile; fileRef = 10C5F30718462CB100642160 /* LocMapAnnotationViewCallout.m */; };
+		10F53D3B187EC89900751A7C /* AvatarInPlacesCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 10F53D3A187EC89900751A7C /* AvatarInPlacesCollectionViewCell.m */; };
+		10F53D3C187EC89900751A7C /* AvatarInPlacesCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 10F53D3A187EC89900751A7C /* AvatarInPlacesCollectionViewCell.m */; };
+		10F53D3D187EC89900751A7C /* AvatarInPlacesCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 10F53D3A187EC89900751A7C /* AvatarInPlacesCollectionViewCell.m */; };
+		10F53D40187EC8F000751A7C /* PlaceTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 10F53D3F187EC8F000751A7C /* PlaceTableViewCell.m */; };
+		10F53D41187EC8F000751A7C /* PlaceTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 10F53D3F187EC8F000751A7C /* PlaceTableViewCell.m */; };
+		10F53D42187EC8F000751A7C /* PlaceTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 10F53D3F187EC8F000751A7C /* PlaceTableViewCell.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		10B04A491835133900109841 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 10B04A181835133900109841 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 10B04A1F1835133900109841;
+			remoteInfo = locmap;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		10012716189A2C93009E5BD2 /* AppRater.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppRater.h; sourceTree = "<group>"; };
+		10012717189A2C93009E5BD2 /* AppRater.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppRater.m; sourceTree = "<group>"; };
+		1001271B189A6ADB009E5BD2 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
+		1001271C189A6B45009E5BD2 /* da */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = da; path = da.lproj/Localizable.strings; sourceTree = "<group>"; };
+		1001271D189A6B51009E5BD2 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
+		1001271E189A6B5B009E5BD2 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		1001271F189A6B6B009E5BD2 /* fr-CA */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "fr-CA"; path = "fr-CA.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		10012720189A6BE7009E5BD2 /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/Localizable.strings; sourceTree = "<group>"; };
+		10012721189A6BF3009E5BD2 /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/Localizable.strings; sourceTree = "<group>"; };
+		10012722189A6C73009E5BD2 /* pt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pt; path = pt.lproj/Localizable.strings; sourceTree = "<group>"; };
+		10012723189A6C84009E5BD2 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		10012724189A6C94009E5BD2 /* sv */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sv; path = sv.lproj/Localizable.strings; sourceTree = "<group>"; };
+		10012725189A6CB5009E5BD2 /* zh */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = zh; path = zh.lproj/Localizable.strings; sourceTree = "<group>"; };
+		100987B81856627800C53327 /* Lokki.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lokki.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		100987B91856627800C53327 /* LokkiAppStore-info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "LokkiAppStore-info.plist"; path = "/Users/olegfedorov/Documents/Sources/ringo/ringo-ios/locMap/LokkiAppStore-info.plist"; sourceTree = "<absolute>"; };
+		100987BA1856FD5A00C53327 /* UIBottomToolbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIBottomToolbar.h; sourceTree = "<group>"; };
+		100987BB1856FD5A00C53327 /* UIBottomToolbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIBottomToolbar.m; sourceTree = "<group>"; };
+		100987BF1857206D00C53327 /* PrivacyPolicyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrivacyPolicyViewController.h; sourceTree = "<group>"; };
+		100987C01857206D00C53327 /* PrivacyPolicyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrivacyPolicyViewController.m; sourceTree = "<group>"; };
+		100987C4185746BC00C53327 /* Tutorial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tutorial.h; sourceTree = "<group>"; };
+		100987C5185746BC00C53327 /* Tutorial.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tutorial.m; sourceTree = "<group>"; };
+		102F451E185B26A700B52343 /* LocMapAvatarsAroundMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocMapAvatarsAroundMap.h; sourceTree = "<group>"; };
+		102F451F185B26A700B52343 /* LocMapAvatarsAroundMap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocMapAvatarsAroundMap.m; sourceTree = "<group>"; };
+		102F4523185B408400B52343 /* AvatarAroundMapInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AvatarAroundMapInfo.h; sourceTree = "<group>"; };
+		102F4524185B408400B52343 /* AvatarAroundMapInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AvatarAroundMapInfo.m; sourceTree = "<group>"; };
+		102F4528185B941E00B52343 /* LocatingInProgressAnimationAroundAvatar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocatingInProgressAnimationAroundAvatar.h; sourceTree = "<group>"; };
+		102F4529185B941E00B52343 /* LocatingInProgressAnimationAroundAvatar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocatingInProgressAnimationAroundAvatar.m; sourceTree = "<group>"; };
+		1030A469183B64D600587D74 /* LocalStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocalStorage.h; sourceTree = "<group>"; };
+		1030A46A183B64D600587D74 /* LocalStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocalStorage.m; sourceTree = "<group>"; };
+		1030A46D183B68EB00587D74 /* UserData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserData.h; sourceTree = "<group>"; };
+		1030A46E183B68EB00587D74 /* UserData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserData.m; sourceTree = "<group>"; };
+		1030A471183B697400587D74 /* Users.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Users.h; sourceTree = "<group>"; };
+		1030A472183B697400587D74 /* Users.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Users.m; sourceTree = "<group>"; };
+		1030A480183B9D2300587D74 /* LocMapAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocMapAnnotation.h; sourceTree = "<group>"; };
+		1030A481183B9D2300587D74 /* LocMapAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocMapAnnotation.m; sourceTree = "<group>"; };
+		1030A484183BA0F400587D74 /* LocMapAnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocMapAnnotationView.h; sourceTree = "<group>"; };
+		1030A485183BA0F400587D74 /* LocMapAnnotationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocMapAnnotationView.m; sourceTree = "<group>"; };
+		1030A488183CD8D500587D74 /* ServerApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServerApi.h; sourceTree = "<group>"; };
+		1030A489183CD8D500587D74 /* ServerApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServerApi.m; sourceTree = "<group>"; };
+		1030A48C183CE59D00587D74 /* StandaloneGPSReporter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StandaloneGPSReporter.h; sourceTree = "<group>"; };
+		1030A48D183CE59D00587D74 /* StandaloneGPSReporter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StandaloneGPSReporter.m; sourceTree = "<group>"; };
+		1030A490183E030D00587D74 /* SingleServerRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SingleServerRequest.h; sourceTree = "<group>"; };
+		1030A491183E030D00587D74 /* SingleServerRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SingleServerRequest.m; sourceTree = "<group>"; };
+		1030A493183E03CA00587D74 /* ServerApi+messages.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ServerApi+messages.h"; sourceTree = "<group>"; };
+		1030A494183E03CA00587D74 /* ServerApi+messages.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ServerApi+messages.m"; sourceTree = "<group>"; };
+		1030A496183E232300587D74 /* SignupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignupViewController.h; sourceTree = "<group>"; };
+		1030A497183E232300587D74 /* SignupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignupViewController.m; sourceTree = "<group>"; };
+		1030A499183E4BB800587D74 /* AddContactsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddContactsViewController.h; sourceTree = "<group>"; };
+		1030A49A183E4BB800587D74 /* AddContactsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddContactsViewController.m; sourceTree = "<group>"; };
+		1030A49C183E4D4E00587D74 /* Contacts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Contacts.h; sourceTree = "<group>"; };
+		1030A49D183E4D4E00587D74 /* Contacts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Contacts.m; sourceTree = "<group>"; };
+		1030A4A0183E4DCF00587D74 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		1030C0A8186D699A001341FC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main_iPhone.strings; sourceTree = "<group>"; };
+		1030C0A9186D699A001341FC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main_iPad.strings; sourceTree = "<group>"; };
+		1030C0AA186D699A001341FC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		1030C0F8187BEEFA001341FC /* InAppPurchase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InAppPurchase.h; sourceTree = "<group>"; };
+		1030C0F9187BEEFA001341FC /* InAppPurchase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InAppPurchase.m; sourceTree = "<group>"; };
+		1030C0FA187BEEFA001341FC /* SKProduct+LocalizedPrice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SKProduct+LocalizedPrice.h"; sourceTree = "<group>"; };
+		1030C0FB187BEEFA001341FC /* SKProduct+LocalizedPrice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SKProduct+LocalizedPrice.m"; sourceTree = "<group>"; };
+		1030C102187BEF78001341FC /* NSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64.h"; sourceTree = "<group>"; };
+		1030C103187BEF78001341FC /* NSData+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Base64.m"; sourceTree = "<group>"; };
+		1030C107187C047C001341FC /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		1030C10B187C1D55001341FC /* SubscriptionsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubscriptionsTableViewController.h; sourceTree = "<group>"; };
+		1030C10C187C1D55001341FC /* SubscriptionsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubscriptionsTableViewController.m; sourceTree = "<group>"; };
+		104C4492187D779B00F2B32F /* PlacesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlacesViewController.h; sourceTree = "<group>"; };
+		104C4493187D779B00F2B32F /* PlacesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlacesViewController.m; sourceTree = "<group>"; };
+		104C4497187D789600F2B32F /* UITransparentToolbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UITransparentToolbar.h; sourceTree = "<group>"; };
+		104C4498187D789600F2B32F /* UITransparentToolbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UITransparentToolbar.m; sourceTree = "<group>"; };
+		105E70FE1886B59400222C85 /* place_01.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = place_01.jpg; sourceTree = "<group>"; };
+		105E70FF1886B59400222C85 /* place_02.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = place_02.jpg; sourceTree = "<group>"; };
+		105E71001886B59400222C85 /* place_03.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = place_03.jpg; sourceTree = "<group>"; };
+		105E71011886B59400222C85 /* place_04.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = place_04.jpg; sourceTree = "<group>"; };
+		105E71021886B59400222C85 /* place_05.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = place_05.jpg; sourceTree = "<group>"; };
+		105E71031886B59400222C85 /* place_06.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = place_06.jpg; sourceTree = "<group>"; };
+		105E71041886B59400222C85 /* place_07.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = place_07.jpg; sourceTree = "<group>"; };
+		105E71051886B59400222C85 /* place_08.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = place_08.jpg; sourceTree = "<group>"; };
+		105E71061886B59400222C85 /* place_09.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = place_09.jpg; sourceTree = "<group>"; };
+		1077F880185F2F3E00F4A6C6 /* LocMapNonOverlappingAnnotations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocMapNonOverlappingAnnotations.h; sourceTree = "<group>"; };
+		1077F881185F2F3E00F4A6C6 /* LocMapNonOverlappingAnnotations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocMapNonOverlappingAnnotations.m; sourceTree = "<group>"; };
+		1089ECDF18647AAC00D7A8D5 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1089ECE018647AAC00D7A8D5 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1089ECE818647B4100D7A8D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		1089ECEB18647B4400D7A8D5 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+		1089ECEE18682CBC00D7A8D5 /* fi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fi; path = fi.lproj/Localizable.strings; sourceTree = "<group>"; };
+		108F65F418967BB700452745 /* LocalizationFramework.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocalizationFramework.h; sourceTree = "<group>"; };
+		108F65F518967BB700452745 /* LocalizationFramework.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocalizationFramework.m; sourceTree = "<group>"; };
+		1092042F188940D8000CF950 /* MapPlaceCircle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapPlaceCircle.h; sourceTree = "<group>"; };
+		10920430188940D8000CF950 /* MapPlaceCircle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapPlaceCircle.m; sourceTree = "<group>"; };
+		109204341889453B000CF950 /* MapPlaceCircleOverlay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapPlaceCircleOverlay.h; sourceTree = "<group>"; };
+		109204351889453B000CF950 /* MapPlaceCircleOverlay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapPlaceCircleOverlay.m; sourceTree = "<group>"; };
+		1094FBD3184C8376004D0EC5 /* PeopleTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PeopleTableViewCell.h; sourceTree = "<group>"; };
+		1094FBD4184C8376004D0EC5 /* PeopleTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PeopleTableViewCell.m; sourceTree = "<group>"; };
+		1094FBD6184CB0A2004D0EC5 /* LocMapFormatters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocMapFormatters.h; sourceTree = "<group>"; };
+		1094FBD7184CB0A2004D0EC5 /* LocMapFormatters.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocMapFormatters.m; sourceTree = "<group>"; };
+		1094FBD918505F28004D0EC5 /* OtherSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OtherSettingsViewController.h; sourceTree = "<group>"; };
+		1094FBDA18505F28004D0EC5 /* OtherSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OtherSettingsViewController.m; sourceTree = "<group>"; };
+		1094FBDC1850A556004D0EC5 /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
+		1094FBDD1850A556004D0EC5 /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
+		1094FBDF1850C59B004D0EC5 /* AddressBookUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBookUI.framework; path = System/Library/Frameworks/AddressBookUI.framework; sourceTree = SDKROOT; };
+		1094FBE11855F3B3004D0EC5 /* RootNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootNavigationController.h; sourceTree = "<group>"; };
+		1094FBE21855F3B3004D0EC5 /* RootNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootNavigationController.m; sourceTree = "<group>"; };
+		1094FC1218565DB5004D0EC5 /* LokkiInternalBeta.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LokkiInternalBeta.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1094FC1418566014004D0EC5 /* LokkiDistributeInternal-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "LokkiDistributeInternal-Info.plist"; sourceTree = SOURCE_ROOT; };
+		10B04A201835133900109841 /* Lokki dev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Lokki dev.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		10B04A231835133900109841 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		10B04A251835133900109841 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		10B04A271835133900109841 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		10B04A2B1835133900109841 /* Lokki-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Lokki-Info.plist"; sourceTree = "<group>"; };
+		10B04A2F1835133900109841 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		10B04A311835133900109841 /* Lokki-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Lokki-Prefix.pch"; sourceTree = "<group>"; };
+		10B04A321835133900109841 /* LocMapAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LocMapAppDelegate.h; sourceTree = "<group>"; };
+		10B04A331835133900109841 /* LocMapAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LocMapAppDelegate.m; sourceTree = "<group>"; };
+		10B04A361835133900109841 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		10B04A391835133900109841 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		10B04A3B1835133900109841 /* LocMapViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LocMapViewController.h; sourceTree = "<group>"; };
+		10B04A3C1835133900109841 /* LocMapViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LocMapViewController.m; sourceTree = "<group>"; };
+		10B04A3E1835133900109841 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		10B04A441835133900109841 /* LokkiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LokkiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		10B04A451835133900109841 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		10B04A4D1835133900109841 /* LokkiTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LokkiTests-Info.plist"; sourceTree = "<group>"; };
+		10B04A511835133900109841 /* locmapTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = locmapTests.m; sourceTree = "<group>"; };
+		10B04A5B18351B7900109841 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		10B04A5D18351BA400109841 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		10C5F2F71843514200642160 /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		10C5F2F81843514200642160 /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
+		10C5F2FA18436D1A00642160 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		10C5F2FC18437BE100642160 /* PeopleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PeopleViewController.h; sourceTree = "<group>"; };
+		10C5F2FD18437BE100642160 /* PeopleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PeopleViewController.m; sourceTree = "<group>"; };
+		10C5F3001844F45F00642160 /* Checks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Checks.h; sourceTree = "<group>"; };
+		10C5F3011844F45F00642160 /* Checks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Checks.m; sourceTree = "<group>"; };
+		10C5F3031845F5E200642160 /* FSConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSConstants.h; sourceTree = "<group>"; };
+		10C5F3041845F5E200642160 /* FSConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSConstants.m; sourceTree = "<group>"; };
+		10C5F30618462CB100642160 /* LocMapAnnotationViewCallout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocMapAnnotationViewCallout.h; sourceTree = "<group>"; };
+		10C5F30718462CB100642160 /* LocMapAnnotationViewCallout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocMapAnnotationViewCallout.m; sourceTree = "<group>"; };
+		10F53D39187EC89900751A7C /* AvatarInPlacesCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AvatarInPlacesCollectionViewCell.h; sourceTree = "<group>"; };
+		10F53D3A187EC89900751A7C /* AvatarInPlacesCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AvatarInPlacesCollectionViewCell.m; sourceTree = "<group>"; };
+		10F53D3E187EC8F000751A7C /* PlaceTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlaceTableViewCell.h; sourceTree = "<group>"; };
+		10F53D3F187EC8F000751A7C /* PlaceTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlaceTableViewCell.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		100987A61856627800C53327 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1030C10A187C048B001341FC /* StoreKit.framework in Frameworks */,
+				100987A71856627800C53327 /* AddressBookUI.framework in Frameworks */,
+				100987A81856627800C53327 /* MessageUI.framework in Frameworks */,
+				100987A91856627800C53327 /* AddressBook.framework in Frameworks */,
+				100987AA1856627800C53327 /* CoreLocation.framework in Frameworks */,
+				100987AB1856627800C53327 /* MapKit.framework in Frameworks */,
+				100987AC1856627800C53327 /* CoreGraphics.framework in Frameworks */,
+				100987AD1856627800C53327 /* UIKit.framework in Frameworks */,
+				100987AE1856627800C53327 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1094FC0118565DB5004D0EC5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1030C109187C0484001341FC /* StoreKit.framework in Frameworks */,
+				1094FC0218565DB5004D0EC5 /* AddressBookUI.framework in Frameworks */,
+				1094FC0318565DB5004D0EC5 /* MessageUI.framework in Frameworks */,
+				1094FC0418565DB5004D0EC5 /* AddressBook.framework in Frameworks */,
+				1094FC0518565DB5004D0EC5 /* CoreLocation.framework in Frameworks */,
+				1094FC0618565DB5004D0EC5 /* MapKit.framework in Frameworks */,
+				1094FC0718565DB5004D0EC5 /* CoreGraphics.framework in Frameworks */,
+				1094FC0818565DB5004D0EC5 /* UIKit.framework in Frameworks */,
+				1094FC0918565DB5004D0EC5 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		10B04A1D1835133900109841 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1030C108187C047C001341FC /* StoreKit.framework in Frameworks */,
+				1094FBE01850C59B004D0EC5 /* AddressBookUI.framework in Frameworks */,
+				10C5F2FB18436D1A00642160 /* MessageUI.framework in Frameworks */,
+				1030A4A1183E4DCF00587D74 /* AddressBook.framework in Frameworks */,
+				10B04A5E18351BA400109841 /* CoreLocation.framework in Frameworks */,
+				10B04A5C18351B7900109841 /* MapKit.framework in Frameworks */,
+				10B04A261835133900109841 /* CoreGraphics.framework in Frameworks */,
+				10B04A281835133900109841 /* UIKit.framework in Frameworks */,
+				10B04A241835133900109841 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		10B04A411835133900109841 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10B04A461835133900109841 /* XCTest.framework in Frameworks */,
+				10B04A481835133900109841 /* UIKit.framework in Frameworks */,
+				10B04A471835133900109841 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1030C0F7187BEEFA001341FC /* inAppPurchase */ = {
+			isa = PBXGroup;
+			children = (
+				1030C102187BEF78001341FC /* NSData+Base64.h */,
+				1030C103187BEF78001341FC /* NSData+Base64.m */,
+				1030C0F8187BEEFA001341FC /* InAppPurchase.h */,
+				1030C0F9187BEEFA001341FC /* InAppPurchase.m */,
+				1030C0FA187BEEFA001341FC /* SKProduct+LocalizedPrice.h */,
+				1030C0FB187BEEFA001341FC /* SKProduct+LocalizedPrice.m */,
+			);
+			path = inAppPurchase;
+			sourceTree = "<group>";
+		};
+		105E70FD1886B59400222C85 /* placeBackgrounds */ = {
+			isa = PBXGroup;
+			children = (
+				105E70FE1886B59400222C85 /* place_01.jpg */,
+				105E70FF1886B59400222C85 /* place_02.jpg */,
+				105E71001886B59400222C85 /* place_03.jpg */,
+				105E71011886B59400222C85 /* place_04.jpg */,
+				105E71021886B59400222C85 /* place_05.jpg */,
+				105E71031886B59400222C85 /* place_06.jpg */,
+				105E71041886B59400222C85 /* place_07.jpg */,
+				105E71051886B59400222C85 /* place_08.jpg */,
+				105E71061886B59400222C85 /* place_09.jpg */,
+			);
+			path = placeBackgrounds;
+			sourceTree = "<group>";
+		};
+		10B04A171835133900109841 = {
+			isa = PBXGroup;
+			children = (
+				10B04A291835133900109841 /* locmap */,
+				10B04A4B1835133900109841 /* locmapTests */,
+				10B04A221835133900109841 /* Frameworks */,
+				10B04A211835133900109841 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		10B04A211835133900109841 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				10B04A201835133900109841 /* Lokki dev.app */,
+				10B04A441835133900109841 /* LokkiTests.xctest */,
+				1094FC1218565DB5004D0EC5 /* LokkiInternalBeta.app */,
+				100987B81856627800C53327 /* Lokki.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		10B04A221835133900109841 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1030C107187C047C001341FC /* StoreKit.framework */,
+				1094FBDF1850C59B004D0EC5 /* AddressBookUI.framework */,
+				10C5F2FA18436D1A00642160 /* MessageUI.framework */,
+				1030A4A0183E4DCF00587D74 /* AddressBook.framework */,
+				10B04A5D18351BA400109841 /* CoreLocation.framework */,
+				10B04A5B18351B7900109841 /* MapKit.framework */,
+				10B04A231835133900109841 /* Foundation.framework */,
+				10B04A251835133900109841 /* CoreGraphics.framework */,
+				10B04A271835133900109841 /* UIKit.framework */,
+				10B04A451835133900109841 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		10B04A291835133900109841 /* locmap */ = {
+			isa = PBXGroup;
+			children = (
+				1030C0F7187BEEFA001341FC /* inAppPurchase */,
+				10C5F2FF184380C600642160 /* GUI */,
+				1030A48C183CE59D00587D74 /* StandaloneGPSReporter.h */,
+				1030A48D183CE59D00587D74 /* StandaloneGPSReporter.m */,
+				10B04A321835133900109841 /* LocMapAppDelegate.h */,
+				10B04A331835133900109841 /* LocMapAppDelegate.m */,
+				108F65F418967BB700452745 /* LocalizationFramework.h */,
+				108F65F518967BB700452745 /* LocalizationFramework.m */,
+				10B04A2A1835133900109841 /* Supporting Files */,
+				1030A469183B64D600587D74 /* LocalStorage.h */,
+				1030A46A183B64D600587D74 /* LocalStorage.m */,
+				1030A46D183B68EB00587D74 /* UserData.h */,
+				1030A46E183B68EB00587D74 /* UserData.m */,
+				1030A471183B697400587D74 /* Users.h */,
+				1030A472183B697400587D74 /* Users.m */,
+				1030A488183CD8D500587D74 /* ServerApi.h */,
+				1030A489183CD8D500587D74 /* ServerApi.m */,
+				1030A490183E030D00587D74 /* SingleServerRequest.h */,
+				1030A491183E030D00587D74 /* SingleServerRequest.m */,
+				1030A493183E03CA00587D74 /* ServerApi+messages.h */,
+				1030A494183E03CA00587D74 /* ServerApi+messages.m */,
+				1030A49C183E4D4E00587D74 /* Contacts.h */,
+				1030A49D183E4D4E00587D74 /* Contacts.m */,
+				10C5F3001844F45F00642160 /* Checks.h */,
+				10C5F3011844F45F00642160 /* Checks.m */,
+			);
+			path = locmap;
+			sourceTree = "<group>";
+		};
+		10B04A2A1835133900109841 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1089ECE918647B4100D7A8D5 /* Localizable.strings */,
+				100987B91856627800C53327 /* LokkiAppStore-info.plist */,
+				10B04A3E1835133900109841 /* Images.xcassets */,
+				10B04A2B1835133900109841 /* Lokki-Info.plist */,
+				1094FC1418566014004D0EC5 /* LokkiDistributeInternal-Info.plist */,
+				10B04A2C1835133900109841 /* InfoPlist.strings */,
+				10B04A2F1835133900109841 /* main.m */,
+				10B04A311835133900109841 /* Lokki-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		10B04A4B1835133900109841 /* locmapTests */ = {
+			isa = PBXGroup;
+			children = (
+				10B04A511835133900109841 /* locmapTests.m */,
+				10B04A4C1835133900109841 /* Supporting Files */,
+			);
+			path = locmapTests;
+			sourceTree = "<group>";
+		};
+		10B04A4C1835133900109841 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				10B04A4D1835133900109841 /* LokkiTests-Info.plist */,
+				10B04A4E1835133900109841 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		10C5F2FF184380C600642160 /* GUI */ = {
+			isa = PBXGroup;
+			children = (
+				105E70FD1886B59400222C85 /* placeBackgrounds */,
+				10012716189A2C93009E5BD2 /* AppRater.h */,
+				10012717189A2C93009E5BD2 /* AppRater.m */,
+				1030A480183B9D2300587D74 /* LocMapAnnotation.h */,
+				1030A481183B9D2300587D74 /* LocMapAnnotation.m */,
+				1030A484183BA0F400587D74 /* LocMapAnnotationView.h */,
+				1030A485183BA0F400587D74 /* LocMapAnnotationView.m */,
+				1092042F188940D8000CF950 /* MapPlaceCircle.h */,
+				10920430188940D8000CF950 /* MapPlaceCircle.m */,
+				109204341889453B000CF950 /* MapPlaceCircleOverlay.h */,
+				109204351889453B000CF950 /* MapPlaceCircleOverlay.m */,
+				100987BA1856FD5A00C53327 /* UIBottomToolbar.h */,
+				100987BB1856FD5A00C53327 /* UIBottomToolbar.m */,
+				104C4497187D789600F2B32F /* UITransparentToolbar.h */,
+				104C4498187D789600F2B32F /* UITransparentToolbar.m */,
+				10B04A351835133900109841 /* Main_iPhone.storyboard */,
+				1030C10B187C1D55001341FC /* SubscriptionsTableViewController.h */,
+				1030C10C187C1D55001341FC /* SubscriptionsTableViewController.m */,
+				100987BF1857206D00C53327 /* PrivacyPolicyViewController.h */,
+				100987C01857206D00C53327 /* PrivacyPolicyViewController.m */,
+				1094FBE11855F3B3004D0EC5 /* RootNavigationController.h */,
+				1094FBE21855F3B3004D0EC5 /* RootNavigationController.m */,
+				1094FBD918505F28004D0EC5 /* OtherSettingsViewController.h */,
+				1094FBDA18505F28004D0EC5 /* OtherSettingsViewController.m */,
+				1094FBD3184C8376004D0EC5 /* PeopleTableViewCell.h */,
+				1094FBD4184C8376004D0EC5 /* PeopleTableViewCell.m */,
+				10C5F2FC18437BE100642160 /* PeopleViewController.h */,
+				10C5F2FD18437BE100642160 /* PeopleViewController.m */,
+				10C5F2F71843514200642160 /* SettingsViewController.h */,
+				10C5F2F81843514200642160 /* SettingsViewController.m */,
+				1030A499183E4BB800587D74 /* AddContactsViewController.h */,
+				1030A49A183E4BB800587D74 /* AddContactsViewController.m */,
+				1030A496183E232300587D74 /* SignupViewController.h */,
+				1030A497183E232300587D74 /* SignupViewController.m */,
+				10B04A381835133900109841 /* Main_iPad.storyboard */,
+				10C5F3031845F5E200642160 /* FSConstants.h */,
+				10C5F3041845F5E200642160 /* FSConstants.m */,
+				10C5F30618462CB100642160 /* LocMapAnnotationViewCallout.h */,
+				10C5F30718462CB100642160 /* LocMapAnnotationViewCallout.m */,
+				1094FBD6184CB0A2004D0EC5 /* LocMapFormatters.h */,
+				1094FBD7184CB0A2004D0EC5 /* LocMapFormatters.m */,
+				1094FBDC1850A556004D0EC5 /* AboutViewController.h */,
+				1094FBDD1850A556004D0EC5 /* AboutViewController.m */,
+				100987C4185746BC00C53327 /* Tutorial.h */,
+				100987C5185746BC00C53327 /* Tutorial.m */,
+				102F451E185B26A700B52343 /* LocMapAvatarsAroundMap.h */,
+				102F451F185B26A700B52343 /* LocMapAvatarsAroundMap.m */,
+				102F4523185B408400B52343 /* AvatarAroundMapInfo.h */,
+				102F4524185B408400B52343 /* AvatarAroundMapInfo.m */,
+				102F4528185B941E00B52343 /* LocatingInProgressAnimationAroundAvatar.h */,
+				102F4529185B941E00B52343 /* LocatingInProgressAnimationAroundAvatar.m */,
+				1077F880185F2F3E00F4A6C6 /* LocMapNonOverlappingAnnotations.h */,
+				1077F881185F2F3E00F4A6C6 /* LocMapNonOverlappingAnnotations.m */,
+				10F53D39187EC89900751A7C /* AvatarInPlacesCollectionViewCell.h */,
+				10F53D3A187EC89900751A7C /* AvatarInPlacesCollectionViewCell.m */,
+				10F53D3E187EC8F000751A7C /* PlaceTableViewCell.h */,
+				10F53D3F187EC8F000751A7C /* PlaceTableViewCell.m */,
+				104C4492187D779B00F2B32F /* PlacesViewController.h */,
+				104C4493187D779B00F2B32F /* PlacesViewController.m */,
+				10B04A3B1835133900109841 /* LocMapViewController.h */,
+				10B04A3C1835133900109841 /* LocMapViewController.m */,
+			);
+			name = GUI;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		100987891856627800C53327 /* Lokki */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 100987B51856627800C53327 /* Build configuration list for PBXNativeTarget "Lokki" */;
+			buildPhases = (
+				1009878A1856627800C53327 /* Sources */,
+				100987A61856627800C53327 /* Frameworks */,
+				100987AF1856627800C53327 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Lokki;
+			productName = locmap;
+			productReference = 100987B81856627800C53327 /* Lokki.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1094FBE418565DB5004D0EC5 /* LokkiDistributeInternal */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1094FC0F18565DB5004D0EC5 /* Build configuration list for PBXNativeTarget "LokkiDistributeInternal" */;
+			buildPhases = (
+				1094FBE518565DB5004D0EC5 /* Sources */,
+				1094FC0118565DB5004D0EC5 /* Frameworks */,
+				1094FC0A18565DB5004D0EC5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LokkiDistributeInternal;
+			productName = locmap;
+			productReference = 1094FC1218565DB5004D0EC5 /* LokkiInternalBeta.app */;
+			productType = "com.apple.product-type.application";
+		};
+		10B04A1F1835133900109841 /* LokkiDev */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 10B04A551835133900109841 /* Build configuration list for PBXNativeTarget "LokkiDev" */;
+			buildPhases = (
+				10B04A1C1835133900109841 /* Sources */,
+				10B04A1D1835133900109841 /* Frameworks */,
+				10B04A1E1835133900109841 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LokkiDev;
+			productName = locmap;
+			productReference = 10B04A201835133900109841 /* Lokki dev.app */;
+			productType = "com.apple.product-type.application";
+		};
+		10B04A431835133900109841 /* LokkiTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 10B04A581835133900109841 /* Build configuration list for PBXNativeTarget "LokkiTests" */;
+			buildPhases = (
+				10B04A401835133900109841 /* Sources */,
+				10B04A411835133900109841 /* Frameworks */,
+				10B04A421835133900109841 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				10B04A4A1835133900109841 /* PBXTargetDependency */,
+			);
+			name = LokkiTests;
+			productName = locmapTests;
+			productReference = 10B04A441835133900109841 /* LokkiTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		10B04A181835133900109841 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = LocMap;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "F-Secure";
+				TargetAttributes = {
+					100987891856627800C53327 = {
+						DevelopmentTeam = 6KALSAFZJC;
+					};
+					1094FBE418565DB5004D0EC5 = {
+						DevelopmentTeam = 64B7GGT4PN;
+					};
+					10B04A1F1835133900109841 = {
+						DevelopmentTeam = 64B7GGT4PN;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
+					10B04A431835133900109841 = {
+						TestTargetID = 10B04A1F1835133900109841;
+					};
+				};
+			};
+			buildConfigurationList = 10B04A1B1835133900109841 /* Build configuration list for PBXProject "Lokki" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				ru,
+				fi,
+				de,
+				da,
+				es,
+				fr,
+				"fr-CA",
+				it,
+				nl,
+				pt,
+				"pt-BR",
+				sv,
+				zh,
+			);
+			mainGroup = 10B04A171835133900109841;
+			productRefGroup = 10B04A211835133900109841 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				10B04A1F1835133900109841 /* LokkiDev */,
+				10B04A431835133900109841 /* LokkiTests */,
+				1094FBE418565DB5004D0EC5 /* LokkiDistributeInternal */,
+				100987891856627800C53327 /* Lokki */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		100987AF1856627800C53327 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				105E71211886B59400222C85 /* place_09.jpg in Resources */,
+				100987B01856627800C53327 /* Main_iPad.storyboard in Resources */,
+				105E710C1886B59400222C85 /* place_02.jpg in Resources */,
+				1089ECE718647B4100D7A8D5 /* Localizable.strings in Resources */,
+				105E710F1886B59400222C85 /* place_03.jpg in Resources */,
+				105E711B1886B59400222C85 /* place_07.jpg in Resources */,
+				105E71121886B59400222C85 /* place_04.jpg in Resources */,
+				105E71151886B59400222C85 /* place_05.jpg in Resources */,
+				100987B11856627800C53327 /* Images.xcassets in Resources */,
+				100987B31856627800C53327 /* Main_iPhone.storyboard in Resources */,
+				105E71181886B59400222C85 /* place_06.jpg in Resources */,
+				100987B41856627800C53327 /* InfoPlist.strings in Resources */,
+				105E71091886B59400222C85 /* place_01.jpg in Resources */,
+				105E711E1886B59400222C85 /* place_08.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1094FC0A18565DB5004D0EC5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				105E71201886B59400222C85 /* place_09.jpg in Resources */,
+				1094FC0B18565DB5004D0EC5 /* Main_iPad.storyboard in Resources */,
+				105E710B1886B59400222C85 /* place_02.jpg in Resources */,
+				1089ECE618647B4100D7A8D5 /* Localizable.strings in Resources */,
+				105E710E1886B59400222C85 /* place_03.jpg in Resources */,
+				105E711A1886B59400222C85 /* place_07.jpg in Resources */,
+				105E71111886B59400222C85 /* place_04.jpg in Resources */,
+				105E71141886B59400222C85 /* place_05.jpg in Resources */,
+				1094FC0C18565DB5004D0EC5 /* Images.xcassets in Resources */,
+				1094FC0D18565DB5004D0EC5 /* Main_iPhone.storyboard in Resources */,
+				105E71171886B59400222C85 /* place_06.jpg in Resources */,
+				1094FC0E18565DB5004D0EC5 /* InfoPlist.strings in Resources */,
+				105E71081886B59400222C85 /* place_01.jpg in Resources */,
+				105E711D1886B59400222C85 /* place_08.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		10B04A1E1835133900109841 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				105E711F1886B59400222C85 /* place_09.jpg in Resources */,
+				1089ECE518647B4100D7A8D5 /* Localizable.strings in Resources */,
+				105E710A1886B59400222C85 /* place_02.jpg in Resources */,
+				10B04A3A1835133900109841 /* Main_iPad.storyboard in Resources */,
+				105E710D1886B59400222C85 /* place_03.jpg in Resources */,
+				105E71191886B59400222C85 /* place_07.jpg in Resources */,
+				105E71101886B59400222C85 /* place_04.jpg in Resources */,
+				105E71131886B59400222C85 /* place_05.jpg in Resources */,
+				10B04A3F1835133900109841 /* Images.xcassets in Resources */,
+				10B04A371835133900109841 /* Main_iPhone.storyboard in Resources */,
+				105E71161886B59400222C85 /* place_06.jpg in Resources */,
+				10B04A2E1835133900109841 /* InfoPlist.strings in Resources */,
+				105E71071886B59400222C85 /* place_01.jpg in Resources */,
+				105E711C1886B59400222C85 /* place_08.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		10B04A421835133900109841 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10B04A501835133900109841 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1009878A1856627800C53327 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1077F884185F2F3E00F4A6C6 /* LocMapNonOverlappingAnnotations.m in Sources */,
+				1009878B1856627800C53327 /* LocMapFormatters.m in Sources */,
+				102F452C185B941E00B52343 /* LocatingInProgressAnimationAroundAvatar.m in Sources */,
+				1009878C1856627800C53327 /* SingleServerRequest.m in Sources */,
+				10F53D3D187EC89900751A7C /* AvatarInPlacesCollectionViewCell.m in Sources */,
+				102F4527185B408400B52343 /* AvatarAroundMapInfo.m in Sources */,
+				1009878D1856627800C53327 /* PeopleViewController.m in Sources */,
+				10F53D42187EC8F000751A7C /* PlaceTableViewCell.m in Sources */,
+				1009878E1856627800C53327 /* FSConstants.m in Sources */,
+				1009878F1856627800C53327 /* Users.m in Sources */,
+				100987C8185746BC00C53327 /* Tutorial.m in Sources */,
+				1030C0FE187BEEFA001341FC /* InAppPurchase.m in Sources */,
+				104C4496187D779B00F2B32F /* PlacesViewController.m in Sources */,
+				100987901856627800C53327 /* LocMapAnnotationView.m in Sources */,
+				100987911856627800C53327 /* SettingsViewController.m in Sources */,
+				100987921856627800C53327 /* LocMapAppDelegate.m in Sources */,
+				100987C31857206D00C53327 /* PrivacyPolicyViewController.m in Sources */,
+				100987931856627800C53327 /* LocalStorage.m in Sources */,
+				100987941856627800C53327 /* StandaloneGPSReporter.m in Sources */,
+				1030C10F187C1D55001341FC /* SubscriptionsTableViewController.m in Sources */,
+				102F4522185B26A700B52343 /* LocMapAvatarsAroundMap.m in Sources */,
+				1030C106187BEF78001341FC /* NSData+Base64.m in Sources */,
+				100987951856627800C53327 /* Checks.m in Sources */,
+				100987961856627800C53327 /* LocMapAnnotationViewCallout.m in Sources */,
+				100987971856627800C53327 /* main.m in Sources */,
+				100987981856627800C53327 /* RootNavigationController.m in Sources */,
+				100987991856627800C53327 /* LocMapAnnotation.m in Sources */,
+				1009879A1856627800C53327 /* UserData.m in Sources */,
+				104C449B187D789600F2B32F /* UITransparentToolbar.m in Sources */,
+				100987BE1856FD5A00C53327 /* UIBottomToolbar.m in Sources */,
+				1009879B1856627800C53327 /* SignupViewController.m in Sources */,
+				1009879C1856627800C53327 /* ServerApi+messages.m in Sources */,
+				108F65F818967BB700452745 /* LocalizationFramework.m in Sources */,
+				1009879D1856627800C53327 /* ServerApi.m in Sources */,
+				109204381889453B000CF950 /* MapPlaceCircleOverlay.m in Sources */,
+				1030C101187BEEFA001341FC /* SKProduct+LocalizedPrice.m in Sources */,
+				1009879E1856627800C53327 /* Contacts.m in Sources */,
+				1009879F1856627800C53327 /* LocMapViewController.m in Sources */,
+				100987A01856627800C53327 /* AddContactsViewController.m in Sources */,
+				100987A11856627800C53327 /* PeopleTableViewCell.m in Sources */,
+				1001271A189A2C93009E5BD2 /* AppRater.m in Sources */,
+				100987A31856627800C53327 /* OtherSettingsViewController.m in Sources */,
+				10920433188940D8000CF950 /* MapPlaceCircle.m in Sources */,
+				100987A41856627800C53327 /* AboutViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1094FBE518565DB5004D0EC5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1077F883185F2F3E00F4A6C6 /* LocMapNonOverlappingAnnotations.m in Sources */,
+				1094FBE618565DB5004D0EC5 /* LocMapFormatters.m in Sources */,
+				102F452B185B941E00B52343 /* LocatingInProgressAnimationAroundAvatar.m in Sources */,
+				1094FBE718565DB5004D0EC5 /* SingleServerRequest.m in Sources */,
+				10F53D3C187EC89900751A7C /* AvatarInPlacesCollectionViewCell.m in Sources */,
+				102F4526185B408400B52343 /* AvatarAroundMapInfo.m in Sources */,
+				1094FBE818565DB5004D0EC5 /* PeopleViewController.m in Sources */,
+				10F53D41187EC8F000751A7C /* PlaceTableViewCell.m in Sources */,
+				1094FBE918565DB5004D0EC5 /* FSConstants.m in Sources */,
+				1094FBEA18565DB5004D0EC5 /* Users.m in Sources */,
+				100987C7185746BC00C53327 /* Tutorial.m in Sources */,
+				1030C0FD187BEEFA001341FC /* InAppPurchase.m in Sources */,
+				104C4495187D779B00F2B32F /* PlacesViewController.m in Sources */,
+				1094FBEB18565DB5004D0EC5 /* LocMapAnnotationView.m in Sources */,
+				1094FBEC18565DB5004D0EC5 /* SettingsViewController.m in Sources */,
+				1094FBED18565DB5004D0EC5 /* LocMapAppDelegate.m in Sources */,
+				100987C21857206D00C53327 /* PrivacyPolicyViewController.m in Sources */,
+				1094FBEE18565DB5004D0EC5 /* LocalStorage.m in Sources */,
+				1094FBEF18565DB5004D0EC5 /* StandaloneGPSReporter.m in Sources */,
+				1030C10E187C1D55001341FC /* SubscriptionsTableViewController.m in Sources */,
+				102F4521185B26A700B52343 /* LocMapAvatarsAroundMap.m in Sources */,
+				1030C105187BEF78001341FC /* NSData+Base64.m in Sources */,
+				1094FBF018565DB5004D0EC5 /* Checks.m in Sources */,
+				1094FBF118565DB5004D0EC5 /* LocMapAnnotationViewCallout.m in Sources */,
+				1094FBF218565DB5004D0EC5 /* main.m in Sources */,
+				1094FBF318565DB5004D0EC5 /* RootNavigationController.m in Sources */,
+				1094FBF418565DB5004D0EC5 /* LocMapAnnotation.m in Sources */,
+				1094FBF518565DB5004D0EC5 /* UserData.m in Sources */,
+				104C449A187D789600F2B32F /* UITransparentToolbar.m in Sources */,
+				100987BD1856FD5A00C53327 /* UIBottomToolbar.m in Sources */,
+				1094FBF618565DB5004D0EC5 /* SignupViewController.m in Sources */,
+				1094FBF718565DB5004D0EC5 /* ServerApi+messages.m in Sources */,
+				108F65F718967BB700452745 /* LocalizationFramework.m in Sources */,
+				1094FBF818565DB5004D0EC5 /* ServerApi.m in Sources */,
+				109204371889453B000CF950 /* MapPlaceCircleOverlay.m in Sources */,
+				1030C100187BEEFA001341FC /* SKProduct+LocalizedPrice.m in Sources */,
+				1094FBF918565DB5004D0EC5 /* Contacts.m in Sources */,
+				1094FBFA18565DB5004D0EC5 /* LocMapViewController.m in Sources */,
+				1094FBFB18565DB5004D0EC5 /* AddContactsViewController.m in Sources */,
+				1094FBFC18565DB5004D0EC5 /* PeopleTableViewCell.m in Sources */,
+				10012719189A2C93009E5BD2 /* AppRater.m in Sources */,
+				1094FBFE18565DB5004D0EC5 /* OtherSettingsViewController.m in Sources */,
+				10920432188940D8000CF950 /* MapPlaceCircle.m in Sources */,
+				1094FBFF18565DB5004D0EC5 /* AboutViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		10B04A1C1835133900109841 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1077F882185F2F3E00F4A6C6 /* LocMapNonOverlappingAnnotations.m in Sources */,
+				1094FBD8184CB0A2004D0EC5 /* LocMapFormatters.m in Sources */,
+				102F452A185B941E00B52343 /* LocatingInProgressAnimationAroundAvatar.m in Sources */,
+				1030A492183E030D00587D74 /* SingleServerRequest.m in Sources */,
+				10F53D3B187EC89900751A7C /* AvatarInPlacesCollectionViewCell.m in Sources */,
+				102F4525185B408400B52343 /* AvatarAroundMapInfo.m in Sources */,
+				10C5F2FE18437BE100642160 /* PeopleViewController.m in Sources */,
+				10F53D40187EC8F000751A7C /* PlaceTableViewCell.m in Sources */,
+				10C5F3051845F5E200642160 /* FSConstants.m in Sources */,
+				1030A473183B697400587D74 /* Users.m in Sources */,
+				100987C6185746BC00C53327 /* Tutorial.m in Sources */,
+				1030C0FC187BEEFA001341FC /* InAppPurchase.m in Sources */,
+				104C4494187D779B00F2B32F /* PlacesViewController.m in Sources */,
+				1030A486183BA0F400587D74 /* LocMapAnnotationView.m in Sources */,
+				10C5F2F91843514200642160 /* SettingsViewController.m in Sources */,
+				10B04A341835133900109841 /* LocMapAppDelegate.m in Sources */,
+				100987C11857206D00C53327 /* PrivacyPolicyViewController.m in Sources */,
+				1030A46B183B64D600587D74 /* LocalStorage.m in Sources */,
+				1030A48E183CE59D00587D74 /* StandaloneGPSReporter.m in Sources */,
+				1030C10D187C1D55001341FC /* SubscriptionsTableViewController.m in Sources */,
+				102F4520185B26A700B52343 /* LocMapAvatarsAroundMap.m in Sources */,
+				1030C104187BEF78001341FC /* NSData+Base64.m in Sources */,
+				10C5F3021844F45F00642160 /* Checks.m in Sources */,
+				10C5F30818462CB100642160 /* LocMapAnnotationViewCallout.m in Sources */,
+				10B04A301835133900109841 /* main.m in Sources */,
+				1094FBE31855F3B3004D0EC5 /* RootNavigationController.m in Sources */,
+				1030A482183B9D2300587D74 /* LocMapAnnotation.m in Sources */,
+				1030A46F183B68EB00587D74 /* UserData.m in Sources */,
+				104C4499187D789600F2B32F /* UITransparentToolbar.m in Sources */,
+				100987BC1856FD5A00C53327 /* UIBottomToolbar.m in Sources */,
+				1030A498183E232300587D74 /* SignupViewController.m in Sources */,
+				1030A495183E03CA00587D74 /* ServerApi+messages.m in Sources */,
+				108F65F618967BB700452745 /* LocalizationFramework.m in Sources */,
+				1030A48A183CD8D500587D74 /* ServerApi.m in Sources */,
+				109204361889453B000CF950 /* MapPlaceCircleOverlay.m in Sources */,
+				1030C0FF187BEEFA001341FC /* SKProduct+LocalizedPrice.m in Sources */,
+				1030A49E183E4D4E00587D74 /* Contacts.m in Sources */,
+				10B04A3D1835133900109841 /* LocMapViewController.m in Sources */,
+				1030A49B183E4BB800587D74 /* AddContactsViewController.m in Sources */,
+				1094FBD5184C8376004D0EC5 /* PeopleTableViewCell.m in Sources */,
+				10012718189A2C93009E5BD2 /* AppRater.m in Sources */,
+				1094FBDB18505F28004D0EC5 /* OtherSettingsViewController.m in Sources */,
+				10920431188940D8000CF950 /* MapPlaceCircle.m in Sources */,
+				1094FBDE1850A556004D0EC5 /* AboutViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		10B04A401835133900109841 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1030A474183B697400587D74 /* Users.m in Sources */,
+				10B04A521835133900109841 /* locmapTests.m in Sources */,
+				1030A470183B68EB00587D74 /* UserData.m in Sources */,
+				1030A487183BA0F400587D74 /* LocMapAnnotationView.m in Sources */,
+				1030A48B183CD8D500587D74 /* ServerApi.m in Sources */,
+				1030A46C183B64D600587D74 /* LocalStorage.m in Sources */,
+				1030A48F183CE59D00587D74 /* StandaloneGPSReporter.m in Sources */,
+				1030A483183B9D2300587D74 /* LocMapAnnotation.m in Sources */,
+				1030A49F183E4D4E00587D74 /* Contacts.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		10B04A4A1835133900109841 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 10B04A1F1835133900109841 /* LokkiDev */;
+			targetProxy = 10B04A491835133900109841 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1089ECE918647B4100D7A8D5 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1089ECE818647B4100D7A8D5 /* Base */,
+				1089ECEB18647B4400D7A8D5 /* ru */,
+				1089ECEE18682CBC00D7A8D5 /* fi */,
+				1030C0AA186D699A001341FC /* en */,
+				1001271B189A6ADB009E5BD2 /* de */,
+				1001271C189A6B45009E5BD2 /* da */,
+				1001271D189A6B51009E5BD2 /* es */,
+				1001271E189A6B5B009E5BD2 /* fr */,
+				1001271F189A6B6B009E5BD2 /* fr-CA */,
+				10012720189A6BE7009E5BD2 /* it */,
+				10012721189A6BF3009E5BD2 /* nl */,
+				10012722189A6C73009E5BD2 /* pt */,
+				10012723189A6C84009E5BD2 /* pt-BR */,
+				10012724189A6C94009E5BD2 /* sv */,
+				10012725189A6CB5009E5BD2 /* zh */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		10B04A2C1835133900109841 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1089ECDF18647AAC00D7A8D5 /* ru */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		10B04A351835133900109841 /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				10B04A361835133900109841 /* Base */,
+				1030C0A8186D699A001341FC /* en */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		10B04A381835133900109841 /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				10B04A391835133900109841 /* Base */,
+				1030C0A9186D699A001341FC /* en */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		10B04A4E1835133900109841 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1089ECE018647AAC00D7A8D5 /* ru */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		100987B61856627800C53327 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "locmap/Lokki-Prefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/LokkiAppStore-info.plist";
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_NAME = Lokki;
+				PROVISIONING_PROFILE = "5868D30F-91D3-47FA-AED9-7FA5AB7E194C";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		100987B71856627800C53327 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "locmap/Lokki-Prefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/LokkiAppStore-info.plist";
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = Lokki;
+				PROVISIONING_PROFILE = "5868D30F-91D3-47FA-AED9-7FA5AB7E194C";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		1094FC1018565DB5004D0EC5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "locmap/Lokki-Prefix.pch";
+				INFOPLIST_FILE = "LokkiDistributeInternal-Info.plist";
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_NAME = LokkiInternalBeta;
+				PROVISIONING_PROFILE = "C4495F2D-1960-4621-BE09-89D3105A3819";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		1094FC1118565DB5004D0EC5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "locmap/Lokki-Prefix.pch";
+				INFOPLIST_FILE = "LokkiDistributeInternal-Info.plist";
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = LokkiInternalBeta;
+				PROVISIONING_PROFILE = "C4495F2D-1960-4621-BE09-89D3105A3819";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		10B04A531835133900109841 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		10B04A541835133900109841 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		10B04A561835133900109841 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "locmap/Lokki-Prefix.pch";
+				INFOPLIST_FILE = "locmap/Lokki-Info.plist";
+				PRODUCT_NAME = "Lokki dev";
+				PROVISIONING_PROFILE = "6F85B1B6-9804-4A74-9B54-2F522E63ABC1";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		10B04A571835133900109841 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "locmap/Lokki-Prefix.pch";
+				INFOPLIST_FILE = "locmap/Lokki-Info.plist";
+				PRODUCT_NAME = "Lokki dev";
+				PROVISIONING_PROFILE = "6F85B1B6-9804-4A74-9B54-2F522E63ABC1";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		10B04A591835133900109841 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/locmap.app/locmap";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "locmap/locmap-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "locmapTests/LokkiTests-Info.plist";
+				PRODUCT_NAME = LokkiTests;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		10B04A5A1835133900109841 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/locmap.app/locmap";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "locmap/locmap-Prefix.pch";
+				INFOPLIST_FILE = "locmapTests/LokkiTests-Info.plist";
+				PRODUCT_NAME = LokkiTests;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		100987B51856627800C53327 /* Build configuration list for PBXNativeTarget "Lokki" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				100987B61856627800C53327 /* Debug */,
+				100987B71856627800C53327 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1094FC0F18565DB5004D0EC5 /* Build configuration list for PBXNativeTarget "LokkiDistributeInternal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1094FC1018565DB5004D0EC5 /* Debug */,
+				1094FC1118565DB5004D0EC5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		10B04A1B1835133900109841 /* Build configuration list for PBXProject "Lokki" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				10B04A531835133900109841 /* Debug */,
+				10B04A541835133900109841 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		10B04A551835133900109841 /* Build configuration list for PBXNativeTarget "LokkiDev" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				10B04A561835133900109841 /* Debug */,
+				10B04A571835133900109841 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		10B04A581835133900109841 /* Build configuration list for PBXNativeTarget "LokkiTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				10B04A591835133900109841 /* Debug */,
+				10B04A5A1835133900109841 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 10B04A181835133900109841 /* Project object */;
+}

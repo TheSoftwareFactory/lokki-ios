@@ -1,0 +1,34 @@
+<!--
+  ~ Copyright (c) 2013 F-Secure Corporation
+  ~ See license terms for the related product.
+  ~
+  ~ Author: Jussi Nieminen
+  ~ Since: 23.07.2013 13:8
+  -->
+
+<div class="page myPlaces" ng-cloak>
+    <div class="header">
+        <div class="left-side">
+            <div class="icon-button icon-back icon-normal icon-inline" ng-click="back()"></div>
+        </div>
+        <div class="right-side"><div class="icon-button icon-plus icon-normal icon-inline" ng-click="addNewPlace()"></div></div>
+        <div class="middle centered">{{"myPlaces.title" | i18n}}</div>
+    </div>
+    <div class="content scroll-y no-scroll-x">
+
+        <div ng-repeat="place in places | objectSort:{by:'name'}">
+            <div class="placesListElement" ng-click="onPlaceClick(place)" >
+                <div class="left-side">
+                    <div class="placesSizeIconWrapper">
+                        <div class="place size-icon" ng-class="place.type"></div>
+                    </div>
+                </div>
+
+                <div class="middle">{{place.name}}</div>
+                <div class="clearfix"></div>
+            </div>
+            <hr>
+        </div>
+
+    </div>
+</div>

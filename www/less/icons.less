@@ -1,0 +1,194 @@
+/*
+ * Copyright (c) 2013 F-Secure Corporation
+ * See license terms for the related product.
+ *
+ * Author: Oleg Fedorov
+ * Since: 03.06.2013 12:54
+ */
+@import "common.less";
+
+.icon-back {
+    background: url("../images/back_button.svg");
+}
+
+.icon-edit {
+    background: url("../images/icons/icon_pen.svg");
+}
+
+.icon-settings {
+    background: url("../images/settings.svg");
+}
+
+.icon-delete {
+    background: url("../images/delete_button.svg");
+}
+
+.icon-menu {
+    background: url("../images/menu.svg");
+}
+
+.icon-emotions {
+    background: url("../images/emotions.svg");
+}
+
+.icon-facebook-share {
+    background: url("../images/share_button.svg");
+}
+
+.icon-ping {
+    background: url("../images/ping.svg");
+}
+
+.icon-chat {
+  background: url("../images/icons/icon_chat.svg");
+}
+
+.icon-chat-group {
+  background: url("../images/icons/group_messages.png");
+}
+
+.icon-plus {
+    background: url("../images/plus.svg");
+}
+
+.icon-location {
+    background: url("../images/location.svg");
+}
+
+.icon-younited {
+    background: url("../images/userDetails/younited.svg");
+}
+
+.icon-internetsecurity {
+    background: url("../images/userDetails/security.svg");
+}
+
+.icon-message {
+    background: url('../images/userDetails/message.svg');
+}
+
+.icon-call {
+    background: url('../images/userDetails/call.svg');
+}
+
+.icon-create-place {
+    background: url('../images/userDetails/createPlace.svg');
+}
+
+
+.icon-progress {
+    background: url("../images/progress.gif");
+}
+
+.icon-accuracy-bad {
+    background: url("../images/icons/accuracy-bad.svg");
+}
+
+.icon-accuracy-very-bad {
+    background: url("../images/icons/accuracy-very-bad.svg");
+}
+
+.icon-lokki-logo {
+    background: url("../images/lokkiLogo.svg");
+}
+
+.icon-manual-checkin {
+    background: url("../images/icons/icon_manual_checkin.svg");
+}
+
+.icon-manual-checkout {
+    background: url("../images/icons/icon_manual_checkout.svg");
+}
+
+.icon-visibility-on {
+    background: url("../images/icons/visivility_on.png");
+}
+
+.icon-visibility-off {
+    background: url("../images/icons/visivility_off.png");
+}
+
+.icon-notification-panel {
+    background: url("../images/icons/notification_center.png");
+}
+
+.icon-visibility-invisible {
+    background: url("../images/icons/visivility_invisible.png");
+}
+
+.overlay-image {
+    background: url("../images/overlay.png");
+}
+
+.icon-button {
+    background-repeat: no-repeat;
+    width: @normalButtonSize;
+    height: @normalButtonSize;
+    background-size: @normalButtonSize;
+    cursor: pointer;
+    border: 0;
+    padding: 0px;
+
+    -ms-touch-action: none;
+
+    .badge{
+        top: 0;
+        right: (-2 * @baseGrid );
+    }
+}
+
+.icon-button:active{
+    .grayed-out();
+    //border-radius: 50%;
+}
+
+
+.icon-normal{
+    width: @normalButtonSize;
+    height: @normalButtonSize;
+    background-size: @normalButtonSize;
+}
+
+.icon-info {
+    width: @infoButtonSize;
+    height: @infoButtonSize;
+    background-size: @infoButtonSize;
+}
+
+
+.icon-in-top-left-corner-of-avatar {
+    top: (@baseGrid*18.75);
+    left: (@baseGrid*18.75);
+    position: absolute;
+}
+
+
+.icon-disabled{
+    opacity: 0.7;
+    border-radius: 50%;
+}
+
+.icon-huge{
+    width: (@baseGrid*15);
+    height: (@baseGrid*15);
+    background-size: 120px;
+}
+
+.icon-inline{
+    display: inline-block;
+}
+
+.icon-relative{
+    postion:relative;
+}
+
+.icon-rotate-180 {
+    transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+}
+
+.icon-chat-input {
+  background: url("../images/arrow_right.png");
+  background-repeat: no-repeat;
+}

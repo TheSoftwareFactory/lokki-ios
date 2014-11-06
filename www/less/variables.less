@@ -1,0 +1,101 @@
+/*
+* Copyright (c) 2013 F-Secure Corporation
+* See license terms for the related product.
+*/
+
+/**
+ * Author: niemju2
+ * Since: 22.5.2013 10.12
+ */
+
+/* F-Secure color palette*/
+@blueDark:              rgb(000,056,142); // in use
+
+@colorC1BlueLight: #00adee; // - header background.
+@colorC2BlueLighter: #6dcff6; // - backgrounds of docks, place labels, secondary screens
+@colorC3BlueLightest: #c3e9fa; // - places backgrounds, primary user avatar’s frame
+@colorC4Turqoise: #0078a5; // - labels, texts, headings on C3 and G2 backgrounds
+@colorC5Orange: #f47920; // - family avatar’s frames
+@colorC6DarkBlue: #182c56; // - texts in special cases, places’ graphics
+@colorC7Pink: #d72185; // - notifications, indications
+@colorC8Red: #e92a3a; // - notifications, indications
+@colorC9Black: #000000; // - limited use in graphics and markings.
+@colorC10Gray: #636a72; // - limited use in graphics and markings.
+
+@colorG1Top: #29abe2;
+@colorG1Bottom: #26a0d4;
+@colorG2Top: #6dcff6;
+@colorG2Bottom: #85d6f6;
+
+@baseGrid : 4px;
+@halfBaseGrid : (@baseGrid / 2);
+@baseColumnWidth: (13 * @baseGrid);
+@baseMargin: (3 * @baseGrid);
+
+@headerHeight : 14;
+@footerHeight : 0;
+@iconHeight : 4;
+
+@normalButtonSize : (@baseGrid*12);
+@normalIconSize: (@baseGrid*12);
+@infoButtonSize : (@baseGrid*4);
+
+@placesHeight: (@baseGrid*26.25);
+@placesDefaultWidth: (@baseGrid*23.625);
+@placeSmallScaleFactor: 0.85;
+@placeTinyScaleFactor: 0.35;
+@placeSizeIconScaleFactor: 0.458; // to scale @placesHeight down to 12*@baseGrid
+
+@colorText : white;
+@colorBackground : #00adee;
+@colorAvatarHalo: @colorC5Orange;
+@colorAvatarHaloYourself: @colorC1BlueLight;
+@colorAvatarHaloYourselfInChat: @colorC1BlueLight;
+@colorNotificationBackground: white;
+@colorDarkBlue : #40A4BF;
+@colorHighlightBackground: white;
+@colorPlacesTitle: black;
+@colorWarningBackground: red;
+@colorAvatarHaloFriend: white;
+@colorFamilyAndFriendsDocks: @colorC2BlueLighter;
+@colorGreen: #339966;
+@colorYellow: #e5d228;
+
+@fontSizeHeading1: (@baseGrid*6);
+@fontLineHeightHeading1: (@baseGrid*8.5);
+
+@fontSizePageTitle: (@baseGrid*4.75);
+@fontLineHeightPageTitle: (@baseGrid*12);
+
+@fontSizeParagraphNormal: (@baseGrid*3.5);
+@fontLineHeightParagraphNormal: (@baseGrid*5);
+
+@fontSizeHeading2: (@baseGrid*5);
+@fontLineHeightHeading2: (@baseGrid*6.5);
+
+@fontSizeParagraphLarge: (@baseGrid*4); //depricated
+@fontLineHeightParagraphLarge: (@baseGrid*6); //depricated
+@fontSizeParagraphSmallest: (@baseGrid*2.25); //depricated
+
+@fontSizeForChat: (@baseGrid*4.5); //depricated
+@fontLineForChat: (@baseGrid*5.5); //depricated
+
+
+
+
+@avatarSize: (@baseGrid*10.5);
+@avatarSizeLarge : (@baseGrid*32);
+@avatarHaloBorderWidth: (@baseGrid*0.75);
+@avatarSizeWithBorder: (@avatarSize + (2 * @avatarHaloBorderWidth));
+@avatarSizeLargeWithBorder: (@avatarSizeLarge + (2 * @avatarHaloBorderWidth));
+
+@avatarHeight: @avatarSize;
+@avatarWidth: @avatarSize;
+@avatarHaloBorder: @avatarHaloBorderWidth solid @colorAvatarHalo;
+
+@buttonWidth: (27 * @baseGrid);
+@buttonHeight: (12 * @baseGrid);
+@buttonFontSize: (@baseGrid*4);
+@ButtonRowHeight: (@baseGrid*18);
+
+@graphicalBalloonCheckboxSize: (@baseGrid*7.75);

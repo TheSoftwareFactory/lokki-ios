@@ -1,0 +1,118 @@
+<!--
+  ~ Copyright (c) 2013 F-Secure Corporation
+  ~ See license terms for the related product.
+  ~
+  ~ Author: Jussi Nieminen
+  ~ Since: 17.06.2013 12:0
+  -->
+<div class="page mySettings" ng-cloak>
+    <div class="header">
+        <div class="left-side">
+            <div class="icon-button icon-back icon-normal icon-inline" ng-click="back()"></div>
+        </div>
+        <div class="right-side"></div>
+        <div class="middle centered"><h1 class="page-title">{{"mySettings.title" | i18n}}</h1></div>
+    </div>
+    <div class="content scroll-y no-scroll-x">
+        <div class="settings-group">
+            <div class="graphical-checkbox checkbox-right"  ng-show="nameEditorEnabled">
+                <input type="text" class="full-width" id="userNameInputElement" ng-model="userName">
+                <div class="button primary full-width" ng-click="onFinishChangingName()" >{{"mySettings.label.finishEditing" | i18n}}</div>
+            </div>
+        </div>
+
+        <!-- Don't show settings in name editing mode -->
+        <div ng-show="!nameEditorEnabled">
+            <div class="settings-title-bar"><h1 class="page-title">{{"mySettings.h2.general" | i18n}}</h1></div>
+
+            <div class="settings-group">
+                <div class="graphical-checkbox with-top-bottom-margins checkbox-right" ng-click="onChangeName()" ng-show="!nameEditorEnabled">
+                    <label class="labelText big ">{{"mySettings.label.myName" | i18n}}</label>
+                    <label class="labelText big float-right no-padding">{{userName}}</label>
+                </div>
+
+                <div class="graphical-checkbox with-top-bottom-margins checkbox-right" ng-click="changeAvatar()" >
+                    <label class="labelText big ">{{"mySettings.label.myAvatar" | i18n}}</label>
+                    <label class="labelText big float-right no-padding">{{"mySettings.label.changeAvatar" | i18n}}</label>
+                </div>
+
+                <div class="graphical-checkbox with-top-bottom-margins checkbox-right float-clear">
+                    <input type="checkbox" id="locationAlerts" ng-model="locationReportingEnabled">
+                    <label class="checkbox-image"><span ng-click="changeLocationEnabledCheckbox()"></span></label>
+                    <label class="labelText big" for="locationAlerts">{{"mySettings.label.enableLocationReporting" | i18n}}</label>
+                </div>
+                <div class="graphical-checkbox with-top-bottom-margins checkbox-right">
+                    <input type="checkbox" id="showEmptyPlaces" ng-model="showEmptyPlaces">
+                    <label class="checkbox-image"><span ng-click="changeShowEmptyPlacesCheckbox()"></span></label>
+                    <label class="labelText big" for="showEmptyPlaces">{{"mySettings.label.enableShowEmptyPlaces" | i18n}}</label>
+                </div>
+                <div class="graphical-checkbox with-top-bottom-margins checkbox-right">
+                    <input type="checkbox" ng-model="settings.enableNotifications">
+                    <label class="checkbox-image"><span ng-click="changeEnableNotificationsCheckbox()"></span></label>
+                    <label class="labelText big">{{"mySettings.label.enableNotifications" | i18n}}</label>
+                </div>
+                <div class="graphical-checkbox with-top-bottom-margins checkbox-right" ng-click="onChangeLanguage()">
+                    <label class="labelText big">{{"mySettings.label.myLanguage" | i18n}}</label>
+                    <label class="labelText big float-right no-padding">{{currentLanguageName}}</label>
+                </div>
+            </div>
+
+
+            <div  ng-show="settings.enableNotifications">
+                <div class="settings-title-bar"><h1 class="page-title">{{"mySettings.h2.alerts" | i18n}}</h1></div>
+                <div class="settings-group">
+                    <div class="graphical-checkbox with-top-bottom-margins checkbox-right">
+                        <input type="checkbox" id="messagesNotifications" ng-model="settings.messagesNotifications">
+                        <label class="checkbox-image"><span ng-click="changeMessagesNotificationsCheckbox()"></span></label>
+                        <label class="labelText big" for="messagesNotifications">{{"mySettings.label.messagesNotifications" | i18n}}</label>
+                    </div>
+                    <div class="graphical-checkbox with-top-bottom-margins checkbox-right">
+                        <input type="checkbox" id="familyNotifications" ng-model="settings.familyNotifications">
+                        <label class="checkbox-image"><span ng-click="changeFamilyNotificationsCheckbox()"></span></label>
+                        <label class="labelText big" for="familyNotifications">{{"mySettings.label.familyNotifications" | i18n}}</label>
+                    </div>
+                    <div class="graphical-checkbox with-top-bottom-margins checkbox-right">
+                        <input type="checkbox" id="friendsNotifications" ng-model="settings.friendsNotifications">
+                        <label class="checkbox-image"><span ng-click="changeFriendsNotificationsCheckbox()"></span></label>
+                        <label class="labelText big" for="friendsNotifications">{{"mySettings.label.friendsNotifications" | i18n}}</label>
+                    </div>
+                    <div class="graphical-checkbox with-top-bottom-margins checkbox-right">
+                        <input type="checkbox" id="friendsNearbyNotifications" ng-model="settings.friendsNearbyNotifications">
+                        <label class="checkbox-image"><span ng-click="changeFriendsNearbyNotificationsCheckbox()"></span></label>
+                        <label class="labelText big" for="friendsNearbyNotifications">{{"mySettings.label.friendsNearbyNotifications" | i18n}}</label>
+                    </div>
+                    <div class="graphical-checkbox with-top-bottom-margins checkbox-right">
+                        <input type="checkbox" id="place-created" ng-model="settings.placeNotifications.onCreated">
+                        <label class="checkbox-image"><span ng-click="changePlaceNotificationsCheckbox('onCreated')"></span></label>
+                        <label class="labelText big" for="place-created">{{"mySettings.placeCreated" | i18n}}</label>
+                    </div>
+                    <div class="graphical-checkbox with-top-bottom-margins checkbox-right">
+                        <input type="checkbox" id="place-deleted" ng-model="settings.placeNotifications.onDeleted">
+                        <label class="checkbox-image"><span ng-click="changePlaceNotificationsCheckbox('onDeleted')"></span></label>
+                        <label class="labelText big" for="place-deleted">{{"mySettings.placeDeleted" | i18n}}</label>
+                    </div>
+                </div>
+            </div>
+
+            <div  ng-show="settings.enableNotifications">
+                <div class="settings-title-bar"><h1 class="page-title">{{"mySettings.h2.family" | i18n}}</h1></div>
+                <div class="settings-group">
+                    <div class="graphical-checkbox with-top-bottom-margins checkbox-right">
+                        <input type="checkbox" ng-model="settings.peopleNotifications.sendAllLocationAlerts">
+                        <label class="checkbox-image"><span ng-click="changeSendAllLocationAlertsCheckbox()"></span></label>
+                        <label class="labelText big">{{"mySettings.label.enableAllPlacesNotifications" | i18n}}</label>
+                    </div>
+
+                    <div class="avatar-with-text"ng-click="onMemberClick(member)" ng-repeat="member in peopleInFamily" ng-show="!settings.peopleNotifications.sendAllLocationAlerts">
+                        <fs-avatar person="member" fade-icon="false"></fs-avatar>
+                        <p class="largeFont">{{member.name}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+</div>

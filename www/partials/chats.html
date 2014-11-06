@@ -1,0 +1,29 @@
+<!--
+  ~ Copyright (c) 2013 F-Secure Corporation
+  ~ See license terms for the related product.
+  ~
+  ~ Author: Oleg Fedorov
+  ~ Since: 19.07.2013 12:0
+  -->
+<div class="page chats" ng-cloak>
+    <div class="header">
+        <div class="left-side">
+            <div class="icon-button icon-back icon-normal icon-inline" ng-click="backToDashboard()"></div>
+        </div>
+        <div class="middle centered"><h1 class="page-title">{{"chats.title" | i18n}}</h1></div>
+    </div>
+
+    <div class="content scroll-y no-scroll-x">
+        <div ng-repeat="chat in chats">
+            <div class="avatar-with-text" ng-click="onChatClick(chat)" >
+                <div class="avatar" ng-class="chat.avatarHaloClass">
+                    <div class="avatarHalo"><img ng-src="{{chat.icon}}" /></div>
+                    <div class="badge" ng-show="chat.unreadMessages">+{{chat.unreadMessages}}</div>
+                </div>
+                <p>{{chat.name}}</p>
+                <div class="chat-last-conversation float-right"><p>{{chat.lastCommunicationText}}</p></div>
+            </div>
+            <hr>
+        </div>
+    </div>
+</div>

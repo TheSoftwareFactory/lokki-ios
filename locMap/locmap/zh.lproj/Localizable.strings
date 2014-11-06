@@ -1,0 +1,166 @@
+/*
+ Localizable.strings
+ Lokki
+ 
+ Created by Oleg Fedorov on 12/20/13.
+ Copyright (c) 2013 F-Secure. All rights reserved.
+ */
+
+/* Shown in settings view if user name is not found in Contacts app */
+"Name not found in contacts" = "联系人中找不到名称";
+
+/*  Shown in My visibility selection in settings, means that user will be invisible if she selects it*/
+"Invisible" = "否";
+
+/*  Shown in My visibility selection in settings, means that user will be visible if she selects it */
+"Visible" = "是";
+
+"Sending contacts" = "发送至联系人";
+"Select contacts" = "选择联系人";
+"Selected: %@" = "已选定：%@";
+"OK" = "确定";
+"Yes" = "是";
+"Don't add" = "不要添加";
+"Add" = "添加";
+"Later" = "稍后";
+"Invite" = "邀请";
+"Error" = "错误";
+"Cannot invite people right now. Please check your internet connection and try again later." = "目前无法邀请联系人。请检查您的互联网连接，稍后重试。";
+"TellAFriendSMS" = "嗨！我正在使用 F-Secure Lokki，这是一款便捷、安全、免费的私人位置共享应用程序。前往 f-secure.com/lokki 安装。";
+"TellAFriendGeneric" = "嗨！\n\n我正在使用 F-Secure Lokki，这是一款私密、安全的位置共享应用程序。在 Lokki 中，您可以选择哪些人能看到您的位置，也可以随时隐藏自己的位置。没有跟踪者，没有陌生人，没有广告。\n\n如果您的电话上还没有 Lokki，请前往 http://www.lok.ki 安装。\n\nLokki 由 F-Secure 开发，公司是屡获大奖的欧洲安全性解决方案提供商。我们非常重视您的隐私。您可以在以下地址阅读隐私策略：http://www.f-secure.com/en/web/home_global/privacy/privacy-summary。所有 F-Secure Lokki 服务器都位于欧盟国家。F-Secure Lokki 不会存储您的联系人详细信息或位置历程记录。\n\n希望在 Lokki 上见！";
+"F-Secure Lokki is awesome!" = "跟我一起用 F-Secure Lokki!";
+"FeedbackEmailSubject" = "我对 Lokki 3.2 (iOS 7) 的反馈";
+"FeedbackEmailBody" = "你好 Lokki 团队，\n\r";
+"AccountDisabledForSecurityReasons" = "注册前，我们需要授权您的帐户。请按照我们发送至 %@ 的说明操作。";
+"SignupGenericError" = "无法完成注册。请确保您已输入有效的电子邮件地址，然后重试";
+"YourAccountRequiresSignupForSecurityReasons" = "您的帐户已暂时锁定。请注意，您不得在超过一个的 Lokki 帐户或设备上使用相同的电子邮件地址。\n请重新注册。";
+"PhoneNumberNotFoundInContacts" = "找不到此联系人的电话号码";
+"AddNewContactQuestion" = "找不到此联系人。要添加联系人吗？";
+"FailedToCreateContact" = "无法创建此联系人";
+"TimeFormatJustNow" = "刚刚";
+"TimeFormatMinutesAgo" = "%d 分钟前";
+"TimeFormatHoursAgo" = "%d 小时前";
+"Tutorial" = "教程";
+"TutorialMessageWelcomeToLokki" = "欢迎使用 Lokki。开始使用 Lokki 时，地图的中心是您的位置。";
+"TutorialMessageAddFriends" = "嗨！看来您是朋友之中第一个使用 Lokki 的。\n添加朋友，这样他们就可以看到您了。请记住，如有需要，您可以随时隐藏自己。";
+"TutorialMessageSomeoneCanSeeYou" = "%@ 现在可以看到您在哪，如果他们允许，您也可以在 Lokki 中看到他们。";
+"Lokki" = "Lokki";
+
+/* Button with "You are visible" and "You are invisible" text is of limited size. Please keep this text short in all languages  */
+"You are visible" = "You are visible";
+"You are invisible" = "您已隐藏";
+
+
+"Filter contacts" = "筛选联系人";
+"Select people you allow to see your location" = "选择在您允许时可以看到您的位置的人。选择您的联系人在 Lokki 中使用的电子邮件地址。\n如果此列表中遗漏了某人，请确认您是否已将其添加至联系人。";
+"Menu" = "菜单";
+"Add people" = "添加联系人";
+"Add place" = "添加地点";
+"People" = "联系人";
+"Settings" = "设置";
+"Help" = "帮助";
+"Send feedback" = "发送反馈";
+"Tell a friend about Lokki" = "向您的朋友介绍 Lokki";
+"F-Secure products" = "F-Secure 产品";
+"About" = "关于";
+
+/* Upper part of 'Can see me' text in People view */
+"Can" = "可以";
+/* Bottom part of 'Can see me' text in People view */
+"see me" = "看到我";
+/* Upper part of 'Show on map' text in People view */
+"Show" = "在地图上";
+/*Bottom part of 'Show on map' text in People view*/
+"on map" = "显示";
+
+/* Shown in settings view */
+"Your Lokki ID is:" = "您的 Lokki ID 是：";
+"Your friends need to use this email to let you see them in Lokki." = "告诉朋友在 Lokki 中使用这个电子邮件。";
+
+/* Map types (Standard, Satellite, Hybrid) - how user sees the map */
+"Standard" = "标准";
+"Satellite" = "卫星";
+"Hybrid" = "混合";
+
+/* Settings view header for MY VISIBILITY selection */
+"MY VISIBILITY" = "我的联系人可以看到我";
+/* Settings view header for MAP MODE selection */
+"MAP MODE" = "地图模式";
+
+/* Shown in About view - opens web page with privacy policy */
+"Privacy policy" = "隐私策略";
+
+/* Shown in About view*/
+"Copyright © 2013 F-Secure Corporation All rights reserved" = "版权所有 © 2013-2014 F-Secure Corporation 保留所有权利";
+
+/* Shown in about view, don't delete %@ - code will put version there (like: "Version: 3.0.2")*/
+"Version: %@" = "版本：%@";
+
+/* Shown in alert box if user does not allow Lokki to access his Contacts */
+"Cannot get access to your Contacts.\nLokki will not work correctly if you don't give it access to your Contacts." = "无法访问您的联系人。\nLokki 需要联系人访问权限方可工作。";
+
+/* Shown in alert box if user disabled background refresh in system settings  */
+"Background refresh is not enabled" = "Background refresh is not turned on for Lokki. Turn it on in the iOS settings (General / Background App Refresh) if you want your friends to see where you are even when the app is in the background.";
+
+/* Shown in alert box if user denied location services for Lokki in system settings  */
+"Location services are not enabled" = "位置服务未对 Lokki 开启。若要使用 Lokki，请在设置中开启位置服务。";
+
+/* Shown in add contacts if user does not have email defined */
+"No email" = "无电子邮件地址";
+
+/* Shown in add contacts if user clicks on contact without email defined */
+"This contact does not have email defined. Do you want to add email address to this contact to be able to use it in Lokki?" = "您尚未为此联系人添加电子邮件地址。要立即添加吗？";
+
+/* Buttons in dialog shown in add contacts if user clicks on contact without email defined */
+"Add email" = "添加";
+"Not now" = "现在不用";
+
+
+"Add a place" = "添加地点";
+"Enter the name for the place" = "为此地点输入名称";
+
+"Done" = "完成";
+"Cancel" = "取消";
+
+"You cannot have more places in free version" = "您无法在免费版本中创建更多地点";
+"Failed to create place" = "无法创建地点";
+
+"Failed to delete place" = "无法删除地点。请稍后重试。";
+
+"Long press on the map to create new place" = "若要创建新地点，请长按地图上的点，或点击 \"+\" 以使用您当前的位置。";
+
+"Edit place name" = "编辑名称";
+
+"Failed to edit place name" = "无法编辑名称";
+
+/*  Please don't remove caps from MAP and PLACES */
+"MAP" = "MAP";
+"PLACES" = "PLACES";
+
+/* User did not report yet */
+"Not reported" = "Not reported yet";
+
+
+"I have read and agree to the terms" = "I have read and agree to the terms";
+"PrivacyPolicyText" = "Your privacy is of the utmost importance to us. Before you get started, you need to agree to the following terms (double tap on the text to read more):\n\n1. I have read the terms of service and accept them.\n2. I consent to collection and processing of personal data.\n3. I consent that the service processes and displays my location.\n4. If I am under 15, I have my parents’ permission to use Lokki according to these terms.\n5. If I am living in the United States and am under 13 years of age, I may not use Lokki.";
+
+"SignupEnterYourEmailAddress" = "Please enter your email address - other Lokki users will be able to find you by using the same email address.";
+
+
+"your email address" = "your email address";
+"Please enter a valid email" = "Please enter a valid email";
+"Signup" = "注册";
+
+
+"AppRaterDoYouLikeTitle" = "Give us feedback";
+"AppRaterDoYouLikeQuestion" = "Do you like F-Secure Lokki?";
+"NO" = "NO";
+"YES" = "YES";
+"AppRaterReviewQuestionTitle" = "Rate Lokki";
+"AppRaterReviewQuestion" = "If you enjoy using F-Secure Lokki, please take a moment to rate it. Thanks for your support!";
+"AppRaterNoThanks" = "No, Thanks";
+"AppRaterRate" = "Rate Lokki";
+"AppRaterRemindLater" = "Remind me later";
+
+"SendFeedbackBodyWhenUserDoesNotLike" = "Hello Lokki team,\n\rI have some feedback for you: ";
+"MailClientNotConfigured" = "Cannot send email because your mail client is not configured!";

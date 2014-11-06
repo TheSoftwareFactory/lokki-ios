@@ -1,0 +1,69 @@
+<div class="page createPlace" ng-cloak>
+    <div class="header">
+        <div class="left-side">
+            <div class="icon-button icon-back icon-normal icon-inline" ng-click="backButtonClicked()"></div>
+        </div>
+        <div class="middle centered" ng-show="isAdd"><h1 class="page-title">{{"createPlace.title" | i18n}}</h1></div>
+        <div class="middle centered" ng-show="!isAdd"><h1 class="page-title">{{"editPlace.header" | i18n}}</h1></div>
+    </div>
+    <div class="content with-margins no-bottom-margin scroll-y no-scroll-x" ng-class="contentClass()">
+
+        <div ng-show="selectingMode" class="centered-select-buttons">
+            <button class="button primary full-width bottom-margin" ng-show="createPlaceInLoggedInUserLocation" ng-click="onCreatePlaceInUserLocationSelected()">{{"createPlace.select.createAroundYou" | i18n}}</button>
+            <button class="button primary full-width bottom-margin" ng-show="createPlaceInOtherUserLocation" ng-click="onCreatePlaceInUserLocationSelected()">{{"createPlace.select.createAroundUser" | i18n}} {{nameOfUserFromWhomToTakeLocation}}</button>
+            <button class="button primary full-width bottom-margin" ng-click="onCreatePlaceInAddressSelected()">{{"createPlace.select.inputAddress" | i18n}}</button>
+            <button class="button primary full-width bottom-margin" ng-click="onCreatePlaceOnMapSelected()" ng-show="canCreatePlaceOnMap">{{"createPlace.select.useMap" | i18n}}</button>
+        </div>
+
+        <div ng-show="!selectingMode">
+            <div ng-show="isAdd">
+                <p ng-show="!createPlaceInAddress">{{"createPlace.setPlaceName" | i18n}}</p>
+
+                <div ng-show="createPlaceInAddress">
+
+                    <p>{{"createPlace.enterAnAddress" | i18n}}</p>
+
+                    <input type="text" class="full-width" ng-model="locationFromAddress" ng-change="locationFromAddressChanged()" placeholder="{{'createPlace.tryEnteringAddress' | i18n}}" />
+                    <p ng-show="locationFromAddressSucceeded">{{"createPlace.foundMatch" | i18n}}: {{locationFromAddressData.displayName}}</p>
+                    <div ng-show="!locationFromAddressSucceeded && !locationFromAddressNotFound && locationFromAddress">
+                        <p>{{"createPlace.searching" | i18n}}</p>
+                    </div>
+                    <div ng-show="locationFromAddressSucceeded">
+                        <button class="button primary full-width top-margin" ng-click="showOnMap()">{{"createPlace.editPlaceOnMap" | i18n}}</button>
+                    </div>
+                    <div ng-show="locationFromAddressNotFound">
+                        <p>{{"createPlace.addressLocationNotFound" | i18n}}</p>
+                    </div>
+
+                    <p ng-show="!locationFromAddressSucceeded">{{"createPlace.createPlaceByAddressInfo" | i18n}}</p>
+                </div>
+            </div>
+
+            <div ng-show="!createPlaceInAddress || locationFromAddressSucceeded">
+                <p></p>
+                <input type="text" class="full-width" ng-model="place.name" placeholder="{{'createPlace.placeName' | i18n}}" />
+                <p></p>
+
+                <div>
+                    <div class="placesSmallWrapper" ng-repeat="shape in shapes">
+                        <div class="place small disabled" ng-class="getCSSForShape(shape)"  ng-click="shapeSelected(shape)"></div>
+                    </div>
+                </div>
+                <div class="float-clear"></div>
+
+                <p></p>
+                <button class="button primary full-width bottom-margin" ng-click="onSizeClicked()">{{"createPlace.chooseSize" | i18n}} {{currentSizeText | i18n}}</button>
+                <div class="float-clear"></div>
+
+                <button class="button primary full-width" ng-click="showOnMap()" ng-show="!createPlaceInAddress">{{"createPlace.editPlaceOnMap" | i18n}}</button>
+            </div>
+        </div>
+
+    </div>
+    <div class="buttonRowBottom" ng-show="!selectingMode && contentClass()">
+        <button class="button primary full-width top-margin" ng-click="addPlace()" ng-show="!createPlaceInAddress && userLocation && place.name && isAdd">{{"createPlace.add" | i18n}}</button>
+        <button class="button primary full-width top-margin" ng-click="addPlace()" ng-show="createPlaceInAddress && locationFromAddressSucceeded && place.name && isAdd">{{"createPlace.add" | i18n}}</button>
+        <button class="button primary full-width top-margin" ng-click="addPlace()" ng-show="userLocation && place.name && !isAdd">{{"editPlace.save" | i18n}}</button>
+    </div>
+</div>
+

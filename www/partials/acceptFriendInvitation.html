@@ -1,0 +1,22 @@
+<div class="page" ng-cloak>
+    <div class="header">
+        <div class="left-side">
+            <div class="icon-button icon-back icon-normal icon-inline" ng-click="backButtonClicked()"></div>
+        </div>
+        <div class="middle centered"><h1 class="page-title">{{"acceptFriendInvitation.title" | i18n}}</h1></div>
+    </div>
+
+    <div class="contentRow">
+        <h1>{{"acceptFriendInvitation.header" | i18n}}</h1>
+        <p>{{"acceptFriendInvitation.text" | i18n}}</p>
+
+        <div>
+            <div class="avatar"><div class="avatarHalo"><img ng-src="{{user.icon}}" /></div></div>
+        </div>
+        <h1>{{"acceptFriendInvitation.invitedBy" | i18n}}{{user.name}}</h1>
+    </div>
+    <div class="buttonRowBottom">
+        <div class="button primary full-width" ng-click="addFriend()">{{"acceptFriendInvitation.buttonAddFriend" | i18n}}</div>
+        <div class="button secondary full-width" ng-click="declineInvitation()">{{"acceptFriendInvitation.buttonDecline" | i18n}}</div>
+    </div>
+</div>

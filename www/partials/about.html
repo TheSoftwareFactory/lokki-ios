@@ -1,0 +1,58 @@
+<!--
+  ~ Copyright (c) 2013 F-Secure Corporation
+  ~ See license terms for the related product.
+  ~
+  ~ Author: Jussi Nieminen
+  ~ Since: 17.06.2013 12:0
+  -->
+<div class="page mySettings" ng-cloak>
+    <div class="header">
+        <div class="left-side">
+            <div class="icon-button icon-back icon-normal icon-inline" ng-click="back()"></div>
+        </div>
+        <div class="middle centered"><h1 class="page-title">{{"about.title" | i18n}}</h1></div>
+    </div>
+    <div class="content with-margins no-bottom-margin scroll-y no-scroll-x">
+
+        <p class="bottom-margin">{{"about.version" | i18n}} {{ version }}</p>
+
+        <p class="bottom-margin">{{"about.copyrightFS" | i18n}}<br>
+            {{"about.allRightsReserved" | i18n}}
+        </p>
+
+        <img src="images/designfinland.png" style="display:block; margin:auto;"/>
+        <br/>
+
+        <button class="button primary full-width bottom-margin" ng-click="openLink('http://www.f-secure.com/')">{{"about.url" | i18n}}</button>
+        <button class="button primary full-width bottom-margin" ng-click="openLink('http://lok.ki/privacy-policy/#post-30')">{{"about.privacyPolicy" | i18n}}</button>
+
+        <hr/>
+        <h2>Trademarks</h2>
+        <p>{{ "about.registeredTerms" | i18n}}</p>
+
+        <hr/>
+        <h2>License information</h2>
+        <p>
+            Libraries & frameworks: angularjs, Phonegap, RequireJS, LESS, fastclick
+            <br/><br/>
+            Copyright (c) 2010-2012 Google, Inc. http://angularjs.org
+            <br/><br/>
+            RequireJS 2.1.5 Copyright (c) 2010-2012, The Dojo Foundation All Rights Reserved.
+            Available via the MIT or new BSD license.
+            <br/><br/>
+            LESS - Leaner CSS v1.4.0
+            http://lesscss.org
+            Copyright (c) 2009-2013, Alexis Sellier
+            Licensed under the Apache 2.0 License.
+            <br/><br/>
+            FastClick: polyfill to remove click delays on browsers with touch UIs.
+            @copyright: The Financial Times Limited [All Rights Reserved]
+            MIT License
+            <br/>
+        </p>
+        <hr/>
+
+    </div>
+
+
+</div>

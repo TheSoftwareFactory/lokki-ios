@@ -1,0 +1,121 @@
+/*
+ * Copyright (c) 2013 F-Secure Corporation
+ * See license terms for the related product.
+ *
+ * Author: Jussi Nieminen
+ * Since: 14.08.2013 10:53
+ */
+
+/**
+ * Author: niemju2
+ * Since: 14.8.2013 10.53
+ */
+@import "variables.less";
+@import "common.less";
+
+.avatar {
+
+    height: (@avatarHeight + (2 * @avatarHaloBorderWidth));
+    width: (@avatarWidth + (2 * @avatarHaloBorderWidth));
+    display: inline-block;
+    position: relative;
+    padding: 0 0;
+
+    &.fade-100-percent {
+        .grayed-out(100%);
+        opacity: 0.6;
+        filter: alpha(opacity=40);
+    }
+
+    &.fade-75-percent {
+        .grayed-out(85%);
+        opacity: 0.65;
+        filter: alpha(opacity=35);
+    }
+
+    &.fade-50-percent {
+        .grayed-out(65%);
+        opacity: 0.7;
+        filter: alpha(opacity=30);
+    }
+
+    &.fade-25-percent {
+        .grayed-out(50%);
+        opacity: 0.8;
+        filter: alpha(opacity=20);
+    }
+
+    .avatarHalo {
+        height: @avatarHeight;
+        width: @avatarWidth;
+        border: @avatarHaloBorder;
+        border-radius: 50%;
+
+        img {
+            height: @avatarHeight;
+            width: @avatarWidth;
+            border-radius: 50%;
+        }
+    }
+
+    .avatar-badge{
+        font-size: (@baseGrid*3);
+        position: absolute;
+        right: (-@baseGrid);
+        top: 0px;
+        color: red;
+        font-weight: bold;
+        padding: (@baseGrid*0.5);
+        border: (@baseGrid*0.25) solid white;
+        border-radius: (@baseGrid*2);
+        background-color: red;
+        color: @colorText;
+    }
+
+    .avatar-bad-accuracy-icon {
+        position: absolute;
+        left: (@baseGrid*0.5);
+        top: 0px;
+        background-size: (4*@baseGrid);
+        width: (4*@baseGrid);
+        height: (4*@baseGrid);
+    }
+
+    &.yourself {
+        .avatarHalo {
+            border-color: @colorAvatarHaloYourself;
+        }
+    }
+    &.yourself-in-chat {
+        .avatarHalo {
+            border-color: @colorAvatarHaloYourselfInChat;
+        }
+    }
+
+    &.friend {
+        .avatarHalo {
+            border-color: @colorAvatarHaloFriend;
+        }
+    }
+
+    &.large {
+        height: (@avatarSizeLarge + (2 * @avatarHaloBorderWidth));
+        width: (@avatarSizeLarge + (2 * @avatarHaloBorderWidth));
+
+        .avatarHalo {
+            height: @avatarSizeLarge;
+            width: @avatarSizeLarge;
+
+            img {
+                height: @avatarSizeLarge;
+                width: @avatarSizeLarge;
+            }
+        }
+    }
+
+
+
+    &.has-user-name {
+        width: 80%;
+    }
+}

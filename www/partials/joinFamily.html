@@ -1,0 +1,24 @@
+<div class="page" ng-cloak>
+    <div class="header">
+        <div class="left-side">
+            <div class="icon-button icon-back icon-normal icon-inline" ng-click="backToDashboard()"></div>
+        </div>
+    </div>
+
+    <div class="contentRow">
+        <h1>{{"joinFamily.header" | i18n}}</h1>
+        <p>{{"joinFamily.text" | i18n}}</p>
+        <p>{{"joinFamily.text2" | i18n}}</p>
+
+        <div class="button secondary full-width text-align-left">
+            <div class="float-left">
+                <div class="avatar"><div class="avatarHalo"><img ng-src="{{invitingUser.icon}}" /></div></div>
+            </div>
+            <div>{{"joinFamily.invitedBy" | i18n}}{{invitingUser.name}}</div>
+        </div>
+    </div>
+    <div class="buttonRowBottom">
+        <div class="button primary full-width" ng-click="joinFamily()">{{"joinFamily.buttonJoin" | i18n}}</div>
+        <div class="button secondary full-width" ng-click="declineInvitation()">{{"joinFamily.buttonDecline" | i18n}}</div>
+    </div>
+</div>

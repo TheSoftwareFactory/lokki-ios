@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="viewport" content="width=device-width, user-scalable=0" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="css/ringo.css" />
+    <link rel="stylesheet/less" type="text/css" href="less/ringo.less" />
+</head>
+<body>
+<div class="bodyWrapper">
+    <div id="mainContent" ng-cloak class="content ng-cloak">
+        <div ng-view></div>
+    </div>
+    <div id="fb-root">
+    </div>
+
+    <div id="progress" class="progressContent" >
+        <div class="progress-icon icon-progress icon-inline"></div>
+    </div>
+</div>
+
+
+<script type="text/javascript">
+    window.onerror = function (message, url, linenumber) {
+        //alert("Error: " + message + " on line " + linenumber + " for " + url);
+        console.error(message + " on line " + linenumber + " for " + url);
+    }
+    IS_DEVICE_READY = false;
+    document.addEventListener('deviceready', function(){
+        console.log("Device ready");
+        IS_DEVICE_READY = true;
+
+        updateViewSize();
+    });
+
+    /// Fixes the bottom margin on pages caused by invalid bodyWrapper size.
+    /// -ms-viewport { device-width : 320px } doesn't work, breaks scrolling
+    function updateViewSize() {
+
+        var platform = ((window.device) ? window.device.platform : "browser");
+        if (platform != "Win32NT") return;
+
+        var STANDARD_WIDTH = 320;
+        var SYSTEM_TRAY_HEIGHT = 32;
+        var width = window.screen.availWidth;
+        var height = window.screen.availHeight;
+
+        // To get exact pixel size of system tray, we must know how much OS scales it.
+        // TODO: We should get this from OS: App.Current.Host.Content.ScaleFactor
+        var scaling = 1.0; // wvga
+        if (height == 1280 && width == 720) {
+            // 720p
+            scaling = 1.5;
+        } 
+        else if( height == 1280 && width == 768)
+        {
+            // wxga
+            scaling = 1.6;
+        }
+        
+        height -= SYSTEM_TRAY_HEIGHT * scaling;
+
+        setViewSize(STANDARD_WIDTH, (STANDARD_WIDTH / width) * height);
+    };
+
+    /// Set size of bodyWrapper element
+    function setViewSize(width, height) {
+
+        console.log("screen:" + window.screen.availWidth + "," + window.screen.availHeight);
+        console.log("set:" + width + "," + height);
+
+        var elem = document.getElementsByClassName("bodyWrapper")[0];
+        elem.style.right = "";
+        elem.style.bottom = "";
+
+        elem.style.width = width + "px";
+        elem.style.height = height + "px";
+
+    }
+
+</script>
+
+<!-- 
+On WP8 the Cordova must be loaded via script tag:
+Less requires the patched xhr and CordovaBrowser_LoadCompleted expects the js is loaded.
+-->
+<script src="lib/cordova/cordova-ios.js"></script>
+<script src="lib/ext/less-1.4.0-beta.js"></script>
+<script src="lib/ext/fastclick.min.js"></script>
+<script src="lib/ext/imgcache.js"></script>
+<script src="lib/angular/angular.js"></script>
+<script src="js/pgplugins/facebook-js-sdk.js"></script>
+<script data-main="js/main" src="lib/ext/require-2.1.5.js"></script>
+
+</body>
+</html>

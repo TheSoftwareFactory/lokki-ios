@@ -1,0 +1,35 @@
+<!--
+  ~ Copyright (c) 2013 F-Secure Corporation
+  ~ See license terms for the related product.
+  ~
+  ~ Author: Oleg Fedorov
+  ~ Since: 17.06.2013 12:0
+  -->
+<div class="page sendFeedback" ng-cloak>
+    <div class="header">
+        <div class="left-side icon-button icon-back icon-normal icon-inline" ng-click="backToSettings()"></div>
+        <div class="middle centered"><h1 class="page-title">{{"sendFeedback.title" | i18n}}</h1></div>
+    </div>
+    <div class="content scroll-y no-scroll-x">
+
+        <div class="full-width" ng-click="onContactDevelopersClick()">
+            <h2 class="text-align-center">{{"sendFeedback.contactDevelopers" | i18n}}</h2>
+            <hr/>
+        </div>
+
+        <div class="full-width" ng-click="onSendBugReportClick()" ng-show="canSendBugReports">
+            <h2 class="text-align-center">{{"sendFeedback.sendBugReport" | i18n}}</h2>
+            <hr/>
+        </div>
+
+        <!--
+        <div class="full-width" ng-click="onNPSClick()">
+            <h2  class="text-align-center">{{"sendFeedback.sendNPS" | i18n}}</h2>
+            <hr/>
+        </div>
+        -->
+
+    </div>
+
+
+</div>

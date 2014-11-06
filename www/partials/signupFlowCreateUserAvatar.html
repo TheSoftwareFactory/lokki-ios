@@ -1,0 +1,15 @@
+<div class="page signup" ng-cloak>
+    <div class="header">
+        <div class="left-side">
+            <div class="icon-button icon-back icon-normal icon-inline" ng-click="goToUserDetails()"></div>
+        </div>
+    </div>
+    <div class="contentRow overlayBothButtons scroll-y no-scroll-x">
+        <p class="reset-margins bottom-margin">{{"signupCreateUserAvatar.text" | i18n}}</p>
+        <div class="full-width horizontal-center">
+            <div ng-show="!newAvatarImageData" class="avatar large"><div ng-click="setAvatar()" class="avatarHalo"><img ng-src="{{newUserAvatar}}" /></div></div>
+            <div ng-show="newAvatarImageData" class="avatar large"><div ng-click="setAvatar()" class="avatarHalo"><img ng-src="data:image/jpeg;base64,{{newAvatarImageData}}" /></div></div>
+        </div>
+        <button class="button primary full-width top-margin" ng-click="finishSignUp()">{{"signupCreateUserAvatar.button" | i18n}}</button>
+    </div>
+</div>

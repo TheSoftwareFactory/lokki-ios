@@ -1,0 +1,23 @@
+# Ignore IDEA project files #
+*.iml
+*.ipr
+*.iws
+.idea
+*.xcscheme
+xcschememanagement.plist
+*.xcuserstate
+*.xcbkptlist
+
+
+# Mac Files
+.DS_Store
+
+# backups
+*~
+
+ringo.xcodeproj/project.xcworkspace/xcuserdata
+ringo.xcodeproj/xcuserdata
+CordovaLib/CordovaLib.xcodeproj/xcuserdata
+
+
+*.xccheckout

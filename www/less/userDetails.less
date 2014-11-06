@@ -1,0 +1,341 @@
+/*
+* Copyright (c) 2013 F-Secure Corporation
+* See license terms for the related product.
+*/
+
+/**
+ * Author: Oleg Fedorov
+ * Since: 25.5.2013 10.11
+ */
+
+@import "variables.less";
+@import "common.less";
+
+@centerContainerHeight: (@baseGrid*64);
+@centerContainerWidth: (@baseGrid*64);
+
+.userDetailsContainer{
+    position: absolute;
+    top: (@headerHeight * @baseGrid);
+    left: 0px;
+    right: 0px;
+    bottom: (@footerHeight * @baseGrid);
+    margin: 0px @baseMargin;
+}
+
+.centerContainer{
+    position: absolute;
+    top:(@baseGrid*4);
+    left:50%;
+    margin-left: (-@centerContainerWidth/2);
+    //margin-top: (@baseGrid*8);
+    height:@centerContainerHeight;
+    width:@centerContainerWidth;
+
+    .aroundIcons{
+
+        @aroundIconHeight: ((@avatarSizeLargeWithBorder / 2) + @normalIconSize);
+        @gapBetweenAroundIconAndCenter: (@baseGrid*2.5);
+
+        position: absolute;
+        top:50%;
+        left:50%;
+        margin-left: ((@normalIconSize / 2) * -1);
+        margin-top: ((@aroundIconHeight + @gapBetweenAroundIconAndCenter) * -1);
+        height: (@aroundIconHeight + @gapBetweenAroundIconAndCenter);
+
+        width: @normalIconSize;
+
+        &.for-text{
+            margin-left: (-@centerContainerWidth/2);
+            width: @centerContainerWidth;
+            height: (@baseGrid*15);
+            margin-top: (-@baseGrid*6.25);
+            text-align: center;
+            font-size: @fontSizeHeading1;
+            line-height: (@fontSizeHeading1 + (@baseGrid*2.5));
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+
+            &.two-lines{
+                height: (@baseGrid*22.5);
+                margin-top: (-@baseGrid*12.5);
+            }
+        }
+
+        &.north{
+            transform: rotate(0deg);
+            -ms-transform: rotate(0deg);
+            -webkit-transform:rotate(0deg);
+
+            transform-origin: bottom;
+            -ms-transform-origin: bottom;
+            -webkit-transform-origin: bottom;
+
+            .icon-button{
+                transform:rotate(-0deg);
+                -ms-transform:rotate(-0deg);
+                -webkit-transform:rotate(-0deg);
+            }
+        }
+
+        &.north-east{
+            transform:rotate(45deg);
+            -ms-transform:rotate(45deg);
+            -webkit-transform:rotate(45deg);
+            transform-origin: bottom;
+            -ms-transform-origin: bottom;
+            -webkit-transform-origin: bottom;
+
+            .icon-button{
+                transform:rotate(-45deg);
+                -ms-transform:rotate(-45deg);
+                -webkit-transform:rotate(-45deg);
+            }
+        }
+
+        &.north-north-east{
+            transform:rotate(30deg);
+            -ms-transform:rotate(30deg);
+            -webkit-transform:rotate(30deg);
+            transform-origin: bottom;
+            -ms-transform-origin: bottom;
+            -webkit-transform-origin: bottom;
+
+            .icon-button{
+                transform:rotate(-30deg);
+                -ms-transform:rotate(-30deg);
+                -webkit-transform:rotate(-30deg);
+            }
+        }
+
+        &.north-east-east{
+            transform:rotate(60deg);
+            -ms-transform:rotate(60deg);
+            -webkit-transform:rotate(60deg);
+            transform-origin: bottom;
+            -ms-transform-origin: bottom;
+            -webkit-transform-origin: bottom;
+
+            .icon-button{
+                transform:rotate(-60deg);
+                -ms-transform:rotate(-60deg);
+                -webkit-transform:rotate(-60deg);
+            }
+        }
+
+        &.east{
+            transform:rotate(90deg);
+            -ms-transform:rotate(90deg);
+            -webkit-transform:rotate(90deg);
+            transform-origin: bottom;
+            -ms-transform-origin: bottom;
+            -webkit-transform-origin: bottom;
+
+            .icon-button{
+                transform:rotate(-90deg);
+                -ms-transform:rotate(-90deg);
+                -webkit-transform:rotate(-90deg);
+            }
+        }
+
+        &.south{
+            transform:rotate(180deg);
+            -ms-transform:rotate(180deg);
+            -webkit-transform:rotate(180deg);
+            transform-origin: bottom;
+            -ms-transform-origin: bottom;
+            -webkit-transform-origin: bottom;
+
+            .icon-button{
+                transform:rotate(-180deg);
+                -ms-transform:rotate(-180deg);
+                -webkit-transform:rotate(-180deg);
+            }
+
+            .text{
+                transform:rotate(-180deg);
+                -ms-transform:rotate(-180deg);
+                -webkit-transform:rotate(-180deg);
+
+                &.small-font{
+                    font-size: @fontSizeParagraphLarge;
+                }
+            }
+        }
+
+        &.south-east{
+            transform:rotate(135deg);
+            -ms-transform:rotate(135deg);
+            -webkit-transform:rotate(135deg);
+            transform-origin: bottom;
+            -ms-transform-origin: bottom;
+            -webkit-transform-origin: bottom;
+
+            .icon-button{
+                transform:rotate(-135deg);
+                -ms-transform:rotate(-135deg);
+                -webkit-transform:rotate(-135deg);
+            }
+
+            .text{
+                transform:rotate(-135deg);
+                -ms-transform:rotate(-135deg);
+                -webkit-transform:rotate(-135deg);
+            }
+        }
+
+        &.west{
+            transform:rotate(270deg);
+            -ms-transform:rotate(270deg);
+            -webkit-transform:rotate(270deg);
+            transform-origin: bottom;
+            -ms-transform-origin: bottom;
+            -webkit-transform-origin: bottom;
+
+            .icon-button{
+                transform:rotate(-270deg);
+                -ms-transform:rotate(-270deg);
+                -webkit-transform:rotate(-270deg);
+            }
+        }
+
+        &.north-west{
+            transform:rotate(315deg);
+            -ms-transform:rotate(315deg);
+            -webkit-transform:rotate(315deg);
+            transform-origin: bottom;
+            -ms-transform-origin: bottom;
+            -webkit-transform-origin: bottom;
+
+            .icon-button{
+                transform:rotate(-315deg);
+                -ms-transform:rotate(-315deg);
+                -webkit-transform:rotate(-315deg);
+            }
+        }
+
+        &.north-north-west{
+            transform:rotate(330deg);
+            -ms-transform:rotate(330deg);
+            -webkit-transform:rotate(330deg);
+            transform-origin: bottom;
+            -ms-transform-origin: bottom;
+            -webkit-transform-origin: bottom;
+
+            .icon-button{
+                transform:rotate(-330deg);
+                -ms-transform:rotate(-330deg);
+                -webkit-transform:rotate(-330deg);
+            }
+        }
+
+        &.north-west-west{
+            transform:rotate(300deg);
+            -ms-transform:rotate(300deg);
+            -webkit-transform:rotate(300deg);
+            transform-origin: bottom;
+            -ms-transform-origin: bottom;
+            -webkit-transform-origin: bottom;
+
+            .icon-button{
+                transform:rotate(-300deg);
+                -ms-transform:rotate(-300deg);
+                -webkit-transform:rotate(-300deg);
+            }
+        }
+    }
+
+    .centerAvatar{
+        position: absolute;
+        top:50%;
+        left:50%;
+
+        margin-top: ((@avatarSizeLargeWithBorder / 2) * -1);
+        margin-left: ((@avatarSizeLargeWithBorder / 2) * -1);
+        height:@avatarSizeLargeWithBorder;
+        width:@avatarSizeLargeWithBorder;
+
+        .avatar{
+            padding: 0px;
+        }
+
+    }
+
+    .centerPlace{
+        position: absolute;
+        top:50%;
+        left:50%;
+        margin-top: ((@placesHeight / 2) * -1);
+        margin-left: ((@placesDefaultWidth / 2) * -1);
+        height: @placesHeight;
+        width: @placesDefaultWidth;
+
+    }
+}
+
+.textAfterCenterContainer {
+    position: absolute;
+    top: (@centerContainerHeight - @baseGrid*4);
+    left: 0px;
+    width:100%;
+
+    &.just-below-avatar {
+        top: (@centerContainerHeight - @baseGrid*12);
+        margin-top: @baseMargin;
+    }
+
+    .bubble{
+        background-color: #e5d228;
+        border-radius: (2 * @baseGrid);
+        padding: @baseGrid 0;
+
+        .bubbleThingSize {
+            @bubbleThingSize: @baseMargin;
+            position: absolute;
+            top: (-1 * @bubbleThingSize);
+            left: 50%;
+            width: 0;
+            height: 0;
+            margin-left: (-1 * (@avatarSizeLarge / 2));
+            border-top: @bubbleThingSize solid transparent;
+            border-right: @bubbleThingSize solid @colorYellow;
+            font-size: 1;
+            line-height: 0;
+        }
+    }
+}
+
+
+
+.buttonContainer{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    margin: 0px (4 * @baseGrid);
+    overflow: hidden;
+
+    .rowOfButtons{
+        text-align: center;
+
+        > *{
+            vertical-align: middle;
+        }
+
+        .icon-button{
+            margin: 0px (3 * @baseGrid);
+        }
+    }
+
+}
+
+.bottomContainer{
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  overflow: hidden;
+
+}

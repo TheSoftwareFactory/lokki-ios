@@ -1,0 +1,15 @@
+<div class="page visibilitySetting" ng-cloak>
+    <div class="header">
+        <div class="left-side icon-button icon-back icon-normal icon-inline" ng-click="backToDashboard()"></div>
+        <div class="middle centered">{{"visibilitySetting.title" | i18n}}</div>
+    </div>
+    <div class="content scroll-y no-scroll-x">
+
+        <div class="buttonsBox">
+            <div class="button primary-green full-width bottom-margin with-icon icon-visibility-on" ng-click="setVisibility(2)"><span>{{"dashboard.visibility.on" | i18n}}</span></div>
+            <div class="button primary-green full-width bottom-margin with-icon icon-visibility-on" ng-click="setVisibility(2)"><span>ON</span></div>
+            <div class="button warning full-width bottom-margin" ng-click="setVisibility(0)">{{"dashboard.visibility.off" | i18n}}</div>
+            <div class="button primary-black-31 full-width" ng-click="setVisibility(1)">{{"dashboard.visibility.invisible" | i18n}}</div>
+        </div>
+    </div>
+</div>

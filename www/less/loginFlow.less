@@ -1,0 +1,77 @@
+/*
+ * Copyright (c) 2013 F-Secure Corporation
+ * See license terms for the related product.
+ *
+ * Author: Oleg Fedorov
+ * Since: 22.05.2013 12:54
+ */
+
+@import "common.less";
+@import "variables.less";
+
+
+@signUpFlowHeaderHeight: (@baseGrid*14);
+@signUpButtonRowHeight: ((@ButtonRowHeight * 2) - @baseMargin);
+
+.headerRow{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    height: @signUpFlowHeaderHeight;
+    margin: 0px @baseGrid;
+}
+
+.contentRow{
+    position: absolute;
+    top: @signUpFlowHeaderHeight;
+    left: 0px;
+    right: 0px;
+    bottom: @signUpButtonRowHeight;
+    margin: @baseMargin @baseMargin @baseGrid @baseMargin;
+
+
+    &.overlayHeader{
+      top: 0px;
+    }
+
+    &.overlayTopButton{
+        bottom: @ButtonRowHeight;
+    }
+
+    &.overlayBothButtons{
+        bottom: 0px;
+    }
+
+    input{
+
+        &.full-width{
+            width: 100%;
+            max-width: 100%;
+        }
+    }
+}
+
+.buttonRowBottom{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    margin: 0px @baseMargin;
+    height: @signUpButtonRowHeight;
+
+    .doubleMarginBottom{
+        margin-bottom: (2 * @baseGrid);
+    }
+}
+
+
+.page{
+
+    &.signup{
+        .headerRow{
+            margin-top: @baseMargin;
+        }
+    }
+
+}

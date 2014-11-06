@@ -1,0 +1,162 @@
+
+/* Class = "IBUITableViewSection"; headerTitle = "MAP MODE"; ObjectID = "1dk-En-9i4"; */
+"1dk-En-9i4.headerTitle" = "MAP MODE";
+
+/* Class = "IBUITableViewSection"; headerTitle = "MY VISIBILITY"; ObjectID = "3oV-0F-Dqg"; */
+"3oV-0F-Dqg.headerTitle" = "MY VISIBILITY";
+
+/* Class = "IBUILabel"; text = "Label"; ObjectID = "4QE-oZ-O0L"; */
+"4QE-oZ-O0L.text" = "Label";
+
+/* Class = "IBUILabel"; text = "About"; ObjectID = "4nk-8p-fem"; */
+"4nk-8p-fem.text" = "About";
+
+/* Class = "IBUILabel"; text = "Settings"; ObjectID = "5Zu-Ep-8qJ"; */
+"5Zu-Ep-8qJ.text" = "Settings";
+
+/* Class = "IBUILabel"; text = "Help"; ObjectID = "9WL-XC-7ye"; */
+"9WL-XC-7ye.text" = "Help";
+
+/* Class = "IBUILabel"; text = "Subtitle"; ObjectID = "9m0-Tn-ZDS"; */
+"9m0-Tn-ZDS.text" = "Subtitle";
+
+/* Class = "IBUILabel"; text = "Copyright © 2013 F-Secure Corporation All rights reserved"; ObjectID = "C88-RN-YG3"; */
+"C88-RN-YG3.text" = "Copyright © 2013 F-Secure Corporation All rights reserved";
+
+/* Class = "IBUINavigationItem"; title = "F.A.Q."; ObjectID = "E8L-1y-Wqc"; */
+"E8L-1y-Wqc.title" = "F.A.Q.";
+
+/* Class = "IBUITableViewController"; title = "People"; ObjectID = "Eym-hz-0KQ"; */
+"Eym-hz-0KQ.title" = "People";
+
+/* Class = "IBUILabel"; text = "some.email@some.address"; ObjectID = "Got-Dq-ZCt"; */
+"Got-Dq-ZCt.text" = "some.email@some.address";
+
+/* Class = "IBUITextView"; text = "Your privacy is of the utmost importance to us. Before you get started, you need to agree to the following terms (double tap on the text to read more):\n\n1. I have read the terms of service and accept them.\n2. I consent to collection and processing of personal data.\n3. I consent that the service processes and displays my location.\n4. If I am under 15, I have my parents’ permission to use Lokki according to these terms.\n5. If I am living in the United States and am under 13 years of age, I may not use Lokki.\n"; ObjectID = "Hax-MH-KUW"; */
+"Hax-MH-KUW.text" = "Your privacy is of the utmost importance to us. Before you get started, you need to agree to the following terms (double tap on the text to read more):\n\n1. I have read the terms of service and accept them.\n2. I consent to collection and processing of personal data.\n3. I consent that the service processes and displays my location.\n4. If I am under 15, I have my parents’ permission to use Lokki according to these terms.\n5. If I am living in the United States and am under 13 years of age, I may not use Lokki.\n";
+
+/* Class = "IBUILabel"; text = "People"; ObjectID = "Hg7-we-iXb"; */
+"Hg7-we-iXb.text" = "People";
+
+/* Class = "IBUILabel"; text = "F-Secure products"; ObjectID = "Img-30-vBe"; */
+"Img-30-vBe.text" = "F-Secure products";
+
+/* Class = "IBUISearchBar"; placeholder = "Filter contacts"; ObjectID = "Js3-E2-Ivw"; */
+"Js3-E2-Ivw.placeholder" = "Filter contacts";
+
+/* Class = "IBUILabel"; text = "Your friends need to use this email to let you see them in Lokki."; ObjectID = "Nvx-E7-fF8"; */
+"Nvx-E7-fF8.text" = "Your friends need to use this email to let you see them in Lokki.";
+
+/* Class = "IBUILabel"; text = "Tell a friend about Lokki"; ObjectID = "OMw-et-wkp"; */
+"OMw-et-wkp.text" = "Tell a friend about Lokki";
+
+/* Class = "IBUIButton"; normalTitle = "Signup"; ObjectID = "QC7-vM-qGt"; */
+"QC7-vM-qGt.normalTitle" = "Signup";
+
+/* Class = "IBUINavigationItem"; title = "Lokki"; ObjectID = "RI1-U5-60I"; */
+"RI1-U5-60I.title" = "Lokki";
+
+/* Class = "IBUILabel"; text = "www.f-secure.com"; ObjectID = "Rli-vz-s1O"; */
+"Rli-vz-s1O.text" = "www.f-secure.com";
+
+/* Class = "IBUISegmentedControl"; UYd-WP-yfy.segmentTitles[0] = "Standard"; ObjectID = "UYd-WP-yfy"; */
+"UYd-WP-yfy.segmentTitles[0]" = "Standard";
+
+/* Class = "IBUISegmentedControl"; UYd-WP-yfy.segmentTitles[1] = "Satellite"; ObjectID = "UYd-WP-yfy"; */
+"UYd-WP-yfy.segmentTitles[1]" = "Satellite";
+
+/* Class = "IBUISegmentedControl"; UYd-WP-yfy.segmentTitles[2] = "Hybrid"; ObjectID = "UYd-WP-yfy"; */
+"UYd-WP-yfy.segmentTitles[2]" = "Hybrid";
+
+/* Class = "IBUILabel"; text = "F-Secure Lokki"; ObjectID = "Va6-7H-jhM"; */
+"Va6-7H-jhM.text" = "F-Secure Lokki";
+
+/* Class = "IBUILabel"; text = "Select people you allow to see your location. Lokki will invite them via the selected email address.\nIf you don't see someone in this list check that you have email defined for this person in the Contacts app."; ObjectID = "VfT-Di-hMg"; */
+"VfT-Di-hMg.text" = "Select people you allow to see your location. Lokki will invite them via the selected email address.\nIf you don't see someone in this list check that you have email defined for this person in the Contacts app.";
+
+/* Class = "IBUILabel"; text = "Label"; ObjectID = "a5M-k7-tqb"; */
+"a5M-k7-tqb.text" = "Label";
+
+/* Class = "IBUISegmentedControl"; arS-7Y-rqr.segmentTitles[0] = "Visible"; ObjectID = "arS-7Y-rqr"; */
+"arS-7Y-rqr.segmentTitles[0]" = "Visible";
+
+/* Class = "IBUISegmentedControl"; arS-7Y-rqr.segmentTitles[1] = "Invisible"; ObjectID = "arS-7Y-rqr"; */
+"arS-7Y-rqr.segmentTitles[1]" = "Invisible";
+
+/* Class = "IBUILabel"; text = "Title"; ObjectID = "cLD-vu-2C0"; */
+"cLD-vu-2C0.text" = "Title";
+
+/* Class = "IBUIButton"; normalTitle = "I have read and agree to the terms"; ObjectID = "dPV-i5-APD"; */
+"dPV-i5-APD.normalTitle" = "I have read and agree to the terms";
+
+/* Class = "IBUINavigationItem"; title = "Menu"; ObjectID = "eUL-p0-7Yh"; */
+"eUL-p0-7Yh.title" = "Menu";
+
+/* Class = "IBUILabel"; text = "Error: server rejected signup"; ObjectID = "g5D-EH-G6l"; */
+"g5D-EH-G6l.text" = "Error: server rejected signup";
+
+/* Class = "IBUILabel"; text = "Show"; ObjectID = "iA4-dq-Tko"; */
+"iA4-dq-Tko.text" = "Show";
+
+/* Class = "IBUINavigationItem"; title = "Settings"; ObjectID = "iHL-m3-Jb3"; */
+"iHL-m3-Jb3.title" = "Settings";
+
+/* Class = "IBUILabel"; text = "on map"; ObjectID = "j9y-vA-JLU"; */
+"j9y-vA-JLU.text" = "on map";
+
+/* Class = "IBUINavigationItem"; title = "About"; ObjectID = "jAn-aA-zfA"; */
+"jAn-aA-zfA.title" = "About";
+
+/* Class = "IBUILabel"; text = "Add people"; ObjectID = "kBn-kz-Hvx"; */
+"kBn-kz-Hvx.text" = "Add people";
+
+/* Class = "IBUILabel"; text = "Please enter a valid email"; ObjectID = "kJU-X5-JG8"; */
+"kJU-X5-JG8.text" = "Please enter a valid email";
+
+/* Class = "IBUILabel"; text = "Can"; ObjectID = "kSW-KI-10A"; */
+"kSW-KI-10A.text" = "Can";
+
+/* Class = "IBUILabel"; text = "see me"; ObjectID = "lSh-FC-gpv"; */
+"lSh-FC-gpv.text" = "see me";
+
+/* Class = "IBUILabel"; text = "F-Secure Lokki"; ObjectID = "mKG-w0-whQ"; */
+"mKG-w0-whQ.text" = "F-Secure Lokki";
+
+/* Class = "IBUIButton"; normalTitle = "You are visible"; ObjectID = "nv1-7H-c90"; */
+"nv1-7H-c90.normalTitle" = "You are visible";
+
+/* Class = "IBUILabel"; text = "Please enter your email address - other Lokki users will be able to find you by using the same email address."; ObjectID = "onE-90-XTc"; */
+"onE-90-XTc.text" = "Please enter your email address - other Lokki users will be able to find you by using the same email address.";
+
+/* Class = "IBUILabel"; text = "Your Lokki ID is:"; ObjectID = "rZx-eL-jQx"; */
+"rZx-eL-jQx.text" = "Your Lokki ID is:";
+
+/* Class = "IBUILabel"; text = "Version: 3.0.0"; ObjectID = "thR-9x-XNj"; */
+"thR-9x-XNj.text" = "Version: 3.0.0";
+
+/* Class = "IBUINavigationItem"; title = "People"; ObjectID = "uSJ-aD-2gR"; */
+"uSJ-aD-2gR.title" = "People";
+
+/* Class = "IBUIButton"; normalTitle = "You are invisible"; ObjectID = "ucf-me-9Qi"; */
+"ucf-me-9Qi.normalTitle" = "You are invisible";
+
+/* Class = "IBUILabel"; text = "Send feedback"; ObjectID = "vEc-RF-Xtr"; */
+"vEc-RF-Xtr.text" = "Send feedback";
+
+/* Class = "IBUIViewController"; title = "Map"; ObjectID = "vXZ-lx-hvc"; */
+"vXZ-lx-hvc.title" = "Map";
+
+/* Class = "IBUINavigationItem"; title = "Add people"; ObjectID = "wXo-Xs-OJp"; */
+"wXo-Xs-OJp.title" = "Add people";
+
+/* Class = "IBUITextField"; placeholder = "your email address"; ObjectID = "xYv-1U-Ebw"; */
+"xYv-1U-Ebw.placeholder" = "your email address";
+
+/* Class = "IBUIViewController"; title = "F.A.Q."; ObjectID = "y3D-XS-agy"; */
+"y3D-XS-agy.title" = "F.A.Q.";
+
+/* Class = "IBUIViewController"; title = "About"; ObjectID = "yNt-8m-7j7"; */
+"yNt-8m-7j7.title" = "About";
+
+/* Class = "IBUILabel"; text = "It's you"; ObjectID = "yjf-3W-HJv"; */
+"yjf-3W-HJv.text" = "It's you";

@@ -1,0 +1,324 @@
+/*
+* Copyright (c) 2013 F-Secure Corporation
+* See license terms for the related product.
+*/
+
+/**
+ * Author: niemju2
+ * Since: 22.5.2013 10.11
+ */
+
+@import "variables.less";
+@import "common.less";
+
+@familyContainerHeight : 13;
+@friendsContainerHeight : 14;
+
+@headerButtonHeight: (@baseGrid*12);
+@lokkiLogoHeight: (@baseGrid*7);
+
+.page{
+    &.dashboard{
+        .header{
+            .icon-lokki-logo{
+                background-size: (@baseGrid*20) (@baseGrid*7);
+                background-position: center center;
+                background-repeat: no-repeat;
+            }
+        }
+
+        .place{
+            margin-top: @baseMargin;
+        }
+    }
+}
+
+.dashboardContent{
+    position: absolute;
+    top: (@headerHeight * @baseGrid);
+    left: 0px;
+    right: 0px;
+    bottom: (@footerHeight * @baseGrid);
+
+    h1{
+        .E2TextAndEffect();
+    }
+
+    .family-text {
+        position: absolute;
+        top: (@baseGrid*3);
+        right: (3*@baseGrid);
+        color: @colorC4Turqoise;
+        z-index: 2;
+
+    }
+
+    .friends-text {
+        position: absolute;
+        bottom: (@baseGrid*3);
+        right: (3*@baseGrid);
+        color: @colorC4Turqoise;
+        z-index: 2;
+
+        h1{
+            .E2TextAndEffect();
+        }
+    }
+
+}
+
+.familyContainer{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    height: (@familyContainerHeight * @baseGrid + (@baseGrid*1.25));
+    background-color: @colorFamilyAndFriendsDocks;
+    .G2BackgroundGradient();
+    z-index: 1;
+
+    .icon-chat{
+        margin-right: 12px;
+    }
+}
+
+.dashboardBar {
+    @dashboardBarMarginGrid : 1;
+    @dashboardBarHeight : ((@familyContainerHeight - (2 * @dashboardBarMarginGrid )) * @baseGrid);
+    @dashboardBarItemSize: @avatarSizeWithBorder;
+
+    position: absolute;
+    left: (3 * @baseGrid);
+    right: 0;
+    top: 50%;
+    margin-top: ((@dashboardBarItemSize / 2) * -1);
+    white-space: nowrap;
+
+    .dashboardBarItemWrapper {
+
+
+        width: @dashboardBarItemSize;
+        height: @dashboardBarItemSize;
+        display: inline-block;
+        position: relative;
+        margin-right: (2 * @baseGrid);
+
+        .avatar{
+            @HeightForCentering: @avatarSizeWithBorder;
+            position:absolute;
+            top:50%;
+            left: 50%;
+            height: @HeightForCentering;
+            margin-top: ((@HeightForCentering / 2) * -1);
+            margin-left: ((@HeightForCentering / 2) * -1);
+            padding: 0;
+        }
+
+        .familyPlusSign{
+            @plusSignHeight: @avatarSizeWithBorder;
+            width: @plusSignHeight;
+            height: @plusSignHeight;
+            @HeightForCentering: @plusSignHeight;
+            position:absolute;
+            top:50%;
+            left: 50%;
+            height: @HeightForCentering;
+            margin-top: ((@HeightForCentering / 2) * -1);
+            margin-left: ((@HeightForCentering / 2) * -1);
+        }
+        &.chat{
+            margin-right: (3 * @baseGrid);
+        }
+    }
+}
+
+.dashboardNotification{
+
+    @notificationHeight : (@familyContainerHeight*@baseGrid - @baseGrid);
+
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 50%;
+    white-space: nowrap;
+    height: @notificationHeight;
+    overflow: hidden;
+
+    margin: 0px (4 * @baseGrid);
+    margin-top: ((@notificationHeight / 2) * -1 + @baseGrid/2);
+    z-index: 10;
+
+    .round-corners;
+    background-color: @colorNotificationBackground;
+
+    .notificationWrapper{
+
+        @NotificationItemSize: (@baseGrid*12);
+        width: @NotificationItemSize;
+        height: @NotificationItemSize;
+        display: inline-block;
+        position: relative;
+        margin-right: (@baseGrid*4);
+
+        .avatar{
+            @HeightForCentering: (@avatarHeight + ( 2 * @avatarHaloBorderWidth));
+            position:absolute;
+            top:50%;
+            height: @HeightForCentering;
+            margin-top: ((@HeightForCentering / 2) * -1);
+            margin-left: (2 * @baseGrid);
+            padding: 0;
+        }
+
+        p{
+            @plusSignHeight: (@avatarHeight + @baseGrid);
+            width: (@baseGrid*43.75);
+            @HeightForCentering: @plusSignHeight;
+            position:absolute;
+            top:50%;
+            height: @HeightForCentering;
+            margin-top: ((@HeightForCentering / 2) * -1);
+            white-space: normal;
+            color: @colorDarkBlue;
+        }
+    }
+}
+
+.dashboardTutorialTextContent{
+    text-align: center;
+}
+
+.placesContainer{
+    position: absolute;
+    top: (@familyContainerHeight * @baseGrid + @baseGrid);
+    bottom: (@friendsContainerHeight * @baseGrid);
+    left: 0px;
+    right: 0px;
+    margin: 0px;
+    z-index: 0;
+
+    .placesGradient{
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        height: (@baseGrid*1.25);
+        background-image: -webkit-linear-gradient(top, rgba(0,0,0,.02), rgba(0,0,0,.2) 2px, rgba(0,0,0,.01) 10px, rgba(0,0,0,.01) 100%);
+        z-index: 2;
+
+    }
+
+    .placeContent{
+        position: absolute;
+        top: (@baseGrid*0.25);
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
+        z-index: 1;
+        background-color: @colorC3BlueLightest;
+
+        padding-left: @baseGrid;
+        padding-right: @baseGrid;
+    }
+
+    .familyBullets{
+        position:absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: (2 * @baseGrid) + @baseMargin;
+        z-index: 11;
+        margin: 0;
+        margin-bottom: @baseMargin;
+        padding: 0;
+        font-size: 1;
+        line-height: 0;
+        text-align: center;
+
+        .bullet{
+            display: inline-block;
+            width: (2 * @baseGrid);
+            height: (2 * @baseGrid);
+            margin: 0;
+            margin-right: @baseMargin;
+            padding: 0;
+            border-radius: 50%;
+            font-size: 1;
+            line-height: 0;
+            background-color: white;
+
+            opacity:0.5;
+            filter:alpha(opacity=50);
+
+            &.selected{
+                opacity:1;
+                filter:alpha(opacity=100);
+            }
+        }
+        .bullet:last-child{
+            margin-right: 0;
+        }
+    }
+
+    .changeFamilyArrows{
+        @arrowHeight: 120px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 50%;
+        margin-top: (-1 * (@arrowHeight / 2));
+        z-index: 10;
+
+        .arrow-left{
+            float: left;
+            background: url("../images/dashboard/dashboard_arrow_left.png");
+            height: @arrowHeight;
+            width: 60px;
+            border-top-right-radius: 50%;
+            border-bottom-right-radius: 50%;
+            cursor: pointer;
+
+        }
+
+        .arrow-right{
+            float: right;
+            background: url("../images/dashboard/dashboard_arrow_right.png");
+            height: @arrowHeight;
+            width: 60px;
+            border-top-left-radius: 50%;
+            border-bottom-left-radius: 50%;
+            cursor: pointer;
+        }
+    }
+}
+
+.friendsContainer{
+    background-color: @colorFamilyAndFriendsDocks;
+    .G2BackgroundGradient();
+    z-index: 1;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    margin: 0px;
+    padding: 0px;
+    height: (@friendsContainerHeight * @baseGrid);
+    width: 100%;
+    font-size: 1px;//just minimum to remove iOS issue with null matrix
+
+    .middle{
+        text-align: center;
+
+        h1{
+            line-height: (12 * @baseGrid);
+        }
+    }
+
+    .dashboardBar{
+        right: (3 * @baseGrid);
+    }
+
+    .no-margin-right{
+        margin-right: 0;
+    }
+}

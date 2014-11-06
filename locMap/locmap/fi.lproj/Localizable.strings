@@ -1,0 +1,168 @@
+/*
+ Localizable.strings
+ Lokki
+ 
+ Created by Oleg Fedorov on 12/20/13.
+ Copyright (c) 2013 F-Secure. All rights reserved.
+ */
+
+/* Shown in settings view if user name is not found in Contacts app */
+"Name not found in contacts" = "Nimeä ei löytynyt yhteystiedoista";
+
+/*  Shown in My visibility selection in settings, means that user will be invisible if she selects it*/
+"Invisible" = "Ei";
+
+/*  Shown in My visibility selection in settings, means that user will be visible if she selects it */
+"Visible" = "Kyllä";
+
+"Sending contacts" = "Lähetetään";
+"Select contacts" = "Valitse henkilöt";
+"Selected: %@" = "Valittu: %@";
+"OK" = "OK";
+"Yes" = "Kyllä";
+"Don't add" = "Älä lisää";
+"Add" = "Lisää";
+"Later" = "Myöhemmin";
+"Invite" = "Kutsu";
+"Error" = "Virhe";
+"Cannot invite people right now. Please check your internet connection and try again later." = "Kutsuja ei voida lähettää juuri nyt. Tarkista Internet-yhteytesi ja yritä myöhemmin uudelleen.";
+"TellAFriendSMS" = "Hei! Käytän F-Secure Lokkia. Sen avulla voin kertoa yksityisesti, helposti, turvallisesti ja ilmaiseksi, missä olen menossa. Voit asentaa sovelluksen osoitteesta f-secure.com/lokki.";
+"TellAFriendGeneric" = "Hei!\n\nKäytän F-Secure Lokkia. Se on sovellus, jolla voin kertoa yksityisesti ja turvallisesti, missä olen menossa. Lokki-sovelluksessa voin valita, ketkä näkevät sijaintini, ja voin piilottaa sijaintini aina halutessani. Siinä ei ole kyttääjiä, vieraita eikä mainoksia.\n\nJos sinulla ei ole vielä Lokkia puhelimessasi, asenna se osoitteesta http://www.f-secure.com/lokki.\n\nLokki on palkitun suomalaisen tietoturvayritys F-Securen kehittämä. Me otamme yksityisyytesi vakavasti. Voit lukea tietosuojakäytäntömme osoitteesta http://www.f-secure.com/en/web/home_global/privacy/privacy-summary. Kaikki F-Securen Lokki-palvelimet sijaitsevat EU:n alueella. F-Secure Lokki ei varastoi yhteystietojasi tai sijaintihistoriaasi.\n\nNähdään pian Lokissa!";
+"F-Secure Lokki is awesome!" = "Liity seuraani F-Secure Lokkiin!";
+"FeedbackEmailSubject" = "Palautteeni Lokki 3.2 -sovelluksesta (iOS 7)";
+"FeedbackEmailBody" = "Hei Lokki-tiimi\n\r";
+"AccountDisabledForSecurityReasons" = "Meidän on valtuutettava tilisi, ennen kuin voit rekisteröityä. Lue toimintaohjeet, jotka olemme lähettäneet osoitteeseen %@.";
+"SignupGenericError" = "Rekisteröityminen ei onnistunut. Varmista, että annoit oikean sähköpostiosoitteen, ja yritä uudelleen";
+"YourAccountRequiresSignupForSecurityReasons" = "Tilisi on lukittu tilapäisesti. Muista, että voit käyttää samaa sähköpostiosoitetta vain yhden Lokki-tilin tai laitteen kanssa.\nRekisteröidy uudelleen.";
+"PhoneNumberNotFoundInContacts" = "Tämän henkilön puhelinnumeroa ei löytynyt";
+"AddNewContactQuestion" = "Tätä henkilöä ei löytynyt. Haluatko lisätä uuden yhteystiedon?";
+"FailedToCreateContact" = "Yhteystietoa ei voitu luoda";
+"TimeFormatJustNow" = "juuri nyt";
+"TimeFormatMinutesAgo" = "%d min sitten";
+"TimeFormatHoursAgo" = "%d h sitten";
+"Tutorial" = "Pikaopas";
+"TutorialMessageWelcomeToLokki" = "Tervetuloa Lokkiin. Kun käynnistät Lokin, kartta keskitetään sijaintiisi.";
+"TutorialMessageAddFriends" = "Hei! Näytät olevan ensimmäisiä kavereistasi, jolla on Lokki käytössä.\nLisää kaverisi sovellukseen, niin he näkevät, missä olet menossa. Muista, että voit piilottaa sijaintisi aina halutessasi.";
+"TutorialMessageSomeoneCanSeeYou" = "%@ näkee nyt, missä olet menossa, ja sinä näet hänen sijaintinsa, jos hän on sallinut sen.";
+"Lokki" = "Lokki";
+
+/* Button with "You are visible" and "You are invisible" text is of limited size. Please keep this text short in all languages  */
+"You are visible" = "Sijaintisi näkyy";
+"You are invisible" = "Sijaintisi on piilotettu";
+
+
+"Filter contacts" = "Suodata yhteystiedot";
+"Select people you allow to see your location" = "Valitse henkilöt, joiden haluat näkevän sijaintisi silloin, kun haluat paljastaa sen. Valitse sähköpostiosoitteet, joita nämä henkilöt käyttävät Lokissa.\nJos joku puuttuu tästä listasta, tarkista, että hänen tietonsa ovat yhteystiedoissasi.";
+"Menu" = "Valikko";
+"Add people" = "Lisää henkilö";
+"Add place" = "Lisää paikka";
+"People" = "Henkilöt";
+"Settings" = "Asetukset";
+"Help" = "Ohje";
+"Send feedback" = "Lähetä palautetta";
+"Tell a friend about Lokki" = "Kerro ystävillesi Lokista";
+"F-Secure products" = "F-Securen tuotteita";
+"About" = "Tietoja";
+
+/* Upper part of 'Can see me' text in People view */
+"Can" = "Näkee";
+/* Bottom part of 'Can see me' text in People view */
+"see me" = "minut";
+/* Upper part of 'Show on map' text in People view */
+"Show" = "Näytä";
+/*Bottom part of 'Show on map' text in People view*/
+"on map" = "kartalla";
+
+/* Shown in settings view */
+"Your Lokki ID is:" = "Lokki-tunnuksesi:";
+"Your friends need to use this email to let you see them in Lokki." = "Pyydä ystäviäsi käyttämään tätä sähköpostiosoitetta Lokissa.";
+
+/* Map types (Standard, Satellite, Hybrid) - how user sees the map */
+"Standard" = "Normaali";
+"Satellite" = "Satelliitti";
+"Hybrid" = "Yhdistelmä";
+
+/* Settings view header for MY VISIBILITY selection */
+"MY VISIBILITY" = "Näkyykö sijaintini muille";
+/* Settings view header for MAP MODE selection */
+"MAP MODE" = "Karttanäkymä";
+
+/* Shown in About view - opens web page with privacy policy */
+"Privacy policy" = "Tietosuojakäytäntö";
+
+/* Shown in About view*/
+"Copyright © 2013 F-Secure Corporation All rights reserved" = "Copyright © 2013-2014 F-Secure Corporation. Kaikki oikeudet pidätetään";
+
+/* Shown in about view, don't delete %@ - code will put version there (like: "Version: 3.0.2")*/
+"Version: %@" = "Versio: %@";
+
+/* Shown in alert box if user does not allow Lokki to access his Contacts */
+"Cannot get access to your Contacts.\nLokki will not work correctly if you don't give it access to your Contacts." = "Yhteystietojasi ei voida käyttää.\nLokin on voitava käyttää yhteystietojasi, jotta se toimisi.";
+
+/* Shown in alert box if user disabled background refresh in system settings  */
+"Background refresh is not enabled" = "Sovellusten tausta-ajo ei ole käytössä. Aktivoi se puhelimesi asetuksista, jos haluat ystäviesi näkevän sijaintisi myös silloin, kun Lokki ei ole puhelimesi näytöllä.";
+
+/* Shown in alert box if user denied location services for Lokki in system settings  */
+"Location services are not enabled" = "Paikannuspalveluja ei ole määritetty käyttöön. Jos haluat käyttää Lokkia, ota paikannuspalvelut käyttöön puhelimesi asetuksista.";
+
+/* Shown in add contacts if user does not have email defined */
+"No email" = "Sähköpostiosoitetta ei ole";
+
+/* Shown in add contacts if user clicks on contact without email defined */
+"This contact does not have email defined. Do you want to add email address to this contact to be able to use it in Lokki?" = "Et ole lisännyt sähköpostiosoitetta tälle henkilölle. Haluatko lisätä sen henkilön yhteystietoihin?";
+
+/* Buttons in dialog shown in add contacts if user clicks on contact without email defined */
+"Add email" = "Lisää";
+"Not now" = "Ei nyt";
+
+
+"Add a place" = "Lisää paikka";
+"Enter the name for the place" = "Anna paikalle nimi";
+
+"Done" = "Valmis";
+"Cancel" = "Peruuta";
+
+"You cannot have more places in free version" = "Et voi luoda enempää paikkoja Lokin ilmaisversiossa";
+"Failed to create place" = "Paikkaa ei voitu luoda";
+
+"Failed to delete place" = "Paikkaa ei voitu poistaa. Yritä myöhemmin uudelleen.";
+
+"Long press on the map to create new place" = "Luo uusi paikka painamalla paikan sijaintia kartalla pitkään tai napauttamalla +, jos haluat käyttää nykyistä sijaintiasi.";
+
+"Edit place name" = "Muokkaa nimeä";
+
+"Failed to edit place name" = "Nimeä ei voitu muokata";
+
+/*  Please don't remove caps from MAP and PLACES */
+"MAP" = "KARTTA";
+"PLACES" = "PAIKAT";
+
+/* User did not report yet */
+"Not reported" = "Ei paikkatietoa";
+
+
+"I have read and agree to the terms" = "Olen lukenut ja hyväksyn käyttöehdot";
+"PrivacyPolicyText" = "Yksityisyytesi on meille tärkeää. Ennen kuin aloitat, sinun pitää hyväksyä seuraavat käyttöehdot (napauta tekstiä kahdesti nähdäksesi tarkemmat kuvaukset):\n\n1. Olen lukenut ja hyväksyn käyttöehdot.\n2. Hyväksyn, että sovellus kerää ja käsittelee henkilökohtaisia tietojani.\n3. Hyväksyn, että sovellus käsittelee ja näyttää sijaintini.\n4. Jos olen alle 15-vuotias, minulla on huoltajieni lupa käyttää Lokkia näiden ehtojen mukaisesti.\n5. Jos asun Yhdysvalloissa ja olen alle 13-vuotias, en saa käyttää Lokkia.";
+
+"SignupEnterYourEmailAddress" = "Ole hyvä ja syötä sähköpostiosoitteesi - toiset Lokki-käyttäjät tunnistavat sinut tämän osoitteen avulla.";
+
+
+"your email address" = "sähköpostiosoitteesi";
+"Please enter a valid email" = "Syötä toimiva sähköpostiosoite";
+"Signup" = "Rekisteröidy";
+
+
+"AppRaterDoYouLikeTitle" = "Lähetä palautetta";
+"AppRaterDoYouLikeQuestion" = "Pidätkö Lokki-sovelluksesta?";
+"NO" = "EN";
+"YES" = "KYLLÄ";
+"AppRaterReviewQuestionTitle" = "Arvostele Lokki";
+"AppRaterReviewQuestion" = "Jos pidät Lokista, voisitko käydä sovelluskaupassa antamassa sille tähtiä? Kiitos tuestasi!";
+"AppRaterNoThanks" = "Ei kiinnosta";
+"AppRaterRate" = "Anna tähtiä";
+"AppRaterRemindLater" = "Muistuta minua myöhemmin";
+
+"SendFeedbackBodyWhenUserDoesNotLike" = "Hei Lokki-tiimi,\n\rTässä teille palautetta:";
+"MailClientNotConfigured" = "Sähköpostia ei voi lähettää, koska sähköpostisovelluksen asetukset eivät ole kunnossa!";
+
+"HelpLink" = "http://bit.ly/KTIpGJ";

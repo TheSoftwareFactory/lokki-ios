@@ -1,0 +1,31 @@
+<div class="page placeInfo" ng-cloak>
+    <div class="header">
+        <div class="left-side icon-button icon-back icon-normal icon-inline" ng-click="backButtonClicked()"></div>
+        <div class="right-side">
+            <div class="icon-button icon-delete icon-normal icon-inline" ng-click="deleteButtonClicked()"></div>
+        </div>
+        <div class="middle centered"></div>
+    </div>
+    <div class="content scroll-y no-scroll-x">
+
+        <div class="centerContainer">
+            <div>
+                <!--
+                <div class="aroundIcons north"><button class="icon-button icon-normal icon-inline" ng-class="checkInOrOutClass()" ng-click="manuallyCheckInOrOut()"></button></div>
+                -->
+                <div class="aroundIcons west"><button class="icon-button icon-location icon-normal icon-inline" ng-click="showOnMapButtonClicked()"></button></div>
+                <div class="aroundIcons east"><button class="icon-button icon-edit icon-normal icon-inline" ng-click="editButtonClicked()"></button></div>
+                <div class="aroundIcons south for-text">
+                    <div class="text" ng-click="editButtonClicked()">{{placeId}}</div>
+                </div>
+            </div>
+            <div class="centerPlace"><div class="place" ng-class="getCSSForShape()" ng-click="editButtonClicked()"></div></div>
+
+        </div>
+
+        <div class="textAfterCenterContainer">
+            <p class="largeFont text-align-center" ng-show="userIsInThisPlace">{{"placeDetails.distanceFromYou.youAreThere" | i18n}}</p>
+            <p class="largeFont text-align-center" ng-show="!userIsInThisPlace">{{"placeDetails.distanceFromYou.distance" | i18n}}{{distanceFromUserToPlace}}</p>
+        </div>
+    </div>
+</div>

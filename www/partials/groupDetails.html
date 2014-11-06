@@ -1,0 +1,47 @@
+<div class="page userDetails familyMemberDetails" ng-cloak>
+    <div class="header">
+        <div class="left-side icon-button icon-back icon-normal icon-inline" ng-click="back()"></div>
+        <div class="right-side icon-button icon-delete icon-normal icon-inline" ng-click="leaveGroupClicked()"></div>
+
+        <div class="middle centered"><h1 class="page-title no-left-margin" >{{group.name}}</h1></div>
+    </div>
+
+    <div class="userDetailsContainer no-scroll-x scroll-y">
+        <div class="centerContainer">
+            <div class="aroundIcons north">
+                <button class="icon-button icon-create-place icon-normal icon-inline"
+                        ng-click="createPlaceButtonClicked()"></button>
+            </div>
+            <div class="aroundIcons west">
+                <button class="icon-button icon-settings icon-normal icon-inline" ng-click="editButtonClicked()"></button>
+            </div>
+            <div class="aroundIcons north">
+                <button class="icon-button icon-chat icon-normal icon-inline" ng-click="pingButtonClicked()"></button>
+                <div class="badge" ng-show="numberOfNewMessages">+{{numberOfNewMessages}}</div>
+            </div>
+            <div class="aroundIcons east">
+                <button class="icon-button icon-create-place icon-normal icon-inline" ng-click="createPlaceClicked()"></button>
+            </div>
+            <div class="centerAvatar">
+                <div class="avatar large">
+                    <div class="avatarHalo"><img src="images/familyAvatar.png"/></div>
+                </div>
+            </div>
+        </div>
+        <div class="textAfterCenterContainer" style="background-color: #e5d228">
+            <p class="text-align-center">{{group.numberOfMembers}} {{"groupDetails.familyMembers" | i18n}} </p>
+            <p class="text-align-center">{{group.numberOfPlaces}} {{"groupDetails.familyPlaces" | i18n}} </p>
+        </div>
+    </div>
+
+    <div class="buttonContainer" ng-show="leaveGroupOptions">
+        <button class="button warning full-width bottom-margin" ng-click="leaveGroupOKClicked()">{{"groupDetails.leave" | i18n}} {{group.name}}</button>
+        <button class="button primary-black full-width bottom-margin" ng-click="leaveGroupCancelClicked()">{{"groupDetails.stay" | i18n}}</button>
+    </div>
+
+    <div class="buttonContainer"  ng-show="nameEditorEnabled">
+        <input type="text" class="full-width" id="userNameInputElement" ng-model="group.name">
+        <div class="button primary full-width" ng-click="onFinishChangingName()" >{{"mySettings.label.finishEditing" | i18n}}</div>
+    </div>
+
+</div>
